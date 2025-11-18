@@ -1,0 +1,177 @@
+[00:00:04.885] Server  LOG      ✓ Ready in 3.5s
+[00:00:34.660] Server  LOG      ○ Compiling / ...
+[00:00:47.382] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="dark">
+                          <body
+                            className="font-sans antialiased bg-background text-foreground"
+-                           data-new-gr-c-s-check-loaded="14.1263.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:00:48.007] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:48.007] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:48.007] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763446967177}
+[00:01:14.008] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763446993272}
+[00:01:56.299] Server  LOG      ✓ Compiled in 302ms
+[00:01:58.858] Server  LOG      ✓ Compiled in 141ms
+[00:01:59.899] Server  LOG      ✓ Compiled in 156ms
+[00:02:03.499] Server  LOG      ✓ Compiled in 103ms
+[00:02:05.523] Server  LOG      ✓ Compiled in 111ms
+[00:02:27.097] Server  LOG      ✓ Compiled in 182ms
+[00:02:34.683] Server  LOG      ✓ Compiled in 77ms
+[00:02:45.452] Server  LOG      ✓ Compiled in 84ms
+[00:02:50.412] Server  LOG      ✓ Compiled in 156ms
+[00:03:25.257] Server  LOG      ✓ Compiled in 120ms
+[00:04:34.157] Server  LOG      ✓ Compiled in 87ms
+[00:04:43.579] Server  LOG      ✓ Compiled in 156ms
+[00:04:48.054] Server  LOG      ✓ Compiled in 108ms
+[00:04:51.509] Server  LOG      ✓ Compiled in 73ms
+[00:04:53.267] Server  LOG      ✓ Compiled in 81ms
+[00:05:09.299] Server  LOG      ✓ Compiled in 86ms
+[00:05:13.508] Server  LOG      ✓ Compiled in 76ms
+[00:05:43.205] Server  LOG      ✓ Compiled in 105ms
+[00:05:53.604] Server  LOG      ✓ Compiled in 104ms
+[00:05:56.628] Server  LOG      ✓ Compiled in 109ms
+[00:06:04.452] Server  LOG      ✓ Compiled in 93ms
+[00:06:05.914] Server  LOG      ✓ Compiled in 111ms
+[00:06:22.224] Server  LOG      ✓ Compiled in 121ms
+[00:06:23.375] Server  LOG      ✓ Compiled in 89ms
+[00:06:51.712] Server  LOG      ✓ Compiled in 179ms
+[00:07:33.330] Server  LOG      ✓ Compiled in 91ms
+[00:07:38.942] Server  LOG      ✓ Compiled in 87ms
+[00:07:44.801] Server  LOG      ✓ Compiled in 95ms
+[00:07:50.092] Server  LOG      ✓ Compiled in 98ms
+[00:08:04.234] Server  LOG      ✓ Compiled in 171ms
+[00:08:22.058] Server  LOG      ✓ Compiled in 118ms
+[00:08:26.386] Server  LOG      ✓ Compiled in 128ms
+[00:08:34.238] Server  LOG      ✓ Compiled in 137ms
+[00:08:40.481] Server  LOG      ✓ Compiled in 133ms
+[00:08:44.906] Server  LOG      ✓ Compiled in 83ms
+[00:08:46.989] Server  LOG      ✓ Compiled in 89ms
+[00:10:34.267] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763447553531}
+[00:11:03.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763447582486}
+[00:14:40.243] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763447799508}
+[00:15:36.704] Server  LOG      ✓ Compiled in 163ms
+[00:15:43.244] Server  LOG      ✓ Compiled in 101ms
+[00:15:49.715] Server  LOG      ✓ Compiled in 108ms
+[00:15:54.887] Server  LOG      ✓ Compiled in 101ms
+[00:16:00.361] Server  LOG      ✓ Compiled in 163ms
+[00:16:21.681] Server  LOG      ✓ Compiled in 186ms
+[00:16:54.631] Server  LOG      ✓ Compiled in 131ms
+[00:17:00.509] Server  LOG      ✓ Compiled in 136ms
+[00:17:06.302] Server  LOG      ✓ Compiled in 130ms
+[00:17:17.327] Server  LOG      ✓ Compiled in 104ms
+[00:19:11.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763448070428}
+[00:19:29.255] Server  LOG      ✓ Compiled in 107ms
+[00:20:34.640] Server  LOG      ✓ Compiled in 136ms
+[00:20:42.559] Server  LOG      ✓ Compiled in 136ms
+[00:20:52.656] Server  LOG      ✓ Compiled in 71ms
+[00:20:55.283] Server  LOG      ✓ Compiled in 167ms
+[00:21:02.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763448181691}
+[00:22:00.366] Server  LOG      ✓ Compiled in 106ms
+[00:22:05.387] Server  LOG      ✓ Compiled in 155ms
+[00:22:12.437] Server  LOG      ✓ Compiled in 136ms
+[00:22:15.329] Server  LOG      ✓ Compiled in 78ms
+[00:22:26.673] Server  LOG      ✓ Compiled in 119ms
+[00:22:34.749] Server  LOG      ✓ Compiled in 109ms
+[00:22:52.646] Server  LOG      ✓ Compiled in 224ms
+[00:23:01.442] Server  LOG      ✓ Compiled in 159ms
+[00:23:12.662] Server  LOG      ✓ Compiled in 105ms
+[00:23:19.177] Server  LOG      ✓ Compiled in 105ms
+[00:23:22.534] Server  LOG      ✓ Compiled in 116ms
+[00:23:25.551] Server  LOG      ✓ Compiled in 91ms
+[00:23:31.189] Server  LOG      ✓ Compiled in 142ms
+[00:24:11.329] Server  LOG      ✓ Compiled in 114ms
+[00:24:37.624] Server  LOG      ✓ Compiled in 78ms
+[00:24:42.091] Server  LOG      ✓ Compiled in 113ms
+[00:24:47.604] Server  LOG      ✓ Compiled in 115ms
+[00:24:56.726] Server  LOG      ✓ Compiled in 138ms
+[00:25:02.925] Server  LOG      ✓ Compiled in 148ms
+[00:25:20.708] Server  LOG      ✓ Compiled in 123ms
+[00:25:36.957] Server  LOG      ✓ Compiled in 136ms
+[00:27:15.265] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763448554533}
+[00:28:18.533] Server  LOG      ✓ Compiled in 175ms
+[00:28:22.910] Server  LOG      ✓ Compiled in 156ms
+[00:28:37.134] Server  LOG      ✓ Compiled in 148ms
+[00:29:14.667] Server  LOG      ✓ Compiled in 154ms
+[00:29:15.797] Server  LOG      ✓ Compiled in 184ms
+[00:29:17.548] Server  LOG      ✓ Compiled in 100ms
+[00:29:38.170] Server  LOG      ✓ Compiled in 129ms
+[00:30:00.809] Server  LOG      ✓ Compiled in 139ms
+[00:30:47.595] Server  LOG      ✓ Compiled in 129ms
+[00:31:19.337] Server  LOG      ✓ Compiled in 127ms
+[00:31:24.736] Server  LOG      ✓ Compiled in 106ms
+[00:31:33.028] Server  LOG      ✓ Compiled in 114ms
+[00:31:34.409] Server  LOG      ✓ Compiled in 119ms
+[00:31:36.847] Server  LOG      ✓ Compiled in 126ms
+[00:31:38.376] Server  LOG      ✓ Compiled in 165ms
+[00:31:40.209] Server  LOG      ✓ Compiled in 110ms
+[00:31:43.064] Server  LOG      ✓ Compiled in 121ms
+[00:31:44.844] Server  LOG      ✓ Compiled in 145ms
+[00:31:45.826] Server  LOG      ✓ Compiled in 103ms
+[00:31:48.510] Server  LOG      ✓ Compiled in 111ms
+[00:31:50.075] Server  LOG      ✓ Compiled in 104ms
+[00:31:53.117] Server  LOG      ✓ Compiled in 128ms
+[00:31:54.338] Server  LOG      ✓ Compiled in 96ms
+[00:32:40.243] Server  LOG      ✓ Compiled in 154ms
+[00:32:54.919] Server  LOG      ✓ Compiled in 111ms
+[00:33:27.394] Server  LOG      ✓ Compiled in 108ms
+[00:33:30.212] Server  LOG      ✓ Compiled in 287ms
+[00:33:34.036] Server  LOG      ✓ Compiled in 287ms
+[00:33:37.148] Server  LOG      ✓ Compiled in 232ms
+[00:33:44.386] Server  LOG      ✓ Compiled in 209ms
+[00:34:06.570] Server  LOG      ✓ Compiled in 113ms
+[00:34:22.004] Server  LOG      ✓ Compiled in 125ms
+[00:35:33.955] Server  LOG      ✓ Compiled in 108ms
+[00:35:41.493] Server  LOG      ✓ Compiled in 121ms
+[00:35:47.738] Server  LOG      ✓ Compiled in 119ms
+[00:35:55.022] Server  LOG      ✓ Compiled in 133ms
+[00:35:58.510] Server  LOG      ✓ Compiled in 122ms
+[00:36:06.746] Server  LOG      ✓ Compiled in 114ms
+[00:36:10.036] Server  LOG      ✓ Compiled in 116ms
+[00:36:44.580] Server  LOG      ✓ Compiled in 153ms
+[00:36:55.259] Server  LOG      ✓ Compiled in 107ms
+[00:37:36.789] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449176056}
+[00:37:42.207] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449181462}
+[00:38:14.771] Server  LOG      ✓ Compiled in 146ms
+[00:38:29.930] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449229193}
+[00:39:08.686] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449267948}
+[00:39:17.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449276654}
+[00:39:30.089] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449289358}
+[00:39:37.746] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449297002}
+[00:39:47.675] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763449306940}
+[00:40:12.612] Server  LOG      ✓ Compiled in 126ms
+[00:40:40.682] Server  LOG      ✓ Compiled in 117ms
+[00:40:43.865] Server  LOG      ✓ Compiled in 121ms
+[00:42:21.304] Server  LOG      ✓ Compiled in 108ms
+[00:42:29.132] Server  LOG      ✓ Compiled in 119ms
