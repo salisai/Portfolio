@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { Terminal } from 'lucide-react';
+
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,7 +26,6 @@ export default function Navbar() {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
 
-          {/* HIDE LOGO WHEN MENU IS OPEN */}
           <Link
             href="/"
             className={cn(
@@ -32,7 +33,7 @@ export default function Navbar() {
               open && "opacity-0 pointer-events-none"
             )}
           >
-          
+             <Terminal className="h-6 w-6" />
           </Link>
 
           {/* DESKTOP MENU */}

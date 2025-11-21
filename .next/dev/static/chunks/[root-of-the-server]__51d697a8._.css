@@ -2110,16 +2110,8 @@
     font-size: .8rem;
   }
 
-  .text-\[12px\] {
-    font-size: 12px;
-  }
-
   .text-\[14px\] {
     font-size: 14px;
-  }
-
-  .text-\[16px\] {
-    font-size: 16px;
   }
 
   .leading-none {
@@ -2182,10 +2174,6 @@
 
   .whitespace-nowrap {
     white-space: nowrap;
-  }
-
-  .text-\[1\] {
-    color: 1;
   }
 
   .text-accent-foreground {

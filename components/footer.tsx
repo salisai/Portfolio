@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h3 className="text-foreground font-semibold mb-4">About</h3>
             <p className="text-muted-foreground text-sm">
-              Full-Stack Developer and AI Engineer passionate about building and shipping elegant impactful solutions.
+              Full-Stack and AI Engineer passionate about building and shipping elegant, impactful solutions.
             </p>
           </div>
           

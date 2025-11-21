@@ -27,7 +27,7 @@ function About() {
                     className: "space-y-6 text-muted-foreground leading-relaxed",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "I’m Ali — a full-stack developer and AI engineer, pursuing bechelors in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference."
+                            children: "I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference."
                         }, void 0, false, {
                             fileName: "[project]/app/about/page.tsx",
                             lineNumber: 10,
@@ -48,7 +48,7 @@ function About() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: "If you’re looking for someone who can turn your AI or web idea into something users love and investors notice — let’s build it together."
+                            children: "If you’re looking for someone who can turn your AI or web idea into something users love and investors notice — let’s create it together."
                         }, void 0, false, {
                             fileName: "[project]/app/about/page.tsx",
                             lineNumber: 16,

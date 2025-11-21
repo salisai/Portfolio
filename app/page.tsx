@@ -20,15 +20,17 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/projects">
-              <Button size="lg" className="gap-2">
-                View Projects
-                <ArrowRight className="w-4 h-4" />
+
+            <Link href="/contact">
+              <Button size="lg" className='gap-2'>
+                Get In Touch
               </Button>
             </Link>
-            <Link href="/contact">
-              <Button size="lg" className='border border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out'>
-                Get In Touch
+
+            <Link href="/projects">
+              <Button size="lg" className="border border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out">
+                View Projects
+                <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>
