@@ -2,9 +2,17 @@
 
 export default function About() {
   return (
-    <div className="pt-24">
+    <div className="pt-10">
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h1 className="text-4xl font-bold text-foreground mb-8">About Me</h1>
+        <div className="sm:hidden">
+          <img 
+            src="/me.jpeg" 
+            alt="Ali" 
+            className="w-100 h-100 object-cover rounded-[10px] mb-8 border border-primary/20 shadow-sw"
+          />
+        </div>
+          <h1 className="text-4xl font-bold text-foreground mb-8">About Me</h1>
+
         
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <p>I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference.</p>

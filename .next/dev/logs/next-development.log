@@ -1,6 +1,6 @@
-[00:00:08.020] Server  LOG      ✓ Ready in 5.1s
-[00:00:19.564] Server  LOG      ○ Compiling / ...
-[00:00:48.833] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.606] Server  LOG      ✓ Ready in 2.3s
+[00:00:06.660] Server  LOG      ○ Compiling /contact ...
+[00:00:11.999] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -18,7 +18,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/contact" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -39,106 +39,10 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:00:52.583] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:52.584] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:52.584] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763744345146}
-[00:08:48.627] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.639] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.645] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\next.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.656] Server  ERROR   TypeError: Cannot set property message of  which has only a getter
-[00:08:48.658] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.671] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.672] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\next.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.674] Server  ERROR    ⨯ "unhandledRejection:" TypeError: Cannot set property message of  which has only a getter
-[00:08:48.677] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.679] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.680] Server  ERROR   D:\downloads\portfolio1\node_modules\next\dist\server\next.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:08:48.682] Server  ERROR    ⨯ "unhandledRejection: " TypeError: Cannot set property message of  which has only a getter
-[00:08:49.571] Browser ERROR   uncaughtError: DataCloneError: Symbol(react.transitional.element) could not be cloned.
-[00:12:43.260] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" className="dark">
-                          <body
-                            className="font-sans antialiased bg-background text-foreground"
--                           data-new-gr-c-s-check-loaded="14.1264.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:12:43.670] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:12:43.670] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:12:43.670] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745056845}
-[00:19:25.097] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745458490}
-[00:19:26.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745459833}
-[00:19:26.699] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745460081}
-[00:20:00.780] Server  LOG      ✓ Compiled in 167ms
-[00:20:15.546] Server  LOG      ✓ Compiled in 100ms
-[00:20:36.584] Server  LOG      ✓ Compiled in 140ms
-[00:20:55.456] Server  LOG      ✓ Compiled in 145ms
-[00:25:03.891] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745797281}
-[00:25:35.886] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745829270}
-[00:25:50.668] Server  LOG      ✓ Compiled in 143ms
-[00:25:57.518] Server  LOG      ✓ Compiled in 104ms
-[00:26:00.656] Server  LOG      ✓ Compiled in 97ms
-[00:26:02.514] Server  LOG      ✓ Compiled in 102ms
-[00:26:16.045] Server  LOG      ✓ Compiled in 125ms
-[00:26:37.960] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763745891349}
-[00:28:59.549] Server  LOG      ✓ Compiled in 128ms
-[00:29:05.219] Server  LOG      ✓ Compiled in 104ms
-[00:29:06.255] Server  LOG      ✓ Compiled in 124ms
-[00:29:09.393] Server  LOG      ✓ Compiled in 96ms
-[00:29:39.414] Server  LOG      ✓ Compiled in 138ms
-[00:29:43.401] Server  LOG      ✓ Compiled in 90ms
-[00:29:44.570] Server  LOG      ✓ Compiled in 83ms
-[00:29:54.416] Server  LOG      ✓ Compiled in 134ms
-[00:30:12.232] Server  LOG      ✓ Compiled in 164ms
-[00:30:32.357] Server  LOG      ✓ Compiled in 172ms
-[00:30:33.565] Server  LOG      ✓ Compiled in 98ms
-[00:30:35.083] Server  LOG      ✓ Compiled in 183ms
-[00:31:14.110] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746167501}
-[00:31:15.426] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746168818}
-[00:31:16.927] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746170308}
-[00:31:18.416] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746171801}
-[00:32:27.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746240675}
-[00:32:33.046] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746246432}
-[00:34:04.144] Server  LOG      ✓ Compiled in 93ms
-[00:34:05.657] Server  LOG      ✓ Compiled in 138ms
-[00:34:13.718] Server  LOG      ✓ Compiled in 133ms
-[00:34:16.386] Server  LOG      ✓ Compiled in 117ms
-[00:34:30.256] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746363647}
-[00:35:27.166] Server  LOG      ✓ Compiled in 105ms
-[00:35:47.485] Server  LOG      ✓ Compiled in 144ms
-[00:36:14.638] Server  LOG      ✓ Compiled in 147ms
-[00:36:58.065] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746511458}
-[00:37:42.515] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746555905}
-[00:38:01.917] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746575301}
-[00:38:10.619] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746584002}
-[00:38:17.702] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763746591092}
+[00:00:12.182] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:12.182] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[00:00:12.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764094877241}
+[00:00:22.198] Server  LOG     RESEND_API_KEY: "re_bbnGMZWz_n2F1amjkYh8wcYeoHuJcZsuP"
+[00:02:26.648] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:26.648] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[00:02:26.649] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764095011627}
