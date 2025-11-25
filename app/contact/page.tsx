@@ -6,6 +6,8 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
+import {toast} from "sonner";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,10 +26,10 @@ export default function Contact() {
     })
     
     if(res.ok){
-      alert("Message sent successfully!")
+      toast("Message sent successfully!")
       setFormData({ name: '', email: '', message: '' })
     }else{
-      alert("Failed to send message")
+      toast("Failed to send message")
     }
 
   }

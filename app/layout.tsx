@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
+import { Toaster } from "@/components/ui/sonner"
+
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -25,6 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans antialiased bg-background text-foreground`}>
+        
+        <Toaster/>
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1 relative">
