@@ -1,27 +1,47 @@
 'use client'
+import Link from "next/link"
 
 export default function About() {
   return (
-    <div className="pt-10">
+    <div>
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="sm:hidden">
+        <div className="sm:hidden relative">
           <img 
             src="/me.jpeg" 
             alt="Ali" 
-            className="w-100 h-100 object-cover rounded-[10px] mb-8 border border-primary/20 shadow-sw"
+            className="w-100 h-100 object-cover rounded-[10px] mb-5 shadow-sw"
           />
+
+          <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none rounded-b-[10px]
+              bg-linear-to-b from-transparent to-black/90">
+          </div>
         </div>
-          <h1 className="text-4xl font-bold text-foreground mb-8">About Me</h1>
+        <h1 className="text-4xl font-bold text-foreground mb-4">About Me</h1>
 
         
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <p>I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference.</p>
     
-          <p>I love exploring the intersection of technology, design, and human behavior — always learning, improving, and building things that push boundaries. When I’m not coding, you’ll find me reading, thinking about big ideas, and studying how technology drives human progress.</p>
+          <p>I love exploring the intersection of technology, design, and human behavior — always learning, improving, and building things that push boundaries. When I’m not coding, you’ll find me reading, 
+            {" "}
+            <Link 
+                href="https://medium.com/@salisai" 
+                className="text-primary"
+              >
+                writing
+              </Link>
+            , thinking about big ideas, and studying how technology drives human progress.</p>
               
           <p>Right now, I’m focused on helping teams build smarter products that perform beautifully and deliver measurable results.</p>
           
-          <p>If you’re looking for someone who can turn your AI or web idea into something users love and investors notice — let’s create it together.</p>
+          <p>If you’re looking for someone who can turn your AI or web idea into something users love and investors notice — let’s{" "}
+             <Link 
+                href="/contact" 
+                className="text-primary"
+              >
+                create
+              </Link>{" "}
+              it together.</p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">

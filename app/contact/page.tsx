@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 import {toast} from "sonner";
+import { Spinner } from '@/components/ui/spinner'
 
 
 export default function Contact() {
@@ -14,24 +15,32 @@ export default function Contact() {
     name: '',
     email: '',
     message: ''
-  })
+  });
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setLoading(true);
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(formData)
-    })
-    
-    if(res.ok){
-      toast("Message sent successfully!")
-      setFormData({ name: '', email: '', message: '' })
-    }else{
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(formData)
+      })
+      
+      if(res.ok){
+        toast("Message sent successfully!")
+        setFormData({ name: '', email: '', message: '' })
+      }else{
+        toast("Failed to send message")
+      }
+
+    } catch (error) {
       toast("Failed to send message")
+    } finally {
+      setLoading(false);
     }
-
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -106,8 +115,15 @@ export default function Contact() {
                   className="bg-input border border-primary/5 text-[14px] placeholder:text-muted-foreground min-h-32"
                 />
 
-                <Button type="submit" size="lg" className="w-full">
-                  Send Message
+                <Button type='submit' size='lg' className='w-full cursor-pointer' disabled={loading}>
+                  {loading ? (
+                    <div className='flex items-center justify-center gap-2'>
+                      <Spinner className='w-5 h-5 text-white'/>
+                      Sending...
+                    </div>
+                  ):(
+                    "Send Message"
+                  )}
                 </Button>
               </form>
             </Card>

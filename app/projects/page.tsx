@@ -9,16 +9,16 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'AI Chat Platform',
-      description: 'Real-time chat application with AI-powered responses, built with Next.js and WebSockets.',
-      tech: ['Next.js', 'TypeScript', 'WebSocket', 'TensorFlow'],
-      link: '#'
+      title: 'CulinaAI',
+      description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
+      tech: ['Next.js', 'TypeScript', 'NeonDB','Clerk','Prisma','Shadcn', 'GeminiAPI', "NanoBanana"],
+      link: 'https://github.com/salisai/ai_recipes_app'
     },
     {
       id: 2,
-      title: 'Data Analytics Dashboard',
-      description: 'Interactive dashboard for real-time data visualization and business intelligence.',
-      tech: ['React', 'Python', 'PostgreSQL', 'D3.js'],
+      title: 'Jewelary Store',
+      description: 'Full-stack ecommerce website with admin dashboard',
+      tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
       link: '#'
     },
     {
