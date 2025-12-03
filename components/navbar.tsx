@@ -4,8 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Terminal } from 'lucide-react';
-
+import { Terminal } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -22,50 +21,59 @@ export default function Navbar() {
 
   return (
     <>
-      {/* NAVBAR */}
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <aside className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-background/80 backdrop-blur-md border-r border-dashed border-primary/20 z-50 py-6">
+        
+        {/* Logo */}
+        <div className="flex items-center md:hidden justify-center mb-10">
+          <Terminal className="h-7 w-7 text-primary" />
+        </div>
 
-          <Link
-            href="/"
-            className={cn(
-              "text-xl font-bold text-foreground transition-opacity",
-              open && "opacity-0 pointer-events-none"
-            )}
-          >
-             <Terminal className="h-6 w-6" />
-          </Link>
-
-          {/* DESKTOP MENU */}
-          <div className="hidden md:flex gap-8">
-            {navLinks.map((link) => (
+        {/* Sidebar Nav */}
+        <nav className="flex flex-col mt-30 gap-6 p-10">
+          {navLinks.map((link) => {
+            const active = pathname === link.href;
+            return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors",
-                  pathname === link.href
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
+                className="flex items-center gap-3 group"
               >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+                <div
+                  className={cn(
+                    "h-[22px] w-[3px] rounded-full transition-all",
+                    active ? "bg-primary" : "bg-muted-foreground/30 group-hover:bg-muted-foreground/60"
+                  )}
+                ></div>
 
-          {/* MOBILE BUTTON */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setOpen(true)}
-              className={cn(
-                "text-foreground hover:text-muted-foreground transition-colors",
-                open && "opacity-0 pointer-events-none"
-              )}
-            >
-              ☰
-            </button>
-          </div>
+                {/* label */}
+                <span
+                  className={cn(
+                    "text-sm font-medium transition-colors",
+                    active ? "text-primary" : "text-muted-foreground group-hover:text-foreground"
+                  )}
+                >
+                  {link.label}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+      </aside>
+
+      {/* TOP NAV (Mobile Only) */}
+      <nav className="md:hidden fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
+        <div className="mx-auto px-4 py-4 flex items-center justify-between">
+
+          <Link href="/" className="text-xl font-bold text-foreground">
+            <Terminal className="h-6 w-6" />
+          </Link>
+
+          <button
+            onClick={() => setOpen(true)}
+            className="text-foreground hover:text-muted-foreground transition"
+          >
+            ☰
+          </button>
         </div>
       </nav>
 
@@ -81,11 +89,10 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-full w-2/3 bg-black text-white z-50 transform transition-transform duration-300 ease-in-out",
+          "fixed top-0 right-0 h-full w-2/3 bg-black text-white z-50 transform transition-transform duration-300",
           open ? "translate-x-0" : "translate-x-full"
         )}
       >
-        {/* CLOSE BUTTON */}
         <div className="flex justify-end p-4">
           <button
             onClick={() => setOpen(false)}
@@ -95,8 +102,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* CENTERED NAV ITEMS */}
-        <div className="flex flex-col gap-6 px-15 mt-4">
+        <div className="flex flex-col gap-6 px-10 mt-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}

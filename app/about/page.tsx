@@ -3,19 +3,8 @@ import Link from "next/link"
 
 export default function About() {
   return (
-    <div>
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="sm:hidden relative">
-          <img 
-            src="/me.jpeg" 
-            alt="Ali" 
-            className="w-100 h-100 object-cover rounded-[10px] mb-5 shadow-sw"
-          />
-
-          <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none rounded-b-[10px]
-              bg-linear-to-b from-transparent to-black/90">
-          </div>
-        </div>
+    <div className="pt-24">
+      <section className="max-w-4xl px-4 sm:px-6  lg:px-8 py-20">
         <h1 className="text-4xl font-bold text-foreground mb-4">About Me</h1>
 
         

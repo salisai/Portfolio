@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -12,42 +13,48 @@ export default function Projects() {
       title: 'CulinaAI',
       description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
       tech: ['Next.js', 'TypeScript', 'NeonDB','Clerk','Prisma','Shadcn', 'GeminiAPI', "NanoBanana"],
-      link: 'https://github.com/salisai/ai_recipes_app'
+      link: 'https://github.com/salisai/ai_recipes_app',
+      image: '/project1.png'
     },
     {
       id: 2,
       title: 'Jewelary Store',
       description: 'Full-stack ecommerce website with admin dashboard',
       tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
-      link: '#'
+      link: '#',
+      image: '/project2.png'
     },
     {
       id: 3,
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with payment processing and inventory management.',
       tech: ['Next.js', 'Stripe', 'MongoDB', 'Docker'],
-      link: '#'
+      link: '#',
+      image: ''
     },
     {
       id: 4,
       title: 'ML Image Recognition',
       description: 'Computer vision model for real-time object detection and classification.',
       tech: ['PyTorch', 'FastAPI', 'OpenCV', 'AWS'],
-      link: '#'
+      link: '#',
+      image: ''
     },
     {
       id: 5,
       title: 'Collaborative Notes App',
       description: 'Real-time collaborative note-taking with encryption and offline support.',
       tech: ['React', 'Firebase', 'Encryption', 'PWA'],
-      link: '#'
+      link: '#',
+      image: ''
     },
     {
       id: 6,
       title: 'DevOps Automation Tool',
       description: 'Kubernetes management tool for simplified deployment and scaling.',
       tech: ['Go', 'Kubernetes', 'gRPC', 'React'],
-      link: '#'
+      link: '#',
+      image: ''
     }
   ]
 
@@ -62,11 +69,22 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           {projects.map((project) => (
-            <Card key={project.id} className="bg-card border border-primary/10 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col">
-              <div className="p-6 flex-1 flex flex-col">
+            
+            <Card key={project.id} className="bg-card border border-primary/10 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col p-0">
+              
+              <div className='w-full relative h-40 sm:h-52 lg:h-56'>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className='object-cover rounded-t-xl'
+                />
+              </div>
+                            
+              <div className="px-6 flex-1 flex flex-col">
                 <h3 className="text-foreground font-semibold text-lg mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-6 flex-1">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <p className="text-muted-foreground text-sm mb-3 flex-1">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-3">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
@@ -77,6 +95,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
+              
               <div className="px-6 pb-6">
                 <Button asChild  className="w-full gap-2 border border-white  hover:bg-white hover:text-black">
                   <Link href={project.link}>
@@ -86,6 +105,7 @@ export default function Projects() {
                 </Button>
               </div>
             </Card>
+
           ))}
         </div>
       </section>

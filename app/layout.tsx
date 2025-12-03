@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`font-sans antialiased bg-background text-foreground`}>
+      <body className={`font-sans antialiased bg-background text-foreground md:ml-60`}>
         
         <Toaster/>
         <div className="min-h-screen flex flex-col">

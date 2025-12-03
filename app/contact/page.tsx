@@ -50,7 +50,7 @@ export default function Contact() {
 
   return (
     <div className="pt-24">
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <h1 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h1>
         <p className="text-muted-foreground mb-12 max-w-2xl">
           I'm always interested in hearing about new projects and opportunities. Let's connect!
@@ -127,22 +127,6 @@ export default function Contact() {
                 </Button>
               </form>
             </Card>
-          </div>
-        </div>
-
-        {/* Social Links */}
-        <div className="text-center">
-          <h3 className="text-foreground font-semibold mb-6">Connect With Me At</h3>
-          <div className="flex gap-4 justify-center">
-            <a href="https://github.com/salisai" className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-card border border-border text-muted-foreground hover:text-primary transition-colors hover:border-primary">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="https://linkedin.com/in/sayed-ali-shah" className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-card border border-border text-muted-foreground hover:text-primary transition-colors hover:border-primary">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="https://x.com/@salisdev" className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-card border border-border text-muted-foreground hover:text-primary transition-colors hover:border-primary">
-              <Twitter className="w-5 h-5" />
-            </a>
           </div>
         </div>
       </section>
