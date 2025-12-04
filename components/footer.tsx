@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
+        <div className="border-t border-dashed border-primary/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Ali Portfolio. All rights reserved.</p>
         </div>
       </div>

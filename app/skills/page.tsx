@@ -32,13 +32,13 @@ export default function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
-            <Card key={category.title} className="bg-card p-4 border border-primary/10 rounded-[10px] hover:border-primary/50 transition-all duration-300">
+            <Card key={category.title} className="bg-card p-4 border border-dashed border-primary/20 hover:border-primary/24 transition-all duration-300">
               <h3 className="text-foreground font-semibold text-lg mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-primary/5 text-primary border border-primary/10 hover:bg-primary/15 text-xs px-2.5 py-1.5 rounded-[5px]"
+                    className="bg-primary/5 text-primary border border-dashed border-primary/18 hover:bg-primary/15 text-xs px-2.5 py-1.5 rounded-[1px]"
                   >
                     {skill}
                   </span>
@@ -48,7 +48,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="mt-16 bg-card border border-primary/10 rounded-lg p-8">
+        <div className="mt-16 bg-card border border-dashed border-primary/14 p-8">
           <h3 className="text-foreground font-semibold text-lg mb-6">Proficiency Levels</h3>
           <div className="space-y-4">
             {[

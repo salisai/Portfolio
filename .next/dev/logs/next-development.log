@@ -1,18 +1,14 @@
-[00:00:04.609] Server  LOG      ✓ Ready in 3.1s
-[00:00:07.694] Server  LOG      ○ Compiling /projects ...
-[00:00:11.922] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.927] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.934] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:11.940] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:12.098] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:12.102] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:12.108] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:12.115] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
-[00:00:18.046] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:18.046] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:18.046] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:18.046] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:18.046] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:04.684] Server  LOG      ✓ Ready in 3.2s
+[00:00:19.824] Server  LOG      ○ Compiling / ...
+[00:00:27.080] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:27.091] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:27.099] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:27.110] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[00:00:33.334] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:33.334] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:33.334] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:33.334] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:33.598] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -51,387 +47,368 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:00:18.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:18.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:18.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:18.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:18.046] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:18.046] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:18.047] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754470213}
-[00:00:30.123] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/certif" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en" className="dark">
-                          <body
-                            className="font-sans antialiased bg-background text-foreground md:ml-60"
--                           data-new-gr-c-s-check-loaded="14.1264.0"
--                           data-gr-ext-installed=""
-                          >
-                  ...
-
-[00:00:30.426] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:30.426] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/certif","route":"/certif"}
-[00:00:30.426] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certif color: rgb(120, 120, 120) color: inherit {"dp":"/certif","o":"http://localhost:3000/certif","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754483318}
-[00:00:49.715] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:49.715] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/certif","route":"/certif"}
-[00:00:49.715] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certif color: rgb(120, 120, 120) color: inherit {"dp":"/certif","o":"http://localhost:3000/certif","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754502636}
-[00:00:51.796] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754504704}
-[00:00:53.465] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754506383}
-[00:00:55.166] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:55.166] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/certif","route":"/certif"}
-[00:00:55.166] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certif color: rgb(120, 120, 120) color: inherit {"dp":"/certif","o":"http://localhost:3000/certif","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754508087}
-[00:00:57.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754510141}
-[00:00:59.206] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:59.206] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:59.206] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:59.206] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser ERROR   Image is missing required "src" property: <img>
-[00:00:59.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754512063}
-[00:01:00.845] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754513761}
-[00:01:30.095] Server  LOG      ✓ Compiled in 100ms
-[00:01:36.051] Server  LOG      ✓ Compiled in 99ms
-[00:01:46.510] Server  LOG      ✓ Compiled in 121ms
-[00:02:21.887] Server  LOG      ✓ Compiled in 74ms
-[00:02:23.479] Server  LOG      ✓ Compiled in 254ms
-[00:02:30.287] Server  LOG      ✓ Compiled in 59ms
-[00:02:54.516] Server  LOG      ✓ Compiled in 145ms
-[00:04:34.889] Server  LOG      ✓ Compiled in 107ms
-[00:04:38.848] Server  LOG      ✓ Compiled in 181ms
-[00:04:49.800] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754742715}
-[00:04:51.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754744331}
-[00:04:53.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:04:53.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:04:53.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:04:53.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser ERROR   Image is missing required "src" property: <img>
-[00:04:53.879] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754746761}
-[00:04:56.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754749625}
-[00:04:58.174] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754751091}
-[00:05:00.374] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:05:00.374] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:05:00.374] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:05:00.374] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser ERROR   Image is missing required "src" property: <img>
-[00:05:00.374] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764754753266}
-[00:06:27.778] Server  LOG      ✓ Compiled in 127ms
-[00:06:32.149] Server  LOG      ✓ Compiled in 58ms
-[00:06:35.795] Server  LOG      ✓ Compiled in 66ms
-[00:06:38.951] Server  LOG      ✓ Compiled in 72ms
-[00:06:41.178] Server  LOG      ✓ Compiled in 118ms
-[00:06:48.511] Server  LOG      ✓ Compiled in 57ms
-[00:06:49.894] Server  LOG      ✓ Compiled in 66ms
-[00:07:43.327] Server  LOG      ✓ Compiled in 170ms
-[00:07:59.257] Server  LOG      ✓ Compiled in 213ms
-[00:07:59.541] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:07:59.541] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:07:59.541] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:07:59.541] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:07:59.541] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.049] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:01.049] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:01.049] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:01.049] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:01.049] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.049] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.049] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.050] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.050] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.050] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.050] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:01.050] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:56.808] Server  LOG      ✓ Compiled in 83ms
-[00:08:57.123] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:57.123] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:57.123] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:57.123] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:57.123] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.045] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:58.045] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:58.045] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:58.046] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:08:58.046] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.735] Server  LOG      ✓ Compiled in 111ms
-[00:09:07.977] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:07.977] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:07.977] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:07.977] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:07.977] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:09.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:09.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:09.047] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:09.047] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:56.287] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755049198}
-[00:09:57.418] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755050337}
-[00:09:58.746] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:58.746] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:58.746] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:58.746] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.746] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.747] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.747] Browser ERROR   Image is missing required "src" property: <img>
-[00:09:58.747] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755051621}
-[00:09:59.983] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755052902}
-[00:10:01.189] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755054107}
-[00:10:02.438] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755055321}
-[00:10:04.105] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755057024}
-[00:10:05.895] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:10:05.895] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:10:05.895] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:10:05.895] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser ERROR   Image is missing required "src" property: <img>
-[00:10:05.895] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755058781}
-[00:12:45.955] Server  LOG      ✓ Compiled in 62ms
-[00:12:48.802] Server  LOG      ✓ Compiled in 99ms
-[00:12:48.982] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. divf
-[00:12:50.034] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. divf
-[00:12:52.954] Server  LOG      ✓ Compiled in 117ms
-[00:12:57.038] Server  LOG      ✓ Compiled in 67ms
-[00:12:59.316] Server  LOG      ✓ Compiled in 58ms
-[00:13:08.136] Server  LOG      ✓ Compiled in 63ms
-[00:13:15.803] Server  LOG      ✓ Compiled in 129ms
-[00:13:28.682] Server  LOG      ✓ Compiled in 68ms
-[00:13:32.496] Server  LOG      ✓ Compiled in 52ms
-[00:13:36.699] Server  LOG      ✓ Compiled in 69ms
-[00:13:38.188] Server  LOG      ✓ Compiled in 81ms
-[00:13:45.558] Server  LOG      ✓ Compiled in 63ms
-[00:13:46.716] Server  LOG      ✓ Compiled in 86ms
-[00:13:49.267] Server  LOG      ✓ Compiled in 66ms
-[00:14:44.909] Server  LOG      ✓ Compiled in 80ms
-[00:14:46.035] Server  LOG      ✓ Compiled in 98ms
-[00:14:59.289] Server  LOG      ✓ Compiled in 157ms
-[00:16:27.488] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:16:27.488] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:16:27.488] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:16:27.488] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser ERROR   Image is missing required "src" property: <img>
-[00:16:27.488] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755440373}
-[00:17:06.154] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:17:06.154] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:17:06.154] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:17:06.154] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.154] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.155] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.155] Browser ERROR   Image is missing required "src" property: <img>
-[00:17:06.155] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755479032}
-[00:18:01.003] Server  LOG      ✓ Compiled in 65ms
-[00:18:13.383] Server  LOG      ✓ Compiled in 85ms
-[00:18:16.985] Server  LOG      ✓ Compiled in 90ms
-[00:19:17.268] Server  LOG      ✓ Compiled in 126ms
-[00:19:18.039] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
-
-If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true clas clas true clas
-[00:19:18.051] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
-
-If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true clas clas true clas
-[00:19:18.661] Server  LOG      ✓ Compiled in 82ms
-[00:19:19.107] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[00:19:19.107] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[00:19:20.201] Server  LOG      ✓ Compiled in 115ms
-[00:19:23.747] Server  LOG      ✓ Compiled in 235ms
-[00:20:09.750] Server  LOG      ✓ Compiled in 83ms
-[00:20:15.038] Server  LOG      ✓ Compiled in 78ms
-[00:22:25.625] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:25.625] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:25.625] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:25.625] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:25.625] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755798461}
-[00:22:28.953] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:28.953] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:28.954] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:28.954] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:28.954] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755801827}
-[00:22:36.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755809592}
-[00:22:39.163] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:39.163] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:39.163] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:39.163] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:39.163] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:39.164] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755812041}
-[00:22:42.374] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755815292}
-[00:22:44.631] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:44.631] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:44.631] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:44.631] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser ERROR   Image is missing required "src" property: <img>
-[00:22:44.631] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764755817498}
-[00:27:51.923] Server  LOG      ✓ Compiled in 111ms
-[00:28:32.587] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756165503}
-[00:28:33.586] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756166490}
-[00:28:35.074] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:35.074] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:35.074] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:35.075] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:35.075] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756167947}
-[00:28:36.202] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756169119}
-[00:28:37.985] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:37.985] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:37.986] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:37.986] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser ERROR   Image is missing required "src" property: <img>
-[00:28:37.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756170864}
-[00:29:43.684] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:29:43.685] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:29:43.685] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:29:43.685] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser ERROR   Image is missing required "src" property: <img>
-[00:29:43.685] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764756236550}
+[00:00:33.598] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:33.598] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:33.598] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:33.598] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:33.897] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:33.897] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:33.897] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830059238}
+[00:00:51.218] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:51.218] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:51.218] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:51.218] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:51.218] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:01:56.385] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:01:56.385] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:01:56.385] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser ERROR   Image is missing required "src" property: <img>
+[00:01:56.385] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830141676}
+[00:02:07.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830152657}
+[00:02:11.268] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830156615}
+[00:02:18.017] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:02:18.017] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:02:18.017] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:02:18.017] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser ERROR   Image is missing required "src" property: <img>
+[00:02:18.017] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830163321}
+[00:03:09.601] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830214943}
+[00:03:14.877] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830220224}
+[00:03:19.083] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:19.083] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:19.083] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:19.083] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:19.083] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830224389}
+[00:03:21.131] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830226478}
+[00:03:22.655] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830228005}
+[00:03:23.984] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:23.984] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:23.984] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:23.984] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:23.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830229274}
+[00:03:25.180] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830230527}
+[00:03:26.479] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830231819}
+[00:03:27.800] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:27.800] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:27.800] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:27.800] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:27.800] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830233101}
+[00:03:28.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830233895}
+[00:03:29.533] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830234882}
+[00:03:31.070] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:31.071] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:31.071] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:31.071] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:31.071] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830236361}
+[00:03:31.882] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830237231}
+[00:03:32.948] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830238290}
+[00:03:34.081] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830239431}
+[00:03:35.318] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:35.318] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:35.318] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:35.318] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:35.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830240620}
+[00:03:36.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830241776}
+[00:03:37.597] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830242940}
+[00:03:39.032] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:39.032] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:39.032] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:39.032] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.032] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.033] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.033] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:39.033] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830244347}
+[00:03:39.998] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830245344}
+[00:03:41.596] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830246943}
+[00:03:42.948] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:42.948] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:42.948] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:42.948] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:42.948] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830248252}
+[00:03:43.947] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830249292}
+[00:03:44.880] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830250223}
+[00:03:46.120] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:46.120] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:46.120] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:46.120] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser ERROR   Image is missing required "src" property: <img>
+[00:03:46.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830251414}
+[00:03:46.997] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830252343}
+[00:03:47.926] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830253270}
+[00:04:22.941] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830288282}
+[00:04:29.114] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:29.114] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:29.114] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:29.114] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:29.114] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830294397}
+[00:04:34.465] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830299801}
+[00:04:39.106] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830304452}
+[00:04:45.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:45.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:45.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:45.879] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser ERROR   Image is missing required "src" property: <img>
+[00:04:45.879] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764830311187}
+[00:10:07.612] Server  LOG      ✓ Compiled in 101ms
+[00:10:15.176] Server  LOG      ✓ Compiled in 65ms
+[00:10:24.078] Server  LOG      ✓ Compiled in 80ms
+[00:10:36.556] Server  LOG      ✓ Compiled in 77ms
+[00:11:02.334] Server  LOG      ✓ Compiled in 124ms
+[00:11:06.541] Server  LOG      ✓ Compiled in 61ms
+[00:11:10.602] Server  LOG      ✓ Compiled in 79ms
+[00:11:55.685] Server  LOG      ✓ Compiled in 62ms
+[00:13:02.931] Server  LOG      ✓ Compiled in 54ms
+[00:13:06.897] Server  LOG      ✓ Compiled in 72ms
+[00:13:14.999] Server  LOG      ✓ Compiled in 63ms
+[00:13:16.239] Server  LOG      ✓ Compiled in 67ms
+[00:13:32.913] Server  LOG      ✓ Compiled in 55ms
+[00:13:35.652] Server  LOG      ✓ Compiled in 132ms
+[00:13:43.026] Server  LOG      ✓ Compiled in 68ms
+[00:13:44.718] Server  LOG      ✓ Compiled in 58ms
+[00:13:46.434] Server  LOG      ✓ Compiled in 62ms
+[00:14:51.515] Server  LOG      ✓ Compiled in 57ms
+[00:17:02.006] Server  LOG      ✓ Compiled in 108ms
+[00:17:27.325] Server  LOG      ✓ Compiled in 53ms
+[00:19:17.203] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831182544}
+[00:20:10.316] Server  LOG      ✓ Compiled in 59ms
+[00:20:21.084] Server  LOG      ✓ Compiled in 100ms
+[00:20:23.183] Server  LOG      ✓ Compiled in 36ms
+[00:20:53.767] Server  LOG      ✓ Compiled in 54ms
+[00:20:56.389] Server  LOG      ✓ Compiled in 34ms
+[00:21:06.271] Server  LOG      ✓ Compiled in 35ms
+[00:21:12.665] Server  LOG      ✓ Compiled in 32ms
+[00:21:18.379] Server  LOG      ✓ Compiled in 44ms
+[00:21:25.827] Server  LOG      ✓ Compiled in 31ms
+[00:22:10.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831356175}
+[00:22:53.482] Server  LOG      ✓ Compiled in 40ms
+[00:22:57.145] Server  LOG      ✓ Compiled in 31ms
+[00:23:21.393] Server  LOG      ✓ Compiled in 47ms
+[00:23:39.322] Server  LOG      ✓ Compiled in 31ms
+[00:23:50.222] Server  LOG      ✓ Compiled in 69ms
+[00:25:12.536] Server  LOG      ✓ Compiled in 91ms
+[00:25:28.251] Server  LOG      ✓ Compiled in 65ms
+[00:25:30.450] Server  LOG      ✓ Compiled in 37ms
+[00:25:45.768] Server  LOG      ✓ Compiled in 30ms
+[00:25:48.184] Server  LOG      ✓ Compiled in 86ms
+[00:25:50.438] Server  LOG      ✓ Compiled in 39ms
+[00:25:57.785] Server  LOG      ✓ Compiled in 40ms
+[00:26:14.270] Server  LOG      ✓ Compiled in 69ms
+[00:26:48.634] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:26:48.634] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:26:48.634] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:26:48.634] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser ERROR   Image is missing required "src" property: <img>
+[00:26:48.634] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831633923}
+[00:27:13.398] Server  LOG      ✓ Compiled in 43ms
+[00:27:14.435] Server  LOG      ✓ Compiled in 32ms
+[00:27:29.813] Server  LOG      ✓ Compiled in 33ms
+[00:27:31.562] Server  LOG      ✓ Compiled in 34ms
+[00:27:45.979] Server  LOG      ✓ Compiled in 40ms
+[00:28:00.844] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831706190}
+[00:28:20.141] Server  LOG      ✓ Compiled in 41ms
+[00:28:30.287] Server  LOG      ✓ Compiled in 33ms
+[00:28:35.850] Server  LOG      ✓ Compiled in 34ms
+[00:28:43.166] Server  LOG      ✓ Compiled in 34ms
+[00:29:05.005] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831770352}
+[00:29:29.723] Server  LOG      ✓ Compiled in 40ms
+[00:29:35.591] Server  LOG      ✓ Compiled in 30ms
+[00:29:36.958] Server  LOG      ✓ Compiled in 105ms
+[00:29:37.945] Server  LOG      ✓ Compiled in 44ms
+[00:30:03.921] Server  LOG      ✓ Compiled in 37ms
+[00:30:09.663] Server  LOG      ✓ Compiled in 36ms
+[00:30:16.937] Server  LOG      ✓ Compiled in 35ms
+[00:30:43.244] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831868590}
+[00:30:48.871] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:30:48.872] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:30:48.872] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:30:48.872] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser ERROR   Image is missing required "src" property: <img>
+[00:30:48.872] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831874189}
+[00:30:57.272] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831882617}
+[00:31:03.706] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831889050}
+[00:32:38.786] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831984134}
+[00:32:45.232] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:32:45.232] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:32:45.232] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:32:45.232] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser ERROR   Image is missing required "src" property: <img>
+[00:32:45.232] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764831990543}
+[00:32:58.565] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832003908}
+[00:33:07.096] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832012439}
+[00:33:15.547] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:33:15.547] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:33:15.547] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:33:15.547] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser ERROR   Image is missing required "src" property: <img>
+[00:33:15.547] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832020873}
+[00:34:18.627] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832083973}
+[00:34:27.027] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832092370}
+[00:34:28.345] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:28.345] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:28.345] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:28.345] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:28.345] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832093664}
+[00:34:29.443] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832094789}
+[00:34:30.596] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832095944}
+[00:34:32.294] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/certifications color: rgb(120, 120, 120) color: inherit {"dp":"/certifications","o":"http://localhost:3000/certifications","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832097631}
+[00:34:34.079] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832099426}
+[00:34:35.359] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:35.359] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:35.359] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:35.359] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:35.359] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832100676}
+[00:34:36.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/skills color: rgb(120, 120, 120) color: inherit {"dp":"/skills","o":"http://localhost:3000/skills","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832102062}
+[00:34:38.010] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:38.010] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:38.010] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:38.010] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:34:38.010] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.010] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser ERROR   Image is missing required "src" property: <img>
+[00:34:38.011] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/projects color: rgb(120, 120, 120) color: inherit {"dp":"/projects","o":"http://localhost:3000/projects","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764832103338}

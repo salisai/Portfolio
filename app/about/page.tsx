@@ -34,7 +34,7 @@ export default function About() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-card p-6 border border-primary/10 rounded-[5px] hover:border-primary/20">
+          <div className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24">
             <h3 className="text-foreground font-semibold mb-4 text-lg">Education</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
@@ -48,7 +48,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div className="bg-card p-6 border border-primary/10 rounded-[5px] hover:border-primary/20">
+          <div className="bg-card p-6 border border-dashed border-primary/18 hover:border-primary/24">
             <h3 className="text-foreground font-semibold mb-4 text-lg">Experience</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>

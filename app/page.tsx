@@ -65,16 +65,16 @@ export default function Home() {
       <section className="max-w-6xl px-4 sm:px-6 mx-auto lg:px-8 py-20 min-h-[80vh] flex items-center">
         <div className="space-y-8">
 
-          <div className=''>
-            <h1 className="text-5xl sm:text-7xl font-bold text-foreground mb-4 text-balance">
+          <div className='mb-6'>
+            <h1 className="text-5xl sm:text-7xl font-bold text-foreground mb-3">
               Full-Stack & AI {"\n"}Engineer
             </h1>
-            <p className="sm:text-2xl text-muted-foreground mb-8 max-w-2xl text-balance">
+            <p className="sm:text-2xl text-muted-foreground mb-2 max-w-2xl text-balance">
               Building smart, scalable digital web experiences that create an impact for businesses.
             </p>
           </div>
 
-          <div className="flex sm:flex-row gap-4">
+          <div className="flex sm:flex-row gap-4 mb-0">
             <Link href="/projects">
               <Button size="lg" className="border border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out">
                 View Projects
@@ -92,12 +92,12 @@ export default function Home() {
 
 
           <div>
-            <section className="max-w-4xl py-16 sm:mt-20">
+            <section className="max-w-4xl py-16 mt-2 sm:mt-20">
               <div className="sm:hidden relative">
                 <img 
                   src="/me.jpeg" 
                   alt="Ali" 
-                  className="w-100 h-100 object-cover rounded-[10px] mb-14 shadow-sw"
+                  className="w-100 h-100 object-cover rounded-[5px] mb-14 shadow-sw"
                 />
 
                 <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none rounded-b-[10px]
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
 
               <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-card p-6 border border-primary/18 rounded-[5px] hover:border-primary/20">
+                <div className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24">
                   <h3 className="text-foreground font-semibold mb-4 text-lg">Education</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
@@ -147,7 +147,7 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="bg-card p-6 border border-primary/18 rounded-[5px] hover:border-primary/20">
+                <div className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24">
                   <h3 className="text-foreground font-semibold mb-4 text-lg">Experience</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
@@ -175,14 +175,14 @@ export default function Home() {
                 
                 {projects.map((project) => (
                   
-                  <Card key={project.id} className="bg-card border border-primary/10 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col p-0">
+                  <Card key={project.id} className="bg-card border border-dashed border-primary/20 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col p-0">
                     
                     <div className='w-full relative h-40 sm:h-52 lg:h-56'>
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className='object-cover rounded-t-xl'
+                        className='object-cover'
                       />
                     </div>
                                   

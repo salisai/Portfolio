@@ -556,6 +556,10 @@
     margin-top: calc(var(--spacing) * 30);
   }
 
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -695,10 +699,6 @@
     height: calc(var(--spacing) * 40);
   }
 
-  .h-56 {
-    height: calc(var(--spacing) * 56);
-  }
-
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
@@ -749,14 +749,6 @@
 
   .w-12 {
     width: calc(var(--spacing) * 12);
-  }
-
-  .w-44 {
-    width: calc(var(--spacing) * 44);
-  }
-
-  .w-46 {
-    width: calc(var(--spacing) * 46);
   }
 
   .w-56 {
@@ -913,10 +905,6 @@
     gap: calc(var(--spacing) * 8);
   }
 
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
-  }
-
   :where(.space-y-2 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
@@ -959,12 +947,20 @@
     overflow: hidden;
   }
 
+  .rounded-\[1px\] {
+    border-radius: 1px;
+  }
+
   .rounded-\[5px\] {
     border-radius: 5px;
   }
 
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+
+  .rounded-\[px\] {
+    border-radius: px;
   }
 
   .rounded-full {
@@ -1030,6 +1026,16 @@
     border-color: var(--input);
   }
 
+  .border-primary\/1 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/1 {
+      border-color: color-mix(in oklab, var(--primary) 1%, transparent);
+    }
+  }
+
   .border-primary\/5 {
     border-color: var(--primary);
   }
@@ -1047,6 +1053,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .border-primary\/10 {
       border-color: color-mix(in oklab, var(--primary) 10%, transparent);
+    }
+  }
+
+  .border-primary\/14 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary\/14 {
+      border-color: color-mix(in oklab, var(--primary) 14%, transparent);
     }
   }
 
@@ -1170,6 +1186,16 @@
     }
   }
 
+  .bg-primary\/15 {
+    background-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-primary\/15 {
+      background-color: color-mix(in oklab, var(--primary) 15%, transparent);
+    }
+  }
+
   .bg-primary\/20 {
     background-color: var(--primary);
   }
@@ -1243,10 +1269,6 @@
 
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
   }
 
   .px-2 {
@@ -1331,10 +1353,6 @@
 
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
-  }
-
-  .text-center {
-    text-align: center;
   }
 
   .font-sans {
@@ -1479,11 +1497,6 @@
 
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
-  .shadow-xl {
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
@@ -1653,6 +1666,18 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:border-primary\/20:hover {
         border-color: color-mix(in oklab, var(--primary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:border-primary\/24:hover {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-primary\/24:hover {
+        border-color: color-mix(in oklab, var(--primary) 24%, transparent);
       }
     }
   }
@@ -1992,12 +2017,6 @@
   }
 
   @media (min-width: 48rem) {
-    .md\:text-left {
-      text-align: left;
-    }
-  }
-
-  @media (min-width: 48rem) {
     .md\:text-sm {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -2011,20 +2030,8 @@
   }
 
   @media (min-width: 64rem) {
-    .lg\:flex {
-      display: flex;
-    }
-  }
-
-  @media (min-width: 64rem) {
     .lg\:h-56 {
       height: calc(var(--spacing) * 56);
-    }
-  }
-
-  @media (min-width: 64rem) {
-    .lg\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 

@@ -45,9 +45,9 @@ export default function Certifications() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {certifications.map((cert) => (
-            <Card key={cert.id} className="bg-card border border-primary/10 hover:border-primary/50 p-6 transition-all">
+            <Card key={cert.id} className="bg-card border border-dashed border-primary/20 hover:border-primary/50 p-6 transition-all">
               <div className="flex gap-4">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
                     <Award className="w-6 h-6 text-primary" />
                   </div>

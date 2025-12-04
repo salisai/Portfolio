@@ -59,9 +59,9 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {/* Contact Info */}
           <div className="space-y-4">
-            <Card className="bg-card border border-primary/10 p-6">
+            <Card className="bg-card border border-dashed border-primary/10 p-6">
               <div className="flex gap-4">
-                <Mail className="w-6 h-6 text-primary flex-shrink-0" />
+                <Mail className="w-6 h-6 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Email</h3>
                   <a href="mailto:sayeed51003@example.com" className="text-muted-foreground hover:text-primary transition-colors">
@@ -71,9 +71,9 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-card border border-primary/10 p-6">
+            <Card className="bg-card border border-dashed border-primary/18 p-6">
               <div className="flex gap-4">
-                <MapPin className="w-6 h-6 text-primary flex-shrink-0" />
+                <MapPin className="w-6 h-6 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Location</h3>
                   <p className="text-muted-foreground">Islamabad, Pak</p>
@@ -84,7 +84,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="bg-card border border-primary/10 p-8">
+            <Card className="bg-card border border-dashed border-primary/18 p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input

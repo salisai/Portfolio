@@ -70,14 +70,14 @@ export default function Projects() {
           
           {projects.map((project) => (
             
-            <Card key={project.id} className="bg-card border border-primary/10 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col p-0">
+            <Card key={project.id} className="bg-card border border-dashed border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
               
               <div className='w-full relative h-40 sm:h-52 lg:h-56'>
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className='object-cover rounded-t-xl'
+                  className='object-cover'
                 />
               </div>
                             
