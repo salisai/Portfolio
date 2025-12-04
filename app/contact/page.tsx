@@ -58,8 +58,8 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {/* Contact Info */}
-          <div className="space-y-4">
-            <Card className="bg-card border border-dashed border-primary/10 p-6">
+          <div className="space-y-2">
+            <Card className="bg-card border border-dashed border-primary/18 p-6">
               <div className="flex gap-4">
                 <Mail className="w-6 h-6 text-primary shrink-0" />
                 <div>
@@ -80,6 +80,16 @@ export default function Contact() {
                 </div>
               </div>
             </Card>
+            
+            <Card className="bg-card border border-dashed border-primary/18 p-6">
+              <div className="flex gap-4">
+                <MapPin className="w-6 h-6 shrink-0 text-green-400" />
+                <div>
+                  <h3 className="text-foreground font-semibold mb-1">Available</h3>
+                  <p className="text-muted-foreground">For projects</p>
+                </div>
+              </div>
+            </Card>
           </div>
 
           {/* Contact Form */}
@@ -93,7 +103,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-input border border-primary/5 text-[14px] placeholder:text-muted-foreground"
+                    className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                   <Input
                     placeholder="Your Email"
@@ -102,7 +112,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="bg-input border border-primary/5 text-[14px] placeholder:text-muted-foreground"
+                    className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                 </div>
 
@@ -112,10 +122,10 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="bg-input border border-primary/5 text-[14px] placeholder:text-muted-foreground min-h-32"
+                  className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground min-h-32"
                 />
 
-                <Button type='submit' size='lg' className='w-full cursor-pointer' disabled={loading}>
+                <Button type='submit' size='lg' className='w-full cursor-pointer rounded-none' disabled={loading}>
                   {loading ? (
                     <div className='flex items-center justify-center gap-2'>
                       <Spinner className='w-5 h-5 text-white'/>

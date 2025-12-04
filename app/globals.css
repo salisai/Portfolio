@@ -111,3 +111,18 @@
 .animate-float {
   animation: float-line 6s ease-in-out infinite;
 }
+
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px oklch(0.15 0 0) inset; /* input background */
+  -webkit-text-fill-color: oklch(0.95 0 0); /* text color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px oklch(0.15 0 0) inset;
+  -webkit-text-fill-color: oklch(0.95 0 0);
+}
+

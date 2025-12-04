@@ -57,7 +57,7 @@ export default function About() {
               </li>
               <li>
                 <p className="text-foreground font-medium">Freelance AI Engineer</p>
-                <p className="text-xs">Upwork, 2025-present</p>
+                <p className="text-xs">Upwork, 2025 - present</p>
               </li>
             </ul>
           </div>

@@ -14,7 +14,7 @@ export default function Home() {
       title: 'CulinaAI',
       description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
       tech: ['Next.js', 'TypeScript', 'NeonDB','Clerk','Prisma','Shadcn', 'GeminiAPI', "NanoBanana"],
-      link: 'https://github.com/salisai/ai_recipes_app',
+      link: 'https://github.com/salisai/recipes-app',
       image: '/project1.png'
     },
     {
@@ -22,7 +22,7 @@ export default function Home() {
       title: 'Jewelary Store',
       description: 'Full-stack ecommerce website with admin dashboard',
       tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
-      link: '#',
+      link: 'https://github.com/salisai/jewelary_estore',
       image: '/project2.png'
     },
     {
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="space-y-8">
 
           <div className='mb-6'>
-            <h1 className="text-5xl sm:text-7xl font-bold text-foreground mb-3">
+            <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-3">
               Full-Stack & AI {"\n"}Engineer
             </h1>
             <p className="sm:text-2xl text-muted-foreground mb-2 max-w-2xl text-balance">
@@ -76,14 +76,14 @@ export default function Home() {
 
           <div className="flex sm:flex-row gap-4 mb-0">
             <Link href="/projects">
-              <Button size="lg" className="border border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out">
+              <Button size="lg" className="border rounded-none border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out">
                 View Projects
                 <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
 
             <Link href="/contact">
-              <Button size="lg" className='gap-2'>
+              <Button size="lg" className='gap-2 rounded-none'>
                 Get In Touch
               </Button>
             </Link>
@@ -171,29 +171,29 @@ export default function Home() {
                 A selection of my recent work across web development, machine learning, and cloud infrastructure.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
                 {projects.map((project) => (
                   
                   <Card key={project.id} className="bg-card border border-dashed border-primary/20 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col p-0">
                     
-                    <div className='w-full relative h-40 sm:h-52 lg:h-56'>
+                    <div className='w-full relative h-60 sm:h-70 lg:h-56'>
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className='object-cover'
+                        className='object-cover p-4 pb-0'
                       />
                     </div>
                                   
-                    <div className="px-6 flex-1 flex flex-col">
+                    <div className="px-4 flex-1 flex flex-col">
                       <h3 className="text-foreground font-semibold text-lg mb-2">{project.title}</h3>
                       <p className="text-muted-foreground text-sm mb-3 flex-1">{project.description}</p>
                       <div className="flex flex-wrap gap-2 mb-3">
                         {project.tech.map((tech) => (
                           <span
                             key={tech}
-                            className="bg-primary/5 text-primary border border-primary/10 hover:bg-primary/15 text-xs px-2.5 py-1.5 rounded-[5px]"
+                            className="bg-primary/5 text-primary border border-dashed border-primary/10 rounded-none hover:bg-primary/15 text-xs px-2.5 py-1.5"
                           >
                             {tech}
                           </span>
@@ -201,8 +201,8 @@ export default function Home() {
                       </div>
                     </div>
                     
-                    <div className="px-6 pb-6">
-                      <Button asChild  className="w-full gap-2 border border-white  hover:bg-white hover:text-black">
+                    <div className="px-4 pb-6">
+                      <Button asChild  className="w-full gap-2 border border-white rounded-none  hover:bg-white hover:text-black">
                         <Link href={project.link}>
                           View Project
                           <ArrowRight className="w-4 h-4" />

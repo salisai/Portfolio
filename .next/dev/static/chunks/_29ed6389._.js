@@ -210,7 +210,7 @@ function Skills() {
                             className: "bg-card p-4 border border-dashed border-primary/20 hover:border-primary/24 transition-all duration-300",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-foreground font-semibold text-lg mb-4",
+                                    className: "text-foreground font-semibold text-lg",
                                     children: category.title
                                 }, void 0, false, {
                                     fileName: "[project]/app/skills/page.tsx",
@@ -220,7 +220,7 @@ function Skills() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-wrap gap-2",
                                     children: category.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "bg-primary/5 text-primary border border-dashed border-primary/18 hover:bg-primary/15 text-xs px-2.5 py-1.5 rounded-[1px]",
+                                            className: "bg-primary/5 text-primary border border-dashed border-primary/18 hover:bg-primary/15 text-xs px-2.5 py-1.5",
                                             children: skill
                                         }, skill, false, {
                                             fileName: "[project]/app/skills/page.tsx",
