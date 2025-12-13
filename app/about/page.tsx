@@ -1,14 +1,37 @@
 'use client'
 import Link from "next/link"
+import {motion} from 'framer-motion';
+import { reveal, revealSoft, cardReveal, stagger } from '@/lib/motion'
+
 
 export default function About() {
   return (
     <div className="pt-24">
-      <section className="max-w-4xl px-4 sm:px-6  lg:px-8 py-20">
-        <h1 className="text-4xl font-bold text-foreground mb-4">About Me</h1>
+      <motion.section 
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        className="max-w-4xl px-4 sm:px-6  lg:px-8 py-20"
+      >
+        
+        <motion.h1 
+          variants={reveal}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="text-4xl font-bold text-foreground mb-4">
+            About Me
+        </motion.h1>
 
         
-        <div className="space-y-6 text-muted-foreground leading-relaxed">
+        <motion.div 
+          variants={revealSoft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="space-y-6 text-muted-foreground leading-relaxed"
+        >
           <p>I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference.</p>
     
           <p>I love exploring the intersection of technology, design, and human behavior — always learning, improving, and building things that push boundaries. When I’m not coding, you’ll find me reading, 
@@ -31,10 +54,22 @@ export default function About() {
                 create
               </Link>{" "}
               it together.</p>
-        </div>
+        </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24">
+        <motion.div 
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+         
+          <motion.div 
+            variants={cardReveal} 
+            initial="hidden"
+            whileInView="show"
+            viewport={{once: true}}
+            className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24"
+          >
             <h3 className="text-foreground font-semibold mb-4 text-lg">Education</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
@@ -46,9 +81,15 @@ export default function About() {
                 <p className="text-xs">DeepLearning.ai, 2025</p>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="bg-card p-6 border border-dashed border-primary/18 hover:border-primary/24">
+          <motion.div 
+            variants={cardReveal} 
+            initial="hidden"
+            whileInView="show"
+            viewport={{once: true}}
+            className="bg-card p-6 border border-dashed border-primary/18 hover:border-primary/24"
+          >
             <h3 className="text-foreground font-semibold mb-4 text-lg">Experience</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
@@ -60,9 +101,9 @@ export default function About() {
                 <p className="text-xs">Upwork, 2025 - present</p>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
+          </motion.div>
+        </motion.div>
+      </motion.section>
     </div>
   )
 }

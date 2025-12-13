@@ -1,34 +1,50 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where((.dark, .dark *)));
 
 :root {
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.95 0 0);
-  --primary-foreground: oklch(0.08 0 0);
-  --secondary: oklch(0.15 0 0);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.95 0 0);
-  --accent-foreground: oklch(0.08 0 0);
-  --destructive: oklch(0.5 0.15 10);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.15 0 0);
-  --input: oklch(0.15 0 0);
-  --ring: oklch(0.3 0 0);
-  --chart-1: oklch(0.6 0.15 260);
-  --chart-2: oklch(0.65 0.12 180);
-  --chart-3: oklch(0.55 0.1 40);
-  --chart-4: oklch(0.7 0.08 270);
-  --chart-5: oklch(0.6 0.1 60);
+  /* Backgrounds */
+  --background: #FFFFFF;           
+  --card: #F3F3F3;                
+  --popover: #F5F5F5;            
+  --input: #FFFFFF;                 
+
+  --foreground: #111111;          
+  --card-foreground: #111111;      
+  --popover-foreground: #111111;  
+  --primary-foreground: #FFFFFF;  
+  --secondary-foreground: #111111; 
+  --muted-foreground: #6B7280;     
+  --accent-foreground: #FFFFFF;   
+
+  /* Colors for buttons, links, accents */
+  --primary: #111111;              
+  --secondary: #E5E7EB;            
+
+  /* Borders & rings */
+  --border: #000000;               
+  --ring: #111111;                 
+
+  /* Muted / subtle elements */
+  --muted: #F3F4F6;                
+
+  
   --radius: 0.5rem;
+
+  --dark-primary: #181C14;
+
+  /* Fonts */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+
+  --progress-fill: black;
+  --progress-bg: #e5e5e5;
+
+  --input-bg: oklch(0.98 0 0);
+  --input-text: oklch(0.15 0 0)
+
 }
+
 
 .dark {
   --background: oklch(0.08 0 0);
@@ -47,7 +63,7 @@
   --accent-foreground: oklch(0.08 0 0);
   --destructive: oklch(0.5 0.15 10);
   --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.15 0 0);
+  --border: oklch(0.55 0 0);
   --input: oklch(0.15 0 0);
   --ring: oklch(0.3 0 0);
   --chart-1: oklch(0.6 0.15 260);
@@ -55,6 +71,14 @@
   --chart-3: oklch(0.55 0.1 40);
   --chart-4: oklch(0.7 0.08 270);
   --chart-5: oklch(0.6 0.1 60);
+
+
+  --progress-fill: #e5e5e5;
+  --progress-bg: rgb(36, 36, 36);
+
+  --input-bg: oklch(0.15 0 0);
+  --input-text: oklch(0.95 0 0);
+
 }
 
 @theme inline {
@@ -96,6 +120,43 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  html {
+    font-family: var(--font-body);
+  } 
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  p, span, li, Link, a, button, input, textarea {
+    font-family: var(--font-body);
+  }
+}
+
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .heading-tight {
+    letter-spacing: -0.03em;
+  }
+
+  .heading-normal {
+    letter-spacing: -0.01em;
   }
 }
 
@@ -115,14 +176,16 @@
 
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px oklch(0.15 0 0) inset; /* input background */
-  -webkit-text-fill-color: oklch(0.95 0 0); /* text color */
-  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px var(--input-bg) inset;
+  -webkit-text-fill-color: var(--input-text);
+   transition: background-color 5000s ease-in-out 0s;
 }
+
 
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px oklch(0.15 0 0) inset;
-  -webkit-text-fill-color: oklch(0.95 0 0);
+  -webkit-box-shadow: 0 0 0px 1000px var(--input-bg) inset;
+  -webkit-text-fill-color: var(--input-text);
 }
+
 

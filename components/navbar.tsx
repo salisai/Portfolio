@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
-import { Terminal } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Terminal, Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -17,18 +18,26 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
 
   return (
     <>
-      <aside className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-background/80 backdrop-blur-md border-r border-dashed border-primary/20 z-50 py-6">
-        
+      {/* DESKTOP SIDEBAR */}
+      <aside
+        className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-[color:var(--background)]/80 backdrop-blur-md border-r border-dashed border-[color:var(--border)] z-50 py-6"
+      >
         {/* Logo */}
         <div className="flex items-center md:hidden justify-center mb-10">
-          <Terminal className="h-7 w-7 text-primary" />
+          <Terminal className="h-7 w-7 text-[color:var(--primary)]" />
         </div>
 
-        {/* Sidebar Nav */}
+        {/* Navigation */}
         <nav className="flex flex-col mt-30 gap-6 p-10">
           {navLinks.map((link) => {
             const active = pathname === link.href;
@@ -41,15 +50,17 @@ export default function Navbar() {
                 <div
                   className={cn(
                     "h-[22px] w-[3px] rounded-full transition-all",
-                    active ? "bg-primary" : "bg-muted-foreground/30 group-hover:bg-muted-foreground/60"
+                    active
+                      ? "bg-[color:var(--primary)]"
+                      : "bg-[color:var(--muted-foreground)]/30 group-hover:bg-[color:var(--muted-foreground)]/60"
                   )}
                 ></div>
-
-                {/* label */}
                 <span
                   className={cn(
                     "text-sm font-medium transition-colors",
-                    active ? "text-primary" : "text-muted-foreground group-hover:text-foreground"
+                    active
+                      ? "text-[color:var(--primary)]"
+                      : "text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)]"
                   )}
                 >
                   {link.label}
@@ -57,31 +68,56 @@ export default function Navbar() {
               </Link>
             );
           })}
+
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-sm transition text-[color:var(--foreground)] hover:text-[color:var(--primary)]"
+          >
+            {theme === "dark" ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
+          </button>
         </nav>
       </aside>
 
-      {/* TOP NAV (Mobile Only) */}
-      <nav className="md:hidden fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
+      {/* MOBILE TOP NAV */}
+      <nav className="md:hidden fixed top-0 w-full bg-[color:var(--background)]/80 backdrop-blur-md z-50">
         <div className="mx-auto px-4 py-4 flex items-center justify-between">
-
-          <Link href="/" className="text-xl font-bold text-foreground">
-            <Terminal className="h-6 w-6" />
+          <Link href="/" className="text-xl font-bold text-[color:var(--foreground)]">
+            <Terminal className="h-6 w-6 text-[color:var(--foreground)]" />
           </Link>
 
-          <button
-            onClick={() => setOpen(true)}
-            className="text-foreground hover:text-muted-foreground transition"
-          >
-            ☰
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Theme Toggle */}
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="p-2 rounded-sm transition text-[color:var(--foreground)] hover:text-[color:var(--primary)]"
+            >
+              {theme === "dark" ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
+            </button>
+
+            {/* Hamburger */}
+            <button
+              onClick={() => setOpen(true)}
+              className="text-[color:var(--foreground)] hover:text-[color:var(--muted-foreground)] transition"
+            >
+              ☰
+            </button>
+          </div>
         </div>
       </nav>
 
-      {/* BACKDROP */}
+      {/* MOBILE BACKDROP */}
       <div
         onClick={() => setOpen(false)}
         className={cn(
-          "fixed inset-0 bg-black/90 transition-opacity duration-300 md:hidden z-40",
+          "fixed inset-0 bg-black/50 md:hidden z-40 transition-opacity duration-300",
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       />
@@ -89,14 +125,14 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-full w-2/3 bg-black text-white z-50 transform transition-transform duration-300",
+          "fixed top-0 right-0 h-full w-2/3 bg-[color:var(--card)] text-[color:var(--card-foreground)] z-50 transform transition-transform duration-300",
           open ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="flex justify-end p-4">
           <button
             onClick={() => setOpen(false)}
-            className="text-white hover:text-gray-300 transition"
+            className="hover:text-[color:var(--muted-foreground)] transition"
           >
             ✕
           </button>
@@ -108,7 +144,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-lg font-medium"
+              className="text-lg font-medium hover:text-[color:var(--primary)] transition"
             >
               {link.label}
             </Link>

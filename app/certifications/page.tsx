@@ -2,6 +2,9 @@
 
 import { Card } from '@/components/ui/card'
 import { Award } from 'lucide-react'
+import {motion} from 'framer-motion';
+import { reveal, revealSoft, cardReveal, stagger } from '@/lib/motion'
+
 
 export default function Certifications() {
   const certifications = [
@@ -37,13 +40,41 @@ export default function Certifications() {
 
   return (
     <div className="pt-24">
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h1 className="text-4xl font-bold text-foreground mb-4">Certifications</h1>
-        <p className="text-muted-foreground mb-12 max-w-2xl">
-          Professional certifications and credentials that validate my expertise in various technologies and domains.
-        </p>
+      <motion.section 
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
+      >
+        
+        <motion.h1 
+          variants={reveal}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="text-4xl font-bold text-foreground mb-4"
+        >
+          Certifications
+        </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <motion.p 
+          variants={revealSoft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="text-muted-foreground mb-12 max-w-2xl"
+        >
+          Professional certifications and credentials that validate my expertise in various technologies and domains.
+        </motion.p>
+
+        <motion.div
+           variants={cardReveal}
+           initial="hidden"
+           whileInView="show"
+           viewport={{once: true}}
+           className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {certifications.map((cert) => (
             <Card key={cert.id} className="bg-card border border-dashed border-primary/20 hover:border-primary/50 p-6 transition-all">
               <div className="flex gap-4">
@@ -60,8 +91,8 @@ export default function Certifications() {
               </div>
             </Card>
           ))}
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </div>
   )
 }

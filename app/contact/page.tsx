@@ -8,6 +8,8 @@ import { Textarea } from '@/components/ui/textarea'
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 import {toast} from "sonner";
 import { Spinner } from '@/components/ui/spinner'
+import {motion} from "framer-motion";
+import { reveal, revealSoft, cardReveal, stagger } from '@/lib/motion'
 
 
 export default function Contact() {
@@ -51,14 +53,41 @@ export default function Contact() {
   return (
     <div className="pt-24">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <h1 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h1>
-        <p className="text-muted-foreground mb-12 max-w-2xl">
-          I'm always interested in hearing about new projects and opportunities. Let's connect!
-        </p>
+        <motion.h1 
+          variants={reveal}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="text-4xl font-bold text-foreground mb-4"
+        >Get In Touch
+        </motion.h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <motion.p 
+          variants={revealSoft}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+
+          className="text-muted-foreground mb-12 max-w-2xl"
+        >
+          I'm always interested in hearing about new projects and opportunities. Let's connect!
+        </motion.p>
+
+        <motion.div 
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16"
+        >
           {/* Contact Info */}
-          <div className="space-y-2">
+          <motion.div
+           variants={revealSoft}
+           initial="hidden"
+           whileInView="show"
+           viewport={{once: true}}
+           className="space-y-2"
+          >
             <Card className="bg-card border border-dashed border-primary/18 p-6">
               <div className="flex gap-4">
                 <Mail className="w-6 h-6 text-primary shrink-0" />
@@ -83,17 +112,23 @@ export default function Contact() {
             
             <Card className="bg-card border border-dashed border-primary/18 p-6">
               <div className="flex gap-4">
-                <MapPin className="w-6 h-6 shrink-0 text-green-400" />
+                <MapPin className="w-6 h-6 shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Available</h3>
                   <p className="text-muted-foreground">For projects</p>
                 </div>
               </div>
             </Card>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2">
+          <motion.div 
+           variants={reveal}
+           initial="hidden"
+           whileInView="show"
+           viewport={{once: true}}
+           className="lg:col-span-2"
+          >
             <Card className="bg-card border border-dashed border-primary/18 p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -137,8 +172,8 @@ export default function Contact() {
                 </Button>
               </form>
             </Card>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
     </div>
   )
