@@ -61,7 +61,7 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
          
           <motion.div 
             variants={cardReveal} 

@@ -73,10 +73,11 @@ export default function Certifications() {
            initial="hidden"
            whileInView="show"
            viewport={{once: true}}
-           className="grid grid-cols-1 md:grid-cols-2 gap-6"
+           className="grid grid-cols-1 md:grid-cols-2 gap-4"
         >
           {certifications.map((cert) => (
-            <Card key={cert.id} className="bg-card border border-dashed border-primary/20 hover:border-primary/50 p-6 transition-all">
+            <div className='p-0 m-0 bg-card'>
+              <Card key={cert.id} className="border border-dashed border-primary/20 hover:border-primary/24 p-6 transition-all">
               <div className="flex gap-4">
                 <div className="shrink-0">
                   <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
@@ -90,6 +91,7 @@ export default function Certifications() {
                 </div>
               </div>
             </Card>
+            </div>
           ))}
         </motion.div>
       </motion.section>

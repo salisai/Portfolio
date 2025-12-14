@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { Terminal, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion"
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -42,30 +43,51 @@ export default function Navbar() {
           {navLinks.map((link) => {
             const active = pathname === link.href;
             return (
+
               <Link
                 key={link.href}
                 href={link.href}
                 className="flex items-center gap-3 group"
               >
-                <div
+                {/* Animated indicator */}
+                <motion.div
+                  layout
+                  initial={false}
+                  animate={{
+                    width: active ? 32 : 20,
+                    opacity: active ? 1 : 0.4,
+                  }}
+                  transition={{
+                    duration: 0.25,
+                    ease: [0.4, 0, 0.2, 1],
+                  }}
                   className={cn(
-                    "h-[22px] w-[3px] rounded-full transition-all",
+                    "h-[2px] rounded-full",
                     active
                       ? "bg-[color:var(--primary)]"
-                      : "bg-[color:var(--muted-foreground)]/30 group-hover:bg-[color:var(--muted-foreground)]/60"
+                      : "bg-[color:var(--muted-foreground)] group-hover:bg-[color:var(--muted-foreground)]/70"
                   )}
-                ></div>
-                <span
+                />
+
+                {/* Nav text */}
+                <motion.span
+                  initial={false}
+                  animate={{
+                    x: active ? 4 : 0,
+                    opacity: active ? 1 : 0.7,
+                  }}
+                  transition={{ duration: 0.2 }}
                   className={cn(
-                    "text-sm font-medium transition-colors",
+                    "text-sm font-medium",
                     active
                       ? "text-[color:var(--primary)]"
                       : "text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)]"
                   )}
                 >
                   {link.label}
-                </span>
+                </motion.span>
               </Link>
+
             );
           })}
 

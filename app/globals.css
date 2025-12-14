@@ -22,7 +22,7 @@
   --secondary: #E5E7EB;            
 
   /* Borders & rings */
-  --border: #000000;               
+  --border: #aaaaaa;               
   --ring: #111111;                 
 
   /* Muted / subtle elements */
@@ -63,7 +63,7 @@
   --accent-foreground: oklch(0.08 0 0);
   --destructive: oklch(0.5 0.15 10);
   --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.55 0 0);
+  --border: oklch(36.768% 0.00004 271.152);
   --input: oklch(0.15 0 0);
   --ring: oklch(0.3 0 0);
   --chart-1: oklch(0.6 0.15 260);

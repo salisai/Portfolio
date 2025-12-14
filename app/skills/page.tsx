@@ -54,7 +54,8 @@ export default function Skills() {
           className="grid grid-cols-1 md:grid-cols-2 gap-4"
         >
           {skillCategories.map((category) => (
-            <Card key={category.title} className="bg-card p-4 border border-dashed border-primary/20 hover:border-primary/24 transition-all duration-300">
+            <div className='bg-card flex'>
+              <Card key={category.title} className="flex-1 p-4 border border-dashed border-primary/20 hover:border-primary/24 transition-all duration-300">
               <h3 className="text-foreground font-semibold text-lg">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
@@ -67,6 +68,7 @@ export default function Skills() {
                 ))}
               </div>
             </Card>
+            </div>
           ))}
         </motion.div>
 

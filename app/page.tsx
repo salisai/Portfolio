@@ -200,7 +200,7 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8"
+                className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4"
               >
                 <motion.div 
                   variants={cardReveal} 
@@ -280,8 +280,9 @@ export default function Home() {
                     initial="hidden"
                     whileInView="show"
                     viewport={{once: true}}
+                    className='bg-card'
                   >
-                    <Card key={project.id} className="flex flex-col h-full group bg-card border border-dashed border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
+                    <Card key={project.id} className="flex flex-col h-full group border border-dashed border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
                     
                     <div className='w-full aspect-[16/9] relative'>
                       <Image

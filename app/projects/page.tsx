@@ -32,39 +32,39 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment processing and inventory management.',
-      tech: ['Next.js', 'Stripe', 'MongoDB', 'Docker'],
-      link: '#',
+      title: 'PDF-Chat using RAG',
+      description: 'Upload your documents and you can ask any question, you will get answer, in statefull a conversation',
+      tech: ['Next.js', 'Supabase', 'Pinecone', 'Gemini', 'LangChain', 'Shadcn', 'Framer-motion'],
+      link: 'https://github.com/salisai/pdf-chat',
       image: '',
-      status: 'live'
+      status: 'dev'
     },
     {
       id: 4,
-      title: 'ML Image Recognition',
-      description: 'Computer vision model for real-time object detection and classification.',
-      tech: ['PyTorch', 'FastAPI', 'OpenCV', 'AWS'],
-      link: '#',
+      title: 'Email Automation Agent',
+      description: 'This agent will automate cutomer support emails',
+      tech: ['Python', 'LangChain', 'LangGraph','Flask'],
+      link: 'https://github.com/salisai/Email_Agent',
       image: '',
-      status: 'live'
+      status: 'dev'
 
     },
     {
       id: 5,
-      title: 'Collaborative Notes App',
-      description: 'Real-time collaborative note-taking with encryption and offline support.',
-      tech: ['React', 'Firebase', 'Encryption', 'PWA'],
-      link: '#',
+      title: 'Blog',
+      description: 'A full functional blog for myself',
+      tech: ['React', 'Appwrite', 'Tailwindcss'],
+      link: 'https://github.com/salisai/BlogApp_appwrite',
       image: '',
-      status: 'live'
+      status: 'dev'
 
     },
     {
       id: 6,
-      title: 'DevOps Automation Tool',
-      description: 'Kubernetes management tool for simplified deployment and scaling.',
-      tech: ['Go', 'Kubernetes', 'gRPC', 'React'],
-      link: '#',
+      title: 'Object detection',
+      description: 'Using semantic segmentation to detect objects and do labeling for it.',
+      tech: ['Python', 'Tensorflow', 'numpy', 'pandas', 'keras'],
+      link: 'https://github.com/salisai/Semantic_segmentation',
       image: '', 
       status: 'dev'
     }
@@ -107,8 +107,9 @@ export default function Projects() {
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
+              className='bg-card'
             >
-              <Card key={project.id} className="flex flex-col h-full group bg-card border border-dashed border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
+              <Card key={project.id} className="flex flex-col h-full group border border-dashed border-primary/18 hover:border-primary/24 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
               
               <div className='w-full aspect-[16/9] relative'>
                 <Image

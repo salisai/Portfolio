@@ -138,7 +138,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                   <Input
                     placeholder="Your Email"
@@ -147,7 +147,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                 </div>
 
@@ -157,7 +157,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="bg-input border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground min-h-32"
+                  className="border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground min-h-32"
                 />
 
                 <Button type='submit' size='lg' className='w-full cursor-pointer rounded-none' disabled={loading}>
