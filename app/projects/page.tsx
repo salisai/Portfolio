@@ -9,68 +9,68 @@ import { motion } from 'framer-motion'
 import { reveal, revealSoft, cardReveal, stagger } from '@/lib/motion'
 
 
+export const projects = [
+  {
+    id: 1,
+    title: 'CulinaAI',
+    description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
+    tech: ['Next.js', 'TypeScript', 'NeonDB','Clerk','Prisma','Shadcn', 'GeminiAPI', "NanoBanana"],
+    link: 'https://github.com/salisai/recipes-app',
+    image: '/project1.png',
+    status: 'live'
+  },
+  {
+    id: 2,
+    title: 'Jewelary Store',
+    description: 'Full-stack ecommerce website with admin dashboard',
+    tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
+    link: 'https://github.com/salisai/jewelary_estore',
+    image: '/project2.png',
+    status: 'live'
+
+  },
+  {
+    id: 3,
+    title: 'PDF-Chat using RAG',
+    description: 'Upload your documents and you can ask any question, you will get answer, in statefull a conversation',
+    tech: ['Next.js', 'Supabase', 'Pinecone', 'Gemini', 'LangChain', 'Shadcn', 'Framer-motion'],
+    link: 'https://github.com/salisai/pdf-chat',
+    image: '',
+    status: 'dev'
+  },
+  {
+    id: 4,
+    title: 'Email Automation Agent',
+    description: 'This agent will automate cutomer support emails',
+    tech: ['Python', 'LangChain', 'LangGraph','Flask'],
+    link: 'https://github.com/salisai/Email_Agent',
+    image: '',
+    status: 'dev'
+
+  },
+  {
+    id: 5,
+    title: 'Blog',
+    description: 'A full functional blog for myself',
+    tech: ['React', 'Appwrite', 'Tailwindcss'],
+    link: 'https://github.com/salisai/BlogApp_appwrite',
+    image: '',
+    status: 'dev'
+
+  },
+  {
+    id: 6,
+    title: 'Object detection',
+    description: 'Using semantic segmentation to detect objects and do labeling for it.',
+    tech: ['Python', 'Tensorflow', 'numpy', 'pandas', 'keras'],
+    link: 'https://github.com/salisai/Semantic_segmentation',
+    image: '', 
+    status: 'dev'
+  }
+]
+
+
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: 'CulinaAI',
-      description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
-      tech: ['Next.js', 'TypeScript', 'NeonDB','Clerk','Prisma','Shadcn', 'GeminiAPI', "NanoBanana"],
-      link: 'https://github.com/salisai/recipes-app',
-      image: '/project1.png',
-      status: 'live'
-    },
-    {
-      id: 2,
-      title: 'Jewelary Store',
-      description: 'Full-stack ecommerce website with admin dashboard',
-      tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
-      link: 'https://github.com/salisai/jewelary_estore',
-      image: '/project2.png',
-      status: 'live'
-
-    },
-    {
-      id: 3,
-      title: 'PDF-Chat using RAG',
-      description: 'Upload your documents and you can ask any question, you will get answer, in statefull a conversation',
-      tech: ['Next.js', 'Supabase', 'Pinecone', 'Gemini', 'LangChain', 'Shadcn', 'Framer-motion'],
-      link: 'https://github.com/salisai/pdf-chat',
-      image: '',
-      status: 'dev'
-    },
-    {
-      id: 4,
-      title: 'Email Automation Agent',
-      description: 'This agent will automate cutomer support emails',
-      tech: ['Python', 'LangChain', 'LangGraph','Flask'],
-      link: 'https://github.com/salisai/Email_Agent',
-      image: '',
-      status: 'dev'
-
-    },
-    {
-      id: 5,
-      title: 'Blog',
-      description: 'A full functional blog for myself',
-      tech: ['React', 'Appwrite', 'Tailwindcss'],
-      link: 'https://github.com/salisai/BlogApp_appwrite',
-      image: '',
-      status: 'dev'
-
-    },
-    {
-      id: 6,
-      title: 'Object detection',
-      description: 'Using semantic segmentation to detect objects and do labeling for it.',
-      tech: ['Python', 'Tensorflow', 'numpy', 'pandas', 'keras'],
-      link: 'https://github.com/salisai/Semantic_segmentation',
-      image: '', 
-      status: 'dev'
-    }
-  ]
-
-
 
   return (
     <div className="pt-24">
@@ -95,7 +95,7 @@ export default function Projects() {
         </motion.p>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          className="grid grid-cols-1 md:grid-cols-2 gap-2"
           variants={stagger}
           initial="hidden"
           whileInView="show"
@@ -109,7 +109,7 @@ export default function Projects() {
               viewport={{once: true}}
               className='bg-card'
             >
-              <Card key={project.id} className="flex flex-col h-full group border border-dashed border-primary/18 hover:border-primary/24 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
+              <Card key={project.id} className="h-full group border border-dashed border-primary/18 hover:border-primary/24 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
               
               <div className='w-full aspect-[16/9] relative'>
                 <Image

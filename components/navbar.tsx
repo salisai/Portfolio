@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/skills", label: "Skills" },
   { href: "/projects", label: "Projects" },
-  { href: "/certifications", label: "Certifications" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -31,7 +30,7 @@ export default function Navbar() {
     <>
       {/* DESKTOP SIDEBAR */}
       <aside
-        className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-[color:var(--background)]/80 backdrop-blur-md border-r border-dashed border-[color:var(--border)] z-50 py-6"
+        className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-[color:var(--background)]/80 backdrop-blur-md z-50 py-6"
       >
         {/* Logo */}
         <div className="flex items-center md:hidden justify-center mb-10">

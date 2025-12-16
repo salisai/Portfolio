@@ -51,7 +51,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          className="grid grid-cols-1 md:grid-cols-2 gap-2"
         >
           {skillCategories.map((category) => (
             <div className='bg-card flex'>

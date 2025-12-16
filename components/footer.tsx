@@ -7,26 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-foreground font-semibold mb-4">About</h3>
-            <p className="text-muted-foreground text-sm">
-              Full-Stack and AI Engineer passionate about building and shipping elegant, impactful solutions.
-            </p>
-          </div>
-          
-          <div>
-            <h3 className="text-foreground font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link></li>
-              <li><Link href="/skills" className="text-muted-foreground hover:text-foreground transition-colors">Skills</Link></li>
-              <li><Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link></li>
-              <li><Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-foreground font-semibold mb-4">Connect</h3>
+          <div className='flex justify-center items-center gap-6 mb-8'>
             <div className="flex gap-4">
               <Link href="https://github.com/salisai" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="w-5 h-5" />
@@ -48,9 +29,8 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-        </div>
 
-        <div className="border-t border-dashed border-primary/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
+        <div className="border-t border-dashed border-primary/20 pt-8 flex justify-center items-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Ali Portfolio. All rights reserved.</p>
         </div>
       </div>

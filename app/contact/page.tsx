@@ -78,7 +78,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-2 mb-16 items-stretch"
         >
           {/* Contact Info */}
           <motion.div
@@ -86,11 +86,11 @@ export default function Contact() {
            initial="hidden"
            whileInView="show"
            viewport={{once: true}}
-           className="space-y-2"
+           className="space-y-2 lg:h-full flex flex-col"
           >
-            <Card className="bg-card border border-dashed border-primary/18 p-6">
+            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
-                <Mail className="w-6 h-6 text-primary shrink-0" />
+                <Mail className="w-4 h-5 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Email</h3>
                   <a href="mailto:sayeed51003@example.com" className="text-muted-foreground hover:text-primary transition-colors">
@@ -100,9 +100,9 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-card border border-dashed border-primary/18 p-6">
+            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
-                <MapPin className="w-6 h-6 text-primary shrink-0" />
+                <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Location</h3>
                   <p className="text-muted-foreground">Islamabad, Pak</p>
@@ -110,9 +110,9 @@ export default function Contact() {
               </div>
             </Card>
             
-            <Card className="bg-card border border-dashed border-primary/18 p-6">
+            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
-                <MapPin className="w-6 h-6 shrink-0" />
+                <MapPin className="w-5 h-5 shrink-0" />
                 <div>
                   <h3 className="text-foreground font-semibold mb-1">Available</h3>
                   <p className="text-muted-foreground">For projects</p>
@@ -127,9 +127,9 @@ export default function Contact() {
            initial="hidden"
            whileInView="show"
            viewport={{once: true}}
-           className="lg:col-span-2"
+           className="lg:col-span-2 lg:h-full"
           >
-            <Card className="bg-card border border-dashed border-primary/18 p-8">
+            <Card className="bg-card border border-dashed border-primary/18 p-8 h-full">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
@@ -157,8 +157,19 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground min-h-32"
+                  className="
+                    border border-dashed border-primary/10
+                    rounded-none
+                    text-[14px]
+                    placeholder:text-muted-foreground
+                    min-h-32
+                    resize-none
+                    focus:outline-none
+                    focus:ring-0
+                    box-border
+                  "
                 />
+
 
                 <Button type='submit' size='lg' className='w-full cursor-pointer rounded-none' disabled={loading}>
                   {loading ? (
