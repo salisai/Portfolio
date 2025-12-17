@@ -40,6 +40,7 @@
   --progress-fill: black;
   --progress-bg: #e5e5e5;
 
+  --nav: black;
   --input-bg: oklch(0.98 0 0);
   --input-text: oklch(0.15 0 0)
 
@@ -72,12 +73,13 @@
   --chart-4: oklch(0.7 0.08 270);
   --chart-5: oklch(0.6 0.1 60);
 
-
+  
   --progress-fill: #e5e5e5;
   --progress-bg: rgb(36, 36, 36);
-
+  
   --input-bg: oklch(0.15 0 0);
   --input-text: oklch(0.95 0 0);
+  --nav: oklch(0.95 0 0)
 
 }
 

@@ -10,8 +10,6 @@ import { motion } from "framer-motion"
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/skills", label: "Skills" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ];
@@ -29,70 +27,67 @@ export default function Navbar() {
   return (
     <>
       {/* DESKTOP SIDEBAR */}
-      <aside
-        className="hidden md:flex flex-col fixed left-0 top-0 h-full w-56 bg-[color:var(--background)]/80 backdrop-blur-md z-50 py-6"
-      >
-        {/* Logo */}
-        <div className="flex items-center md:hidden justify-center mb-10">
-          <Terminal className="h-7 w-7 text-[color:var(--primary)]" />
-        </div>
-
-        {/* Navigation */}
-        <nav className="flex flex-col mt-30 gap-6 p-10">
+      <div className="absolute hidden lg:flex top-6 left-1/2 -translate-x-1/2 z-50">
+        <nav
+          className="
+            relative flex items-center gap-2
+            rounded-full px-4 py-1.5
+            bg-[(--background)]/70
+            backdrop-blur-xl
+            border border-white/10
+            shadow-lg
+          "
+        >
           {navLinks.map((link) => {
-            const active = pathname === link.href;
-            return (
+            const active = pathname === link.href
 
+            return (
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-3 group"
+                className="relative px-4 py-2 text-sm font-medium"
               >
-                {/* Animated indicator */}
-                <motion.div
-                  layout
-                  initial={false}
-                  animate={{
-                    width: active ? 32 : 20,
-                    opacity: active ? 1 : 0.4,
-                  }}
-                  transition={{
-                    duration: 0.25,
-                    ease: [0.4, 0, 0.2, 1],
-                  }}
-                  className={cn(
-                    "h-[2px] rounded-full",
-                    active
-                      ? "bg-[color:var(--primary)]"
-                      : "bg-[color:var(--muted-foreground)] group-hover:bg-[color:var(--muted-foreground)]/70"
-                  )}
-                />
+                {/* Active pill */}
+                {active && (
+                  <motion.div
+                    layoutId="active-pill"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="
+                      absolute inset-0
+                      rounded-full
+                      bg-white/10
+                    "
+                  />
+                )}
 
-                {/* Nav text */}
-                <motion.span
-                  initial={false}
-                  animate={{
-                    x: active ? 4 : 0,
-                    opacity: active ? 1 : 0.7,
-                  }}
-                  transition={{ duration: 0.2 }}
+                {/* Label */}
+                <span
                   className={cn(
-                    "text-sm font-medium",
+                    "relative z-10 transition-colors",
                     active
-                      ? "text-[color:var(--primary)]"
-                      : "text-[color:var(--muted-foreground)] group-hover:text-[color:var(--foreground)]"
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {link.label}
-                </motion.span>
+                </span>
               </Link>
-
-            );
+            )
           })}
 
+          {/* Theme Toggle */}
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-sm transition text-[color:var(--foreground)] hover:text-[color:var(--primary)]"
+            className="
+              ml-2 p-2 rounded-full
+              text-[color:var(--muted-foreground)]
+              hover:text-[color:var(--foreground)]
+              transition
+            "
           >
             {theme === "dark" ? (
               <Sun className="h-4 w-4" />
@@ -101,7 +96,7 @@ export default function Navbar() {
             )}
           </button>
         </nav>
-      </aside>
+      </div>
 
       {/* MOBILE TOP NAV */}
       <nav className="md:hidden fixed top-0 w-full bg-[color:var(--background)]/80 backdrop-blur-md z-50">

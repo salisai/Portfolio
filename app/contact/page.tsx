@@ -58,7 +58,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="text-4xl font-bold text-foreground mb-4"
+          className="text-3xl font-bold text-foreground mb-2"
         >Get In Touch
         </motion.h1>
 
@@ -68,7 +68,7 @@ export default function Contact() {
           whileInView="show"
           viewport={{once: true}}
 
-          className="text-muted-foreground mb-12 max-w-2xl"
+          className="text-muted-foreground mb-6 max-w-2xl"
         >
           I'm always interested in hearing about new projects and opportunities. Let's connect!
         </motion.p>

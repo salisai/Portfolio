@@ -11,9 +11,28 @@ import { projects } from './projects/page'
 
 export default function Home() {
 
+  const skillCategories = [
+    {
+      title: 'Frontend',
+      skills: ['React', 'TypeScript', 'Next.js','Redux', 'Tailwindcss','Shadcn']
+    },
+    {
+      title: 'Backend',
+      skills: ['Node.js','Express', 'Flask', 'Prisma', 'PostgreSQL', 'MongoDB', 'Supabase', 'Pinecone', 'Weaviate']
+    },
+    {
+      title: 'DevOps',
+      skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Nginx', 'Git', 'Vercel']
+    },
+    {
+      title: 'AI',
+      skills: ['TensorFlow', 'PyTorch', 'LLMs', 'RAG', 'AI Agents', 'LangChain', 'crewAI']
+    }
+  ]
+
 
   return (
-    <div className="pt-16 sm:pt-24">
+    <div className="pt-10 sm:pt-20">
       <section className="max-w-6xl px-4 sm:px-6 mx-auto lg:px-8 py-20 min-h-[80vh] flex items-center">
         <div className="space-y-8 w-full">
           
@@ -23,19 +42,23 @@ export default function Home() {
             animate="show"
             variants={stagger}
             viewport={{once: true}}
-            className="mb-6 space-y-4"
           >
-            <motion.div 
-              variants={revealSoft}
+
+            <motion.div
+              variants={reveal}
               initial="hidden"
               whileInView="show"
-              viewport={{once: true}}
-              className="flex items-center gap-2 mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              <span className="font-body font-medium text-muted-foreground tracking-wide uppercase">Available for Projects</span>
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <img
+                src="/me.jpeg"
+                alt="Ali"
+                className="w-30 h-30 object-cover rounded-full mb-10 shadow-sw"
+              />
+              <div className="absolute bottom-0 left-0 w-30 h-30 pointer-events-none rounded-full
+                  bg-linear-to-b from-transparent to-black/90">
+              </div>
             </motion.div>
 
             <motion.h1
@@ -43,39 +66,20 @@ export default function Home() {
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
-              className="text-5xl sm:text-7xl font-bold tracking-tight"
+              className="text-4xl sm:text-4xl font-bold"
             >
-              Full-Stack & AI <br className="hidden sm:block" />
-              <span className="font-heading text-primary/80">Engineer.</span>
+              Sayed Ali Shah 
             </motion.h1>
 
-            <motion.p
-              variants={revealSoft}
-              className="sm:text-xl text-muted-foreground max-w-2xl text-balance leading-relaxed"
+            <motion.h2
+              variants={reveal}
+              initial="hidden"
+              whileInView="show"
+              viewport={{once: true}}
+              className="font-body text-xl text-muted-foreground font-extralight"
             >
-              I build pixel-perfect, engaging, and accessible digital experiences.
-              Bridging the gap between design and technology to create products that matter.
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            variants={revealSoft}
-            initial="hidden"
-            animate="show"
-            className="flex sm:flex-row gap-4 mb-0"
-          >
-            <Link href="/projects">
-              <Button size="lg" className="gap-2 rounded-none">
-                View Projects
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
-
-            <Link href="/contact">
-              <Button size="lg" className="border rounded-none border-primary/20 bg-black text-white hover:text-black transition-all duration-300 ease-in-out">
-                Get In Touch
-              </Button>
-            </Link>
+              Full Stack developer | AI Engineer 
+            </motion.h2>
           </motion.div>
 
 
@@ -86,53 +90,24 @@ export default function Home() {
               initial="hidden"
               whileInView="show"
               viewport={{once: true, margin: "-80px"}}
-              className="max-w-4xl py-16 mt-2 sm:mt-20">
-              
-              <motion.div
-                variants={reveal}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="sm:hidden relative"
-              >
-                <img
-                  src="/me.jpeg"
-                  alt="Ali"
-                  className="w-100 h-100 object-cover rounded-[5px] mb-14 shadow-sw"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none rounded-b-[10px]
-                    bg-linear-to-b from-transparent to-black/90">
-                </div>
-              </motion.div>
-
-
-              <motion.h1 
-                variants={reveal}
-                initial="hidden"
-                whileInView="show"
-                viewport={{once: true}}
-                className="text-4xl font-bold text-foreground mb-4"
-              >
-                About Me
-              </motion.h1>
+              className="max-w-4xl py-1 mt-2 sm:mt-4">        
 
               <motion.div 
                 variants={revealSoft}
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className="space-y-6 text-muted-foreground leading-relaxed"
+                className="space-y-3 text-muted-foreground leading-relaxed"
               >
-                <p>I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science, passionate about turning bold ideas into intelligent, scalable products that make true difference.</p>
+                <p>I’m Ali — a full-stack developer and AI engineer pursuing bechelor's in computer science. I build intelligent, scalable web products that create real impact.</p>
 
                 <p>I love exploring the intersection of technology, design, and human behavior — always learning, improving, and building things that push boundaries. When I’m not coding, you’ll find me reading,{" "}
                   <Link href="https://medium.com/@salisai" className="text-primary">writing</Link>, thinking about big ideas, and studying how technology drives human progress.
                 </p>
 
-                <p>Right now, I’m focused on helping teams build smarter products that perform beautifully and deliver measurable results.</p>
 
-                <p>If you’re looking for someone who can turn your AI or web idea into something users love and investors notice — let’s{" "}
-                  <Link href="/contact" className="text-primary">create</Link>{" "}it together.
+                <p>If you have an AI or web idea — let’s{" "}
+                  <Link href="/contact" className="text-primary">make</Link>{" "}it real.
                 </p>
               </motion.div>
 
@@ -148,16 +123,16 @@ export default function Home() {
                   initial="hidden" 
                   whileInView="show" 
                   viewport={{once: true}}
-                  className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24"
+                  className="bg-card p-4 border border-dashed border-primary/20 hover:border-primary/24"
                 >
-                  <h3 className="text-foreground font-semibold mb-4 text-lg">Education</h3>
+                  <h3 className="text-foreground font-medium mb-2 text-lg">Education</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
-                      <p className="text-foreground font-medium">B.S. Computer and Information Science</p>
+                      <p className="text-foreground font-normal">B.S. Computer and Information Science</p>
                       <p className="text-xs">PIEAS, Islamabad, 23-27</p>
                     </li>
                     <li>
-                      <p className="text-foreground font-medium">ML and DL Specializations</p>
+                      <p className="text-foreground font-normal">ML and DL Specializations</p>
                       <p className="text-xs">DeepLearning.ai, 2025</p>
                     </li>
                   </ul>
@@ -168,16 +143,16 @@ export default function Home() {
                   initial="hidden" 
                   whileInView="show" 
                   viewport={{once: true}}
-                  className="bg-card p-6 border border-dashed border-primary/20 hover:border-primary/24"
+                  className="bg-card p-4 border border-dashed border-primary/20 hover:border-primary/24"
                 >
-                  <h3 className="text-foreground font-semibold mb-4 text-lg">Experience</h3>
+                  <h3 className="text-foreground font-medium mb-2 text-lg">Experience</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
-                      <p className="text-foreground font-medium">Freelance Full-Stack Developer</p>
+                      <p className="text-foreground font-normal">Freelance Full-Stack Developer</p>
                       <p className="text-xs">Upwork, 2024 - Present</p>
                     </li>
                     <li>
-                      <p className="text-foreground font-medium">Freelance AI Engineer</p>
+                      <p className="text-foreground font-normal">Freelance AI Engineer</p>
                       <p className="text-xs">Upwork, 2025-present</p>
                     </li>
                   </ul>
@@ -186,11 +161,60 @@ export default function Home() {
             </motion.section>
           </div>
 
+          {/* tech stack  */}
+          <section 
+            className="max-w-4xl mx-auto pt-20">
+            <motion.h1 
+              variants={reveal} 
+              initial="hidden"
+              whileInView="show"
+              viewport={{once: true}}
+              className="text-3xl font-bold text-foreground mb-2"
+            >Tech Stack</motion.h1>
+
+            <motion.p 
+              variants={revealSoft} 
+              initial="hidden"
+              whileInView="show"
+              viewport={{once: true}}
+              className="text-muted-foreground mb-6 max-w-2xl"
+            >
+              A comprehensive overview of technologies and tools I've mastered over my career.
+            </motion.p>
+
+            <motion.div 
+              variants={cardReveal} 
+              initial="hidden"
+              whileInView="show"
+              viewport={{once: true}}
+              className="grid grid-cols-1 md:grid-cols-2 gap-2"
+            >
+              {skillCategories.map((category) => (
+                <div className='bg-card flex'>
+                  
+                  <Card key={category.title} className="flex-1 p-4 border border-dashed border-primary/20 hover:border-primary/24 transition-all duration-300">
+                  <h3 className="text-foreground font-semibold text-lg">{category.title}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="bg-primary/5 text-primary border border-dashed border-primary/18 hover:bg-primary/15 text-xs px-2.5 py-1.5"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </Card>
+                </div>
+              ))}
+            </motion.div>
+          </section>
+
           {/* PROJECT-SECTION */}
           <div>
-            <section className="max-w-6xl mx-auto">
+            <section className="max-w-6xl mx-auto pt-20">
               <motion.h1 
-                className="text-4xl font-bold text-foreground mb-4"
+                className="text-3xl font-body font-bold text-foreground mb-2"
                 variants={reveal}
                 initial="hidden"
                 whileInView="show"
@@ -199,7 +223,7 @@ export default function Home() {
                 Projects</motion.h1>
               
               <motion.p 
-                className="text-muted-foreground mb-12 max-w-2xl"
+                className="text-muted-foreground mb-6 max-w-2xl"
                 variants={revealSoft}
                 initial="hidden"
                 whileInView="show"

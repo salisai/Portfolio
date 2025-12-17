@@ -76,7 +76,7 @@ export default function Projects() {
     <div className="pt-24">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.h1 
-          className="text-4xl font-bold text-foreground mb-4"
+          className="text-3xl font-bold text-foreground mb-2"
           variants={reveal}
           initial="hidden"
           whileInView="show"
@@ -85,7 +85,7 @@ export default function Projects() {
           Projects</motion.h1>
         
         <motion.p 
-          className="text-muted-foreground mb-12 max-w-2xl"
+          className="text-muted-foreground mb-6 max-w-2xl"
           variants={revealSoft}
           initial="hidden"
           whileInView="show"
