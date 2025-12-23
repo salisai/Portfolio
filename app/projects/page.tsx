@@ -76,7 +76,7 @@ export default function Projects() {
     <div className="pt-24">
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.h1 
-          className="text-3xl font-bold text-foreground mb-2"
+          className="text-2xl font-bold text-foreground mb-2"
           variants={reveal}
           initial="hidden"
           whileInView="show"
@@ -109,7 +109,7 @@ export default function Projects() {
               viewport={{once: true}}
               className='bg-card'
             >
-              <Card key={project.id} className="h-full group border border-dashed border-primary/18 hover:border-primary/24 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
+              <Card key={project.id} className="h-full group border border-dashed rounded-[5px] border-primary/18 hover:border-primary/24 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
               
               <div className='w-full aspect-[16/9] relative'>
                 <Image
@@ -130,7 +130,7 @@ export default function Projects() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-primary/5 text-primary border border-dashed border-primary/14 hover:bg-primary/15 text-xs px-2.5 py-1.5"
+                      className="bg-primary/5 text-primary border rounded-[4px] border-dashed border-primary/14 hover:bg-primary/15 text-xs px-2.5 py-1.5"
                     >
                       {tech}
                     </span>
@@ -141,7 +141,7 @@ export default function Projects() {
               <div className="px-4 pb-6">
                 <Button 
                   asChild  
-                  className="w-full gap-2 rounded-none border border-white">
+                  className="w-full gap-2 rounded-[4px] border border-white">
                   
                   <Link href={project.link}>
                     {project.status === 'live' ? 'Live Demo' : 'View on Github'}

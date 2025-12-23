@@ -58,7 +58,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="text-3xl font-bold text-foreground mb-2"
+          className="text-2xl font-bold text-foreground mb-2"
         >Get In Touch
         </motion.h1>
 
@@ -88,7 +88,7 @@ export default function Contact() {
            viewport={{once: true}}
            className="space-y-2 lg:h-full flex flex-col"
           >
-            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
+            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
                 <Mail className="w-4 h-5 text-primary shrink-0" />
                 <div>
@@ -100,7 +100,7 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
+            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <div>
@@ -110,7 +110,7 @@ export default function Contact() {
               </div>
             </Card>
             
-            <Card className="bg-card border border-dashed border-primary/18 p-6 flex-1">
+            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 shrink-0" />
                 <div>
@@ -129,7 +129,7 @@ export default function Contact() {
            viewport={{once: true}}
            className="lg:col-span-2 lg:h-full"
           >
-            <Card className="bg-card border border-dashed border-primary/18 p-8 h-full">
+            <Card className="bg-card border rounded-[5px] border-dashed border-primary/18 p-8 h-full">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
@@ -138,7 +138,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className=" border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                   <Input
                     placeholder="Your Email"
@@ -147,7 +147,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className=" border border-dashed rounded-none border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed border-primary/10 text-[14px] placeholder:text-muted-foreground"
                   />
                 </div>
 
@@ -159,7 +159,6 @@ export default function Contact() {
                   required
                   className="
                     border border-dashed border-primary/10
-                    rounded-none
                     text-[14px]
                     placeholder:text-muted-foreground
                     min-h-32
@@ -171,7 +170,7 @@ export default function Contact() {
                 />
 
 
-                <Button type='submit' size='lg' className='w-full cursor-pointer rounded-none' disabled={loading}>
+                <Button type='submit' size='lg' className='w-full cursor-pointer' disabled={loading}>
                   {loading ? (
                     <div className='flex items-center justify-center gap-2'>
                       <Spinner className='w-5 h-5 text-white'/>

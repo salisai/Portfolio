@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`max-w-4xl font-body antialiased md:border-r md:border-l border-dashed border-border z-50 bg-background text-foreground md:ml-60`}>
+      <body className={`max-w-4xl font-body antialiased z-50 bg-background text-foreground justify-self-center-safe`}>
         <Providers>
           <Toaster/>
           <div className="min-h-screen flex flex-col">
