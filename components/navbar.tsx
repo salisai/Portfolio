@@ -10,7 +10,9 @@ import { motion } from "framer-motion"
 
 const navLinks = [
   { href: "/projects", label: "Projects" },
+    { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+
 ];
 
 export default function Navbar() {
@@ -38,13 +40,13 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="font-body text-sm tracking-wide text-white/90"
+            className="font-body text-[12px] tracking-wide text-white/90"
           >
-            ~/ali
+            ~/Ali
           </Link>
 
           {/* RIGHT: NAV LINKS */}
-          <div className="flex items-center gap-8 font-body text-sm">
+          <div className="flex items-center gap-8 font-body">
             {navLinks.map((link) => {
               const active = pathname === link.href
 
@@ -53,7 +55,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "transition-colors",
+                    "transition-colors text-[12px]",
                     active
                       ? "text-white"
                       : "text-white/60 hover:text-white"

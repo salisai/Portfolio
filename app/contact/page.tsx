@@ -58,7 +58,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="text-2xl font-bold text-foreground mb-2"
+          className="text-2xl font-medium text-foreground mb-2"
         >Get In Touch
         </motion.h1>
 
@@ -68,7 +68,7 @@ export default function Contact() {
           whileInView="show"
           viewport={{once: true}}
 
-          className="text-muted-foreground mb-6 max-w-2xl"
+          className="text-muted-foreground text-sm mb-6 max-w-2xl"
         >
           I'm always interested in hearing about new projects and opportunities. Let's connect!
         </motion.p>
@@ -92,8 +92,8 @@ export default function Contact() {
               <div className="flex gap-4">
                 <Mail className="w-4 h-5 text-primary shrink-0" />
                 <div>
-                  <h3 className="text-foreground font-semibold mb-1">Email</h3>
-                  <a href="mailto:sayeed51003@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  <h3 className="text-foreground font-normal text-[14px]">Email</h3>
+                  <a href="mailto:sayeed51003@example.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
                     sayeed51003@gmail.com
                   </a>
                 </div>
@@ -104,8 +104,8 @@ export default function Contact() {
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <div>
-                  <h3 className="text-foreground font-semibold mb-1">Location</h3>
-                  <p className="text-muted-foreground">Islamabad, Pak</p>
+                  <h3 className="text-foreground text-[14px] font-normal">Location</h3>
+                  <p className="text-muted-foreground text-sm">Islamabad, Pak</p>
                 </div>
               </div>
             </Card>
@@ -114,8 +114,8 @@ export default function Contact() {
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 shrink-0" />
                 <div>
-                  <h3 className="text-foreground font-semibold mb-1">Available</h3>
-                  <p className="text-muted-foreground">For projects</p>
+                  <h3 className="text-foreground font-normal text-[14px]">Available</h3>
+                  <p className="text-muted-foreground text-sm">For projects</p>
                 </div>
               </div>
             </Card>
@@ -138,7 +138,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className=" border border-dashed border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed border-primary/10 text-sm placeholder:text-muted-foreground"
                   />
                   <Input
                     placeholder="Your Email"
@@ -147,7 +147,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className=" border border-dashed border-primary/10 text-[14px] placeholder:text-muted-foreground"
+                    className=" border border-dashed border-primary/10 text-sm placeholder:text-muted-foreground"
                   />
                 </div>
 
@@ -159,7 +159,7 @@ export default function Contact() {
                   required
                   className="
                     border border-dashed border-primary/10
-                    text-[14px]
+                    text-sm
                     placeholder:text-muted-foreground
                     min-h-32
                     resize-none

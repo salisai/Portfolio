@@ -55,9 +55,9 @@ export default function Home() {
               <img
                 src="/me.jpeg"
                 alt="Ali"
-                className="w-20 h-20 object-cover rounded-[10px]"
+                className="w-16 h-16 sm:h-18 sm:w-18 object-cover rounded-[10px]"
               />
-              <div className="absolute bottom-0 rounded-[10px] left-0 w-20 h-20 pointer-events-none
+              <div className="absolute bottom-0 rounded-[10px] left-0 w-18 h-18 pointer-events-none
                   bg-linear-to-b from-transparent to-black/90">
               </div>
             </motion.div>
@@ -68,7 +68,7 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className=" text-3xl sm:text-4xl font-bold tracking-tighter"
+                className=" text-[24px] sm:text-3xl font-bold tracking-tighter"
               >
                 Sayed Ali Shah 
               </motion.h1>
@@ -78,7 +78,7 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className="font-body text-xl text-muted-foreground font-extralight"
+                className="text-[18px] font-body text-xl text-muted-foreground font-extralight"
               >
                 Full Stack developer
               </motion.h2>
@@ -101,16 +101,14 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className="space-y-3 text-muted-foreground leading-relaxed"
+                className="space-y-3 text-[14px] text-muted-foreground leading-relaxed"
               >
-                <p>I’m Ali — a computer science student who cares deeply about how technology creates real value in people’s lives.</p>
+                <p>I’m Ali — a full-stack developer and AI engineer in progress.</p>
 
-                <p>I’m early in my journey, but I don’t take it lightly. I spend my days improving my development and AI engineering skills, not just to write code, but to understand how real products are built, scaled, and used by real humans.</p>
+                <p>I build practical web and AI products with a focus on real users, clean systems, and long-term value. I understand how AI works, and I use it thoughtfully — not as hype, but as a tool to solve real problems.</p>
 
-                <p>I’m obsessed with growth — learning better, thinking deeper, and building things that matter. I read, I <Link href="/contact" className="text-primary">write</Link>{" "}, I experiment, I fail, and I improve.</p>
-                <p>If you have an idea and you want someone who will treat it with care, honesty, and effort, I’m ready — let’s{" "}
-                  <Link href="/contact" className="text-primary">make</Link>{" "}it real.
-                </p>
+                <p>I’m learning fast, building consistently, and serious about doing work that matters.</p>
+                <p>If you have an idea worth building, let’s <Link href="/contact" className="text-primary">make</Link>{" "}it real it real.</p>
               </motion.div>
 
               <motion.div 
@@ -127,14 +125,14 @@ export default function Home() {
                   viewport={{once: true}}
                   className="bg-card p-4 border border-dashed rounded-[5px] border-primary/20 hover:border-primary/24"
                 >
-                  <h3 className="text-foreground font-medium mb-2">Education</h3>
+                  <h3 className="text-foreground font-medium  mb-2">Education</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
-                      <p className="text-foreground font-normal">B.S. Computer and Information Science</p>
-                      <p className="text-xs">PIEAS, Islamabad, 23-27</p>
+                      <p className="text-foreground font-normal text-[12px]">B.S. Computer and Information Science</p>
+                      <p className="text-xs">PIEAS, Islamabad</p>
                     </li>
                     <li>
-                      <p className="text-foreground font-normal">ML and DL Specializations</p>
+                      <p className="text-foreground font-normal text-[12px]">ML and DL Specializations</p>
                       <p className="text-xs">DeepLearning.ai, 2025</p>
                     </li>
                   </ul>
@@ -150,11 +148,11 @@ export default function Home() {
                   <h3 className="text-foreground font-medium mb-2">Experience</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li>
-                      <p className="text-foreground font-normal">Freelance Full-Stack Developer</p>
+                      <p className="text-foreground font-normal text-[12px]">Freelance Full-Stack Developer</p>
                       <p className="text-xs">Upwork, 2024 - Present</p>
                     </li>
                     <li>
-                      <p className="text-foreground font-normal">Freelance AI Engineer</p>
+                      <p className="text-foreground font-normal text-[12px]">Freelance AI Engineer</p>
                       <p className="text-xs">Upwork, 2025-present</p>
                     </li>
                   </ul>
@@ -165,13 +163,13 @@ export default function Home() {
 
           {/* tech stack  */}
           <section 
-            className="max-w-4xl mx-auto pt-20">
+            className="max-w-4xl mx-auto pt-10">
             <motion.h1 
               variants={reveal} 
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
-              className="text-2xl font-bold text-foreground mb-2"
+              className="text-xl font-medium text-foreground mb-2"
             >Tech Stack</motion.h1>
 
             <motion.p 
@@ -179,7 +177,7 @@ export default function Home() {
               initial="hidden"
               whileInView="show"
               viewport={{once: true}}
-              className="text-muted-foreground mb-6 max-w-2xl"
+              className="text-muted-foreground text-[14px] mb-6 max-w-2xl"
             >
               A comprehensive overview of technologies and tools I've mastered over my career.
             </motion.p>
@@ -195,7 +193,7 @@ export default function Home() {
                 <div className='bg-card flex'>
                   
                   <Card key={category.title} className="flex-1 p-4 border border-dashed rounded-[5px] border-primary/20 hover:border-primary/24 transition-all duration-300">
-                  <h3 className="text-foreground font-semibold text-lg">{category.title}</h3>
+                  <h3 className="text-foreground font-semibold text-[16px]">{category.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
                       <span
@@ -214,9 +212,9 @@ export default function Home() {
 
           {/* PROJECT-SECTION */}
           <div>
-            <section className="max-w-6xl mx-auto pt-20">
+            <section className="max-w-6xl mx-auto pt-10">
               <motion.h1 
-                className="text-2xl font-body font-bold text-foreground mb-2"
+                className="text-xl font-body font-medium text-foreground mb-2"
                 variants={reveal}
                 initial="hidden"
                 whileInView="show"
@@ -225,7 +223,7 @@ export default function Home() {
                 Projects</motion.h1>
               
               <motion.p 
-                className="text-muted-foreground mb-6 max-w-2xl"
+                className="text-muted-foreground mb-6 text-[14px] max-w-2xl"
                 variants={revealSoft}
                 initial="hidden"
                 whileInView="show"
@@ -262,7 +260,7 @@ export default function Home() {
                                   
                     <div className="px-4 flex-1 flex flex-col">
                       
-                    <h3 className="text-foreground font-semibold text-lg mb-1">{project.title}</h3>
+                    <h3 className="text-foreground font-semibold text-[16px] mb-1">{project.title}</h3>
                     
 
                       <p className="text-muted-foreground text-sm mb-3 flex-1">{project.description}</p>
