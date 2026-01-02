@@ -79,7 +79,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-2 mb-16 items-stretch"
+          className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 mb-16 items-stretch"
         >
           {/* Contact Info */}
           <motion.div

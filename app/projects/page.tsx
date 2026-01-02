@@ -109,7 +109,7 @@ export default function Projects() {
               viewport={{ once: true }}
               className='bg-card'
             >
-              <Card key={project.id} className="card-gradient h-full group border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
+              <Card key={project.id} className="card-gradient-br h-full group border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
 
                 <div className='w-full aspect-[16/9] relative'>
                   <Image

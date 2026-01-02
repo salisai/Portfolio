@@ -244,7 +244,7 @@ export default function Home() {
                     viewport={{once: true}}
                     className='bg-card'
                   >
-                    <Card key={project.id} className="h-full card-gradient group border border-dashed rounded-[5px] border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
+                    <Card key={project.id} className="h-full card-gradient-br group border border-dashed rounded-[5px] border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
                     
                     <div className='w-full aspect-[16/10] relative'>
                       <Image
