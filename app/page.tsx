@@ -1,7 +1,7 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Github } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
@@ -43,7 +43,6 @@ export default function Home() {
             variants={stagger}
             viewport={{once: true}}
           >
-
            <div className='flex flex-row items-center gap-4'>
             <motion.div
               variants={reveal}
@@ -94,7 +93,7 @@ export default function Home() {
               initial="hidden"
               whileInView="show"
               viewport={{once: true, margin: "-80px"}}
-              className="max-w-4xl py-1 mt-2 sm:mt-4">        
+              className="max-w-4xl ">        
 
               <motion.div 
                 variants={revealSoft}
@@ -103,12 +102,10 @@ export default function Home() {
                 viewport={{once: true}}
                 className="space-y-3 text-[14px] text-muted-foreground leading-relaxed"
               >
-                <p>I’m Ali — a full-stack developer and AI engineer in progress.</p>
-
-                <p>I build practical web and AI products with a focus on real users, clean systems, and long-term value. I understand how AI works, and I use it thoughtfully — not as hype, but as a tool to solve real problems.</p>
-
-                <p>I’m learning fast, building consistently, and serious about doing work that matters.</p>
-                <p>If you have an idea worth building, let’s <Link href="/contact" className="text-primary">make</Link>{" "}it real it real.</p>
+                <p>Hey, I am Ali. I build full-stack web apps and AI products that actually work. I've been coding for about two years — breaking things, fixing them, and learning from every mistake along the way.
+                </p>
+                <p>I understand how AI works and use it to solve real problems, not just chase trends. I care about clean code, solid systems, and creating things that deliver real value.</p>
+                <p>Right now, I'm looking for freelance projects or full-stack roles where I can build something meaningful. If you're working on something worth doing, let's make it happen.</p>
               </motion.div>
 
               <motion.div 
@@ -116,14 +113,14 @@ export default function Home() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once: true}}
-                className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-2"
+                className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-2"
               >
                 <motion.div 
                   variants={cardReveal} 
                   initial="hidden" 
                   whileInView="show" 
                   viewport={{once: true}}
-                  className="bg-card p-4 border border-dashed rounded-[5px] border-primary/20 hover:border-primary/24"
+                  className="card-gradient p-4 border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16"
                 >
                   <h3 className="text-foreground font-medium  mb-2">Education</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
@@ -143,7 +140,7 @@ export default function Home() {
                   initial="hidden" 
                   whileInView="show" 
                   viewport={{once: true}}
-                  className="bg-card p-4 border border-dashed rounded-[5px] border-primary/20 hover:border-primary/24"
+                  className="card-gradient p-4 border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16"
                 >
                   <h3 className="text-foreground font-medium mb-2">Experience</h3>
                   <ul className="space-y-3 text-sm text-muted-foreground">
@@ -192,7 +189,7 @@ export default function Home() {
               {skillCategories.map((category) => (
                 <div className='bg-card flex'>
                   
-                  <Card key={category.title} className="flex-1 p-4 border border-dashed rounded-[5px] border-primary/20 hover:border-primary/24 transition-all duration-300">
+                  <Card key={category.title} className="card-gradient flex-1 p-4 border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-all duration-300">
                   <h3 className="text-foreground font-semibold text-[16px]">{category.title}</h3>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill) => (
@@ -247,7 +244,7 @@ export default function Home() {
                     viewport={{once: true}}
                     className='bg-card'
                   >
-                    <Card key={project.id} className="h-full group border border-dashed rounded-[5px] border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
+                    <Card key={project.id} className="h-full card-gradient group border border-dashed rounded-[5px] border-primary/18 hover:border-primary/24 transition-all duration-300 overflow-hidden flex flex-col p-0">
                     
                     <div className='w-full aspect-[16/10] relative'>
                       <Image
@@ -276,17 +273,24 @@ export default function Home() {
                       </div>
                     </div>
             
-                    <div className="px-4 pb-6">
-                      <Button 
-                        asChild  
-                        className="w-full gap-2 rounded-none border rounded-[4px] border-white">
-                        
+                   <div className="px-4 pb-6">
+                    <div className="flex gap-3">
+                      <Button asChild className="flex-1 gap-2 rounded-[4px] border border-white">
                         <Link href={project.link}>
-                          {project.status === 'live' ? 'Live Demo' : 'View on Github'}
-                          <ArrowRight className="w-4 h-4" />
+                          <>Live <ArrowRight className="w-4 h-4" /></>
+                        </Link>
+                      </Button>
+
+                      <Button asChild className="flex items-center gap-2 rounded-[4px] border-[0.5px] border-[var(--btn-minimal-border)] bg-[var(--btn-minimal-bg)] text-foreground hover:bg-[var(--btn-minimal-bg)] px-3 shadow-none">
+                        <Link href={project.link}>
+                          <>
+                            <Github className="w-4 h-4" />
+                            GitHub
+                          </>
                         </Link>
                       </Button>
                     </div>
+                  </div>
                     </Card>
                   </motion.div>
                 ))}

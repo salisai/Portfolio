@@ -73,12 +73,13 @@ export default function Contact() {
           I'm always interested in hearing about new projects and opportunities. Let's connect!
         </motion.p>
 
-        <motion.div 
+        <div className="max-w-4xl">
+          <motion.div 
           variants={stagger}
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-2 mb-16 items-stretch"
+          className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-2 mb-16 items-stretch"
         >
           {/* Contact Info */}
           <motion.div
@@ -88,9 +89,9 @@ export default function Contact() {
            viewport={{once: true}}
            className="space-y-2 lg:h-full flex flex-col"
           >
-            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
+            <Card className="card-gradient border border-dashed rounded-[5px] border-primary/18 p-6 pr-16 flex-1">
               <div className="flex gap-4">
-                <Mail className="w-4 h-5 text-primary shrink-0" />
+                <Mail className="w-5 h-5 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground font-normal text-[14px]">Email</h3>
                   <a href="mailto:sayeed51003@example.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
@@ -100,17 +101,17 @@ export default function Contact() {
               </div>
             </Card>
 
-            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
+            <Card className="card-gradient border border-dashed rounded-[5px] border-primary/18 p-6 pr-16 flex-1">
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
                 <div>
                   <h3 className="text-foreground text-[14px] font-normal">Location</h3>
-                  <p className="text-muted-foreground text-sm">Islamabad, Pak</p>
+                  <p className="text-muted-foreground text-sm">Peshawer, Pakistan</p>
                 </div>
               </div>
             </Card>
             
-            <Card className="bg-card border border-dashed rounded-[5px] border-primary/18 p-6 flex-1">
+            <Card className="card-gradient border border-dashed rounded-[5px] border-primary/18 p-6 pr-16 flex-1">
               <div className="flex gap-4">
                 <MapPin className="w-5 h-5 shrink-0" />
                 <div>
@@ -127,9 +128,9 @@ export default function Contact() {
            initial="hidden"
            whileInView="show"
            viewport={{once: true}}
-           className="lg:col-span-2 lg:h-full"
+           className="lg:h-full"
           >
-            <Card className="bg-card border rounded-[5px] border-dashed border-primary/18 p-8 h-full">
+            <Card className="card-gradient border rounded-[5px] border-dashed border-primary/18 p-8 h-full">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
@@ -184,6 +185,7 @@ export default function Contact() {
             </Card>
           </motion.div>
         </motion.div>
+        </div>
       </section>
     </div>
   )
