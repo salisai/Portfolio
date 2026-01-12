@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="pt-20 sm:pt-20">
       <section className="max-w-6xl px-4 sm:px-6 mx-auto lg:px-8 py-20 min-h-[80vh] flex items-center">
-        <div className="space-y-8 w-full">
+        <div className="space-y-6 w-full">
 
           {/* HERO-SECTION */}
           <motion.div
@@ -104,7 +104,7 @@ export default function Home() {
               >
                 <p>Hey, I am Ali. I build full-stack web apps and AI products that solve real business problems. I've been coding for about two years — breaking things, fixing them, and learning from every mistake along the way.
                 </p>
-                <p>From Idea to production - I focus clean code, scalable systems, and real results.</p>
+                <p>From Idea to production - I focus on clean code, scalable systems, and real results.</p>
                 <p>Right now, I'm looking for freelance projects and full-stack roles where I can build something meaningful. Need something solid, let's make it happen.</p>
               </motion.div>
 

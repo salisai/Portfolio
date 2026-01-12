@@ -44,23 +44,33 @@ export const projects = [
   {
     id: 4,
     title: 'Book Translator',
-    description: 'Currently this project is in build stage. It will make the book translation easy. Any can then read book af any language in their own native langauge. This will make access to wisdom easy.',
+    description: 'Currently this project is in building stage. It will make book translation easy. Anyone can then read book af any language in their own native langauge.',
     tech: ['React', 'Typescript','Tailwindcss', 'Flask', 'Langchain', 'Gemini', 'Postgesql', 'aws s3'],
     link: 'https://github.com/salisai/translate',
     image: '/translate.png',
     status: 'dev',
-    github: 'https://github.com/salisai/translate'
+    github: 'https://github.com/salisai/translate  '
 
   },
   {
     id: 5,
     title: 'Interior Design',
-    description: 'Simple and Minimal interior design website.',
+    description: 'Simple and modern interior design website.',
     tech: ['React', 'Nextjs', 'Tailwindcss', 'Shadcn', 'Framer-motion'],
     link: 'https://nivara-zeta.vercel.app',
     image: '/design.png',
     status: 'dev',
     github: 'https://github.com/salisai/Nivara'
+  },
+  {
+    id: 6,
+    title: 'Authentication System',
+    description: 'JWT based authentication system with password reset, and social login options.',
+    tech: ['React', 'Tailwindcss', 'Nodejs', 'Express', 'MongoDB', 'JWT', 'OAuth'],
+    link: 'https://github.com/salisai/Loginly',
+    image: '/auth.png',
+    status: 'dev',
+    github: 'https://github.com/salisai/Loginly'
   }
 ]
 
