@@ -43,8 +43,8 @@ const About = () => {
           </p>
 
           <p>
-            Before tech, I spent years helping my father run a small shoe business while studying. That experience taught me
-            more than any course ever could — how to talk to people, understand real needs, take responsibility, and stay honest
+            Before tech, I spent 5 years helping my father run a shoes business while studying. That experience taught me
+            more than any course ever could — how to talk to people, understand real needs, understand customer mind, take responsibility, and stay honest
             even when things get messy.
           </p>
 
@@ -56,7 +56,7 @@ const About = () => {
 
         {/* What I Do */}
         <motion.div
-          variants={stagger}
+          variants={cardReveal}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
@@ -68,8 +68,8 @@ const About = () => {
           >
             <h3 className="text-foreground font-medium mb-2">What I Do</h3>
             <ul className="text-sm text-muted-foreground space-y-2">
-              <li>• Build full-stack web applications (frontend + backend)</li>
-              <li>• Develop AI-powered features and systems</li>
+              <li>• Build full-stack web applications (frontend + backend + deployment)</li>
+              <li>• Develop AI-powered features, AI systems</li>
               <li>• Turn business ideas into working products</li>
             </ul>
           </motion.div>
@@ -117,10 +117,10 @@ const About = () => {
           <h3 className="text-foreground font-medium mb-4">My Journey</h3>
           <ul className="text-sm text-muted-foreground space-y-2">
             <li>• Grade 1-6: Didn't know anything, yes anything</li>
-            <li>• Grade 6–10: Helped run a family shoe business</li>
+            <li>• Grade 6–10: Helped run a family shoe business while studying</li>
             <li>• College: Studied pre-medical</li>
-            <li>• Now: Full-stack + AI-focused projects and client work (studying CS)</li>
-            <li>• Future: Build a company creating meaningful AI products. Giving back to people</li>
+            <li>• Now: Full-stack + AI-Engineering projects + client work ( also studying CS)</li>
+            <li>• Future: Build a company creating meaningful AI products. Giving back to community</li>
           </ul>
         </motion.div>
 

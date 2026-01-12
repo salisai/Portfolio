@@ -13,59 +13,54 @@ export const projects = [
   {
     id: 1,
     title: 'CulinaAI',
-    description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images',
-    tech: ['Next.js', 'TypeScript', 'NeonDB', 'Clerk', 'Prisma', 'Shadcn', 'GeminiAPI', "NanoBanana"],
+    description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images. Enjoy global recipes.',
+    tech: ['React','Next.js', 'TypeScript', 'Postgresql', 'Clerk', 'Prisma', 'Shadcn', 'GeminiAPI', "NanoBanana", 'Imagekit'],
     link: 'https://github.com/salisai/recipes-app',
-    image: '/project1.png',
-    status: 'live'
+    image: '/culina.png',
+    status: 'live',
+    github: 'https://github.com/salisai/recipes-app'
   },
   {
     id: 2,
-    title: 'Jewelary Store',
+    title: 'Jewelary E-Store',
     description: 'Full-stack ecommerce website with admin dashboard',
-    tech: ['React', 'Tailwindcss', 'Supabase', 'Resend', 'Stripe'],
-    link: 'https://github.com/salisai/jewelary_estore',
-    image: '/project2.png',
-    status: 'live'
+    tech: ['Nextjs', 'Tailwindcss', 'Framer-motion', 'Supabase', 'Resend', 'Polar Payments', 'Gemini'],
+    link: 'https://jewelary-estore.vercel.app',
+    image: '/jew.png',
+    status: 'live',
+    github: 'https://github.com/salisai/jewelary_estore'
 
   },
   {
     id: 3,
     title: 'PDF-Chat using RAG',
-    description: 'Upload your documents and you can ask any question, you will get answer, in statefull a conversation',
+    description: 'Upload your documents and ask any question, you will get answer, in statefull a conversation',
     tech: ['Next.js', 'Supabase', 'Pinecone', 'Gemini', 'LangChain', 'Shadcn', 'Framer-motion'],
     link: 'https://github.com/salisai/pdf-chat',
-    image: '',
-    status: 'dev'
+    image: '/RAG.png',
+    status: 'dev',
+    github: 'https://github.com/salisai/pdf-chat'
   },
   {
     id: 4,
-    title: 'Email Automation Agent',
-    description: 'This agent will automate cutomer support emails',
-    tech: ['Python', 'LangChain', 'LangGraph', 'Flask'],
-    link: 'https://github.com/salisai/Email_Agent',
-    image: '',
-    status: 'dev'
+    title: 'Book Translator',
+    description: 'Currently this project is in build stage. It will make the book translation easy. Any can then read book af any language in their own native langauge. This will make access to wisdom easy.',
+    tech: ['React', 'Typescript','Tailwindcss', 'Flask', 'Langchain', 'Gemini', 'Postgesql', 'aws s3'],
+    link: 'https://github.com/salisai/translate',
+    image: '/translate.png',
+    status: 'dev',
+    github: 'https://github.com/salisai/translate'
 
   },
   {
     id: 5,
-    title: 'Blog',
-    description: 'A full functional blog for myself',
-    tech: ['React', 'Appwrite', 'Tailwindcss'],
-    link: 'https://github.com/salisai/BlogApp_appwrite',
-    image: '',
-    status: 'dev'
-
-  },
-  {
-    id: 6,
-    title: 'Object detection',
-    description: 'Using semantic segmentation to detect objects and do labeling for it.',
-    tech: ['Python', 'Tensorflow', 'numpy', 'pandas', 'keras'],
-    link: 'https://github.com/salisai/Semantic_segmentation',
-    image: '',
-    status: 'dev'
+    title: 'Interior Design',
+    description: 'Simple and Minimal interior design website.',
+    tech: ['React', 'Nextjs', 'Tailwindcss', 'Shadcn', 'Framer-motion'],
+    link: 'https://nivara-zeta.vercel.app',
+    image: '/design.png',
+    status: 'dev',
+    github: 'https://github.com/salisai/Nivara'
   }
 ]
 
@@ -91,7 +86,7 @@ export default function Projects() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          A selection of my recent work across web development, machine learning, and cloud infrastructure.
+          A selection of my recent work across my domain.
         </motion.p>
 
         <motion.div
@@ -109,16 +104,17 @@ export default function Projects() {
               viewport={{ once: true }}
               className='bg-card'
             >
-              <Card key={project.id} className="card-gradient-br h-full group border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-colors duration-300 ease-in-out overflow-hidden flex flex-col p-0">
+              <Card key={project.id} className="card-gradient-br h-full group border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-colors duration-300 ease-in-out flex flex-col p-0">
 
-                <div className='w-full aspect-[16/9] relative'>
+                <div className="w-full aspect-[16/9] relative overflow-hidden rounded-t-[5px]">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className='object-cover p-2 pb-0'
+                    className="object-cover"
                   />
                 </div>
+
 
                 <div className="px-4 flex-1 flex flex-col">
 
@@ -147,7 +143,7 @@ export default function Projects() {
                     </Button>
 
                     <Button asChild className="flex items-center gap-2 rounded-[4px] border-[0.5px] border-[var(--btn-minimal-border)] bg-[var(--btn-minimal-bg)] text-foreground hover:bg-[var(--btn-minimal-bg)] px-3 shadow-none">
-                      <Link href={project.link}>
+                      <Link href={project.github}>
                         <>
                           <Github className="w-4 h-4" />
                           GitHub

@@ -1,10 +1,15 @@
 import { NextResponse } from "next/server";
-import {Resend} from "resend";
+import { Resend } from "resend";
 
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-export async function POST(req: Request){
+export async function POST(req: Request) {
+    if (!resend) {
+        console.error("Resend API Key is missing");
+        return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    }
+
     const data = await req.json();
 
     try {
@@ -20,8 +25,8 @@ export async function POST(req: Request){
             `
         })
 
-        return NextResponse.json({success: true})
+        return NextResponse.json({ success: true })
     } catch (error) {
-        return NextResponse.json({error}, {status: 500})
+        return NextResponse.json({ error }, { status: 500 })
     }
 }
