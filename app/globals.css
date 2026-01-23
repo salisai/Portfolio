@@ -191,27 +191,30 @@
   }
 }
 
-
 @layer utilities {
   .dark .card-gradient {
-    background:
+    background: 
       radial-gradient(
-        120% 120% at 0% 0%,
-        rgba(255, 255, 255, 0.04),
-        transparent 60%
+        100% 100% at 0% 0%, 
+        rgba(255, 255, 255, 0.03) 0%, 
+        rgba(255, 255, 255, 0.01) 40%, 
+        transparent 100%
       ),
-      var(--card);
+      hsl(var(--card));
+    /* Ensures the edges don't have a "cut-off" look */
+    background-attachment: fixed;
   }
 
   .dark .card-gradient-br {
-    background:
+    background: 
       radial-gradient(
-        120% 120% at 100% 100%,
-        rgba(255, 255, 255, 0.04),
-        transparent 60%
+        100% 100% at 100% 100%, 
+        rgba(255, 255, 255, 0.03) 0%, 
+        rgba(255, 255, 255, 0.01) 40%, 
+        transparent 100%
       ),
-
-      var(--card);
+      hsl(var(--card));
+    background-attachment: fixed;
   }
 }
 

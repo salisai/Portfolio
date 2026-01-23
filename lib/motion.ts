@@ -1,55 +1,44 @@
-// lib/motion.ts
 import type { Variants } from "framer-motion";
 
+// Custom "Sleek" Easing
+const transition = { duration: 0.8, ease: [0.16, 1, 0.3, 1] } as any;
 
-//Base reveal from bottom
-export const reveal: Variants = {
-  hidden: { opacity: 0, y: 24 },
+export const stagger: Variants = {
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    y: 0,
     transition: {
-      duration: 0.5,
-      ease: [0.22, 1, 0.36, 1]
-    }
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
   },
 };
 
-//slightly slower text reveal
-export const revealSoft: Variants = ({
-  hidden: { opacity: 0, y: 26 },
+export const reveal: Variants = {
+  hidden: { opacity: 0, y: 15 },
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.65,
-      ease: [0.22, 1, 0.36, 1],
-    },
+    transition
   },
-});
+};
 
+export const revealSoft: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { ...transition, duration: 1 }
+  },
+};
 
+// Focused on a subtle scale-in for cards
 export const cardReveal: Variants = {
-  hidden: { opacity: 0, y: 28, scale: 0.98 },
+  hidden: { opacity: 0, y: 20, scale: 0.99 },
   show: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: {
-      duration: 0.55,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  },
-};
-
-
-//parent stagger
-export const stagger: Variants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.08,
-    },
+    transition
   },
 };

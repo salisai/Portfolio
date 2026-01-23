@@ -40,7 +40,7 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="font-body text-[12px] tracking-wide text-white/90"
+            className="font-mono uppercase text-[10px] tracking-wide text-white/90"
           >
             ~/Ali
           </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "transition-colors text-[12px]",
+                    "text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors duration-300",
                     active
                       ? "text-white"
                       : "text-white/60 hover:text-white"
