@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Portfolio',
     images: [
       {
-        url: '/opengraph-image.png',
+        url: 'https://sayedalishah.com/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Sayed Ali Shah Portfolio Preview',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image', 
     title: 'Portfolio',
     description: 'Full-Stack & AI Developer • Projects • Experience • Portfolio',
-    images: ['/twitter-image.png'], 
+    images: ['https://sayedalishah.com/twitter-image.png'], 
   },
 
   icons: {
