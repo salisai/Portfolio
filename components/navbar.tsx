@@ -10,9 +10,9 @@ import { motion } from "framer-motion"
 
 const navLinks = [
   { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-
 ];
 
 export default function Navbar() {
