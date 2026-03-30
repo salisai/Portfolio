@@ -3,18 +3,19 @@
 import React from 'react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Github, Plus } from 'lucide-react'
+import { ArrowRight, Github, Plus, Globe } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import { reveal, revealSoft, cardReveal, stagger } from '@/lib/motion'
+import { Reveal } from '@/components/ui/Reveal'
 
 export const projects = [
   {
     id: 1,
     title: 'CulinaAI',
     description: 'AI powered fully fledged SAAS app to generate recipes using available grocceries images. Enjoy global recipes.',
-    tech: ['React','Next.js', 'TypeScript', 'Postgresql', 'Clerk', 'Prisma', 'Shadcn', 'GeminiAPI', "NanoBanana", 'Imagekit'],
+    tech: ['React', 'Next.js', 'TypeScript', 'Postgresql', 'Clerk', 'Prisma', 'Shadcn', 'GeminiAPI', "NanoBanana", 'Imagekit'],
     link: 'https://github.com/salisai/recipes-app',
     image: '/culina.png',
     status: 'live',
@@ -45,7 +46,7 @@ export const projects = [
     id: 4,
     title: 'Book Translator',
     description: 'Currently this project is in building stage. It will make book translation easy. Anyone can then read book af any language in their own native langauge.',
-    tech: ['React', 'Typescript','Tailwindcss', 'Flask', 'Langchain', 'Gemini', 'Postgesql', 'aws s3'],
+    tech: ['React', 'Typescript', 'Tailwindcss', 'Flask', 'Langchain', 'Gemini', 'Postgesql', 'aws s3'],
     link: 'https://github.com/salisai/translate',
     image: '/translate.png',
     status: 'dev',
@@ -78,9 +79,9 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-background pt-32 pb-40 selection:bg-primary/20">
       <section className="max-w-6xl mx-auto px-6 lg:px-8">
-        
+
         {/* --- TOP SECTION: ANIMATES ON LOAD --- */}
-        <motion.div 
+        <motion.div
           variants={stagger}
           initial="hidden"
           animate="show"
@@ -91,19 +92,19 @@ export default function Projects() {
           </div>
 
           <div className="md:col-span-7">
-            <h1 
+            <h1
               className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8"
             >
               Selected <br />
               <span className="text-muted-foreground/50">Implementations.</span>
             </h1>
-            <p 
+            <p
               className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
             >
               A selection of my recent work across full-stack engineering and machine learning interfaces.
             </p>
           </div>
-          
+
           <div className="md:col-span-2 flex md:justify-end">
             <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
               <Plus className="w-4 h-4 text-muted-foreground" />
@@ -111,64 +112,63 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        {/* --- GRID: ANIMATES ON VIEWPORT/SCROLL --- */}
-        <motion.div
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-2"
+        <Reveal
+          stagger={0.1}
+          delay={0.2}
+          offset={0}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {projects.map((project) => (
-            <div
+            <Link
+              href={`/projects/${project.id}`}
               key={project.id}
-              className='bg-card'
+              className="relative bg-background group p-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
             >
-              <Card className="card-gradient-br h-full group border border-dashed rounded-[5px] border-primary/10 hover:border-primary/16 transition-colors duration-300 ease-in-out flex flex-col p-0">
-                <div className="w-full aspect-[16/9] relative overflow-hidden rounded-t-[5px]">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
+              {/* Corner Accents */}
+              <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+              <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+              <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+              <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
 
-                <div className="px-4 flex-1 flex flex-col pt-4">
-                  <h3 className="text-foreground font-semibold text-[16px] mb-1">{project.title}</h3>
-                  <p className="flex-1 text-muted-foreground text-sm mb-3 font-light leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-primary/5 text-primary border rounded-[4px] border-dashed border-primary/14 hover:bg-primary/15 text-[10px] px-2.5 py-1.5 font-mono"
+              <div className="w-full aspect-[16/9] relative overflow-hidden bg-muted/10">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+                {project.status === 'dev' && (
+                  <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[10px] font-mono px-2 py-1 rounded-[4px] border border-white/10 uppercase tracking-wider">
+                    Building
+                  </div>
+                )}
+              </div>
+
+              <div className="flex-1 flex flex-col pt-1">
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-foreground font-semibold text-lg flex items-center gap-2 group-hover:text-primary transition-colors">
+                    {project.title}
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300 -rotate-45" />
+                  </h3>
+                  {project.github && (
+                    <object>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub Repository"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="px-4 pb-6 mt-auto">
-                  <div className="flex gap-3">
-                    <Button asChild className="flex-1 gap-2 rounded-[4px] border border-white cursor-pointer">
-                      <Link href={project.link}>
-                        Live <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </Button>
-
-                    <Button asChild className="flex items-center gap-2 rounded-[4px] border-[0.5px] border-primary/10 bg-secondary/50 text-foreground hover:bg-secondary px-3 shadow-none cursor-pointer">
-                      <Link href={project.github}>
                         <Github className="w-4 h-4" />
-                        GitHub
-                      </Link>
-                    </Button>
-                  </div>
+                      </a>
+                    </object>
+                  )}
                 </div>
-              </Card>
-            </div>
+                <p className="flex-1 text-muted-foreground text-sm font-light leading-relaxed">{project.description}</p>
+              </div>
+            </Link>
           ))}
-        </motion.div>
+        </Reveal>
       </section>
     </div>
   )

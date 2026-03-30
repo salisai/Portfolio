@@ -9,7 +9,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion"
 
 const navLinks = [
-  { href: "/projects", label: "Projects" },
+  { href: "/projects", label: "Work" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -69,7 +69,7 @@ export default function Navbar() {
         </nav>
       </div>
 
- 
+
     </>
   );
 }

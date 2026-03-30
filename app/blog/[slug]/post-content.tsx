@@ -25,7 +25,7 @@ export function PostContent({ post }: PostContentProps) {
   return (
     <div className="min-h-screen bg-background pt-32 pb-40 selection:bg-primary/20">
       <article className="max-w-4xl mx-auto px-6 lg:px-8">
-        
+
         {/* Back Button */}
         <motion.div
           variants={reveal}
@@ -33,7 +33,7 @@ export function PostContent({ post }: PostContentProps) {
           animate="show"
           className="mb-8"
         >
-          <Link 
+          <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
           >
@@ -52,7 +52,7 @@ export function PostContent({ post }: PostContentProps) {
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[1.1] mb-6">
             {post.title}
           </h1>
-          
+
           {post.description && (
             <p className="text-[14px] text-muted-foreground font-light leading-relaxed mb-6 max-w-2xl">
               {post.description}
@@ -86,7 +86,7 @@ export function PostContent({ post }: PostContentProps) {
             animate="show"
             className="mb-12"
           >
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+            <div className="relative w-full aspect-video overflow-hidden">
               <Image
                 src={urlFor(post.mainImage).width(1200).height(675).url()}
                 alt={post.mainImage.alt || post.title}
@@ -112,8 +112,8 @@ export function PostContent({ post }: PostContentProps) {
             animate="show"
             className="prose prose-lg max-w-none"
           >
-            <PortableText 
-              value={post.body} 
+            <PortableText
+              value={post.body}
               components={portableTextComponents}
             />
           </motion.div>
