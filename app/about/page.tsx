@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { reveal, revealSoft, stagger } from '@/lib/motion'
-import { ArrowUpRight, Plus, Minus } from 'lucide-react'
+import { ArrowRight, Plus, Minus } from 'lucide-react'
 import Link from 'next/link'
 
 const About = () => {
@@ -24,11 +24,11 @@ const About = () => {
 
           <div className="md:col-span-7">
             <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-body mb-8">
-              Full Stack <br/>
-              <span className="text-muted-foreground/50"> & AI Engineer.</span>
+              Builder. Engineer. <br/>
+              <span className="text-muted-foreground/50"> AI Integrator.</span>
             </h1>
             <p className="text-[14px] text-muted-foreground font-light leading-relaxed">
-              Building complex technical architectures, systems with human-centric design. Learning, shipping and repeating.
+              I build full-stack applications and wire in AI — LLMs, agents, APIs — so products actually work for the people using them.
             </p>
           </div>
           <div className="md:col-span-2 flex md:justify-end">
@@ -51,10 +51,10 @@ const About = () => {
           </div>
           <div className="md:col-span-7 space-y-8 text-[14px] leading-relaxed text-muted-foreground font-light">
             <p>
-              I build production-grade applications that solve real-world problems. My path in engineering is defined by a cycle of <span className="text-foreground">curiosity, execution, and refinement</span>. While pursuing my degree in Computer Science, I have dedicated the last two years to mastering the full stack and diving deep into the LLM ecosystem.
+              I'm a full-stack developer and AI engineer focused on AI integration — building the layer between powerful models and the products people actually use. Over the last two years I've gone deep on the LLM ecosystem: prompt engineering, agentic workflows, API design, model finetuning, dataset curation, model integration and shipping interfaces that make AI feel useful, not gimmicky.
             </p>
             <p>
-              Before the code, I spent five years managing operations in a family business alongside my father for 5 years. This provided a foundational understanding of <span className="text-foreground font-medium italic">user psychology and market trust</span>—lessons that now guide every line of code I write.
+              Before engineering, I spent five years running operations in a family business. That time taught me how real users think, what they trust, and what they ignore — a lens I bring to every product decision.
             </p>
           </div>
           <div className="md:col-span-2" />
@@ -75,9 +75,9 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Methods</h3>
               <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>Full-stack Architecture</li>
-                <li>AI/LLM Integration</li>
-                <li>Product Strategy</li>
+                <li>LLM and Agent Integration</li>
+                <li>Full-Stack Development</li>
+                <li>API Design and Tooling</li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -157,7 +157,7 @@ const About = () => {
           <div className="md:col-span-3" />
           <div className="md:col-span-7">
             <p className="text-sm text-muted-foreground font-light mb-8 max-w-md">
-              Available for freelance engagements and strategic technical partnerships.
+              Open to freelance projects, AI integration work, and building with teams who move fast.
             </p>
             <Link 
               href="/contact" 
@@ -165,7 +165,7 @@ const About = () => {
             >
               Start a conversation 
               <span className="h-10 w-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                <ArrowUpRight className="w-4 h-4 group-hover:text-background" />
+                <ArrowRight className="w-4 h-4 group-hover:text-background -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
               </span>
             </Link>
           </div>

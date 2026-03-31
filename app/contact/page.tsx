@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Plus, Globe, Mail } from 'lucide-react'
+import { ArrowRight, Plus, Globe, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { toast } from "sonner"
 import { Spinner } from '@/components/ui/spinner'
@@ -50,13 +50,16 @@ export default function Contact() {
           </div>
 
           <div className="md:col-span-7">
+           
             <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8">
-              Initiate <br />
-              <span className="text-muted-foreground/50">Engagement.</span>
+              Let's Build <br />
+              <span className="text-muted-foreground/50">Something.</span>
             </h1>
+
             <p className="text-[14px] text-muted-foreground font-light leading-relaxed">
-              Available for technical partnerships and full-stack AI development. Reach out to start the integration.
+              Open to projects at the intersection of AI and product — from LLM integration and agentic workflows to full-stack applications built for real users.
             </p>
+
           </div>
           
           <div className="md:col-span-2 flex md:justify-end">
@@ -75,7 +78,7 @@ export default function Contact() {
           className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
         >
           <div className="md:col-span-3">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Inquiry Form</span>
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Start a <br></br>Conversation</span>
           </div>
           
           <div className="md:col-span-7">
@@ -115,7 +118,7 @@ export default function Contact() {
                   required
                   rows={4}
                   className="w-full text-[14px] bg-transparent border-b border-border/50 py-4 focus:outline-none focus:border-primary transition-colors text-foreground font-light text-lg resize-none placeholder:text-muted-foreground/20"
-                  placeholder="Tell me about your vision..."
+                  placeholder="What are you building — and where does AI fit in?"
                 />
               </div>
 
@@ -124,9 +127,9 @@ export default function Contact() {
                 disabled={loading}
                 className="group flex items-center gap-4 text-lg font-light text-foreground hover:text-primary transition-all"
               >
-                {loading ? <Spinner className="w-5 h-5" /> : "Send Inquiry"}
+                {loading ? <Spinner className="w-5 h-5" /> : "Send Message"}
                 <span className="h-10 w-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4 group-hover:text-background" />
+                  <ArrowRight className="w-4 h-4 group-hover:text-background -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
                 </span>
               </button>
             </form>
@@ -197,7 +200,7 @@ export default function Contact() {
       <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Presence</h3>
       <div className="space-y-2 text-[13px] font-light text-muted-foreground">
         <p>Peshawar, Pakistan</p>
-        <p className="opacity-60">Remote / GMT +5</p>
+        <p className="hover:text-primary transition-colors duration-300 w-fit">Available remotely · GMT +5</p>
       </div>
     </div>
   </div>

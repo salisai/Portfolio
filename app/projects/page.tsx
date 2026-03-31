@@ -95,13 +95,13 @@ export default function Projects() {
             <h1
               className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8"
             >
-              Selected <br />
-              <span className="text-muted-foreground/50">Implementations.</span>
+              Work & <br />
+              <span className="text-muted-foreground/50">Projects.</span>
             </h1>
             <p
               className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
             >
-              A selection of my recent work across full-stack engineering and machine learning interfaces.
+              A selection of my recent work across full-stack, AI engineering.
             </p>
           </div>
 

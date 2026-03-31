@@ -102,101 +102,100 @@ export default function Home() {
 
           {/* SECTION 02 - about */}
           <motion.div
-            variants={stagger}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
-          >
+  variants={stagger}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, margin: "-100px" }}
+  className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
+>
+  <div className="md:col-span-3">
+    <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground/60">
+      Background
+    </span>
+  </div>
 
-            <div className="md:col-span-3">
-              <span
-                className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground/60"
-              >
-                Background
-              </span>
-            </div>
+  <div className="md:col-span-7">
+    <div className="space-y-6 text-[14px] text-muted-foreground font-light leading-relaxed mb-12">
+      <p>
+        Hey, I'm Ali. I build <span className="text-foreground">full-stack web apps</span> and wire AI into them — LLMs, agentic workflows, 
+        and API integrations that make products smarter without getting in the user's way.
+      </p>
+      <p>
+        From architecture to deployment, I care about one thing: does it work for the person using it.
+      </p>
+      <p>
+        Currently open to freelance projects and full-stack roles. If you're building something real, 
+        <span className="text-primary/80 font-medium italic"> let's talk.</span>
+      </p>
+    </div>
 
-            <div className="md:col-span-7">
-              <div
-                className="space-y-6 text-[14px] text-muted-foreground font-light leading-relaxed mb-12"
-              >
-                <p>
-                  Hey, I am Ali. I build <span className="text-foreground">full-stack web apps</span> and <span className="text-foreground">AI products</span> that solve, augment real business problems. I've been coding for more than two years — breaking things, fixing them, and learning from every mistake along the way.
-                </p>
-                <p>
-                  From Idea to production — I focus on clean code, scalable systems, and real results.
-                </p>
-                <p>
-                  Right now, I'm looking for projects and full-stack roles where I can build something meaningful. Need something solid, <span className="text-primary/80 font-medium italic">let's make it happen.</span>
-                </p>
-              </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* SECTION: EDUCATION */}
+      <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
+        {/* Growing Corner Accents */}
+        <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
 
+        <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
+          <span className="h-[1px] w-4 bg-primary/30" />
+          Education
+        </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {/* SECTION: EDUCATION */}
-                <div className="group relative p-5 border border-dashed border-primary/10 bg-card/20 rounded-[4px] transition-all duration-500 hover:border-primary/30 hover:bg-card/40">
-
-                  <div className="absolute top-0 right-0 p-2 opacity-20 group-hover:opacity-100 transition-opacity">
-                    <Plus className="w-3 h-3 text-primary" />
-                  </div>
-
-                  <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
-                    <span className="h-[1px] w-4 bg-primary/30" />
-                    Education
-                  </h3>
-
-                  <div className="space-y-6">
-                    {[
-                      { title: "B.S. Computer Science", sub: "PIEAS, Islamabad", year: "2023—2027" },
-                      { title: "ML and DL Specializations", sub: "DeepLearning.ai", year: "2025" }
-                    ].map((item, idx) => (
-                      <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
-                        <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
-                          {item.title}
-                        </p>
-                        <div className="flex justify-between items-center mt-1.5">
-                          <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
-                          <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* SECTION: EXPERIENCE */}
-                <div className="group relative p-5 border border-dashed border-primary/10 bg-card/20 rounded-[4px] transition-all duration-500 hover:border-primary/30 hover:bg-card/40">
-                  <div className="absolute top-0 right-0 p-2 opacity-20 group-hover:opacity-100 transition-opacity">
-                    <Plus className="w-3 h-3 text-primary" />
-                  </div>
-
-                  <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
-                    <span className="h-[1px] w-4 bg-primary/30" />
-                    Experience
-                  </h3>
-
-                  <div className="space-y-6">
-                    {[
-                      { title: "Freelance Full-Stack", sub: "Upwork", year: "2024—Present" },
-                      { title: "Freelance AI Engineer", sub: "Upwork", year: "2025—Present" }
-                    ].map((item, idx) => (
-                      <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
-                        <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
-                          {item.title}
-                        </p>
-                        <div className="flex justify-between items-center mt-1.5">
-                          <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
-                          <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+        <div className="space-y-6">
+          {[
+            { title: "B.S. Computer Science", sub: "PIEAS, Islamabad", year: "2023—2027" },
+            { title: "ML and DL Specializations", sub: "DeepLearning.ai", year: "2025" }
+          ].map((item, idx) => (
+            <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
+              <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
+                {item.title}
+              </p>
+              <div className="flex justify-between items-center mt-1.5">
+                <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
+                <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
 
-            <div className="md:col-span-2" />
-          </motion.div>
+      {/* SECTION: EXPERIENCE */}
+      <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
+        {/* Growing Corner Accents */}
+        <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+        <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+
+        <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
+          <span className="h-[1px] w-4 bg-primary/30" />
+          Experience
+        </h3>
+
+        <div className="space-y-6">
+          {[
+            { title: "Freelance Full-Stack", sub: "Upwork", year: "2024—Present" },
+            { title: "Freelance AI Engineer", sub: "Upwork", year: "2025—Present" }
+          ].map((item, idx) => (
+            <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
+              <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
+                {item.title}
+              </p>
+              <div className="flex justify-between items-center mt-1.5">
+                <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
+                <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="md:col-span-2" />
+</motion.div>
 
           {/* SECTION 03: TECH STACK (REFINED ARCHITECTURAL) */}
           <motion.div
