@@ -95,7 +95,7 @@ export default function Projects() {
             <h1
               className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8"
             >
-              Work & <br />
+              Work<br />
               <span className="text-muted-foreground/50">Projects.</span>
             </h1>
             <p
@@ -103,12 +103,6 @@ export default function Projects() {
             >
               A selection of my recent work across full-stack, AI engineering.
             </p>
-          </div>
-
-          <div className="md:col-span-2 flex md:justify-end">
-            <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
-              <Plus className="w-4 h-4 text-muted-foreground" />
-            </div>
           </div>
         </motion.div>
 

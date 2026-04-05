@@ -61,12 +61,6 @@ export default function Contact() {
             </p>
 
           </div>
-          
-          <div className="md:col-span-2 flex md:justify-end">
-            <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
-              <Plus className="w-4 h-4 text-muted-foreground" />
-            </div>
-          </div>
         </motion.div>
 
         {/* SECTION 02: INTAKE FORM */}

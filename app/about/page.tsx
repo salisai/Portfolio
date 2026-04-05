@@ -24,17 +24,12 @@ const About = () => {
 
           <div className="md:col-span-7">
             <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-body mb-8">
-              Builder. Engineer. <br/>
-              <span className="text-muted-foreground/50"> AI Integrator.</span>
+              AI Engineer. <br/>
+              <span className="text-muted-foreground/50"> Builder.</span>
             </h1>
             <p className="text-[14px] text-muted-foreground font-light leading-relaxed">
               I build full-stack applications and wire in AI — LLMs, agents, APIs — so products actually work for the people using them.
             </p>
-          </div>
-          <div className="md:col-span-2 flex md:justify-end">
-            <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
-              <Plus className="w-4 h-4 text-muted-foreground" />
-            </div>
           </div>
         </motion.div>
 
@@ -51,11 +46,14 @@ const About = () => {
           </div>
           <div className="md:col-span-7 space-y-8 text-[14px] leading-relaxed text-muted-foreground font-light">
             <p>
-              I'm a full-stack developer and AI engineer focused on AI integration — building the layer between powerful models and the products people actually use. Over the last two years I've gone deep on the LLM ecosystem: prompt engineering, agentic workflows, API design, model finetuning, dataset curation, model integration and shipping interfaces that make AI feel useful, not gimmicky.
+              I am an AI Engineer focused on the full spectrum — from LLM engineering and inference optimization to agentic systems, RAG pipelines, n8n automations, and full-stack web applications. I do not just integrate AI into products. I understand how the models work at a deep level, which means I can debug what others cannot, optimize what others leave slow, and architect systems that hold up in production rather than just in demos.
             </p>
             <p>
-              Before engineering, I spent five years running operations in a family business. That time taught me how real users think, what they trust, and what they ignore — a lens I bring to every product decision.
+              My technical foundation covers machine learning theory, deep learning, MLOps, and deployment on cloud infrastructure including AWS. I have studied AI engineering from the ground up — not just the APIs on top, but the systems underneath.
             </p>
+            <p>
+              Before engineering, I spent five years working inside a real business — handling sales, logistics, and daily operations from the age of 12. That grounding shapes how I approach every project: I think about the business problem first and the technology second. I also study game theory and philosophy alongside engineering, which gives me an unusual ability to define the right problem before jumping to a solution.            </p>
+            <p>Right now I am available for freelance AI engineering projects and actively looking for remote AI engineering roles where I can go deep, build fast, and contribute meaningfully from day one.</p>
           </div>
           <div className="md:col-span-2" />
         </motion.div>
@@ -73,27 +71,30 @@ const About = () => {
           </div>
           <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-12">
             <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Methods</h3>
+              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Skills Set</h3>
               <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>LLM and Agent Integration</li>
-                <li>Full-Stack Development</li>
-                <li>API Design and Tooling</li>
+                <li>LLM & Inference Engineering</li>
+                <li>Agentic AI Systems</li>
+                <li>RAG Pipeline Architecture</li>
+                <li>n8n Workflow Automation</li>
+                <li>Full-Stack AI Applications</li>
+                <li>MLOps & Cloud Deployment</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Workflow</h3>
               <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>Problem Analysis</li>
-                <li>Rapid Prototyping</li>
-                <li>Iterative Shipping</li>
+                <li>Business Problem First</li>
+                <li>Architecture Before Code</li>
+                <li>Ship, Measure, Improve</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Values</h3>
               <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>Technical Honesty</li>
-                <li>Long-term Value</li>
-                <li>Owner Mindset</li>
+               <li>Depth Over Surface</li>
+                <li>Production Over Prototype</li>
+                <li>Client Outcome Over Deliverable</li>
               </ul>
             </div>
           </div>
@@ -117,10 +118,10 @@ const About = () => {
           <div className="md:col-span-9">
             <div className="space-y-0">
               {[
-                { year: "2015 — 2020", title: "Family Business Ops", desc: "Real-world problem solving & customer psychology." },
-                { year: "2021 — 2022", title: "Academic Foundation", desc: "Focus on biological sciences & pre-medical." },
-                { year: "2023 — 2025", title: "Engineering Phase", desc: "Full-stack + AI development & Computer Science studies.", active: true },
-                { year: "2026 — Future", title: "AI Product Founder", desc: "Building meaningful AI-first communities." }
+                { year: "2015 — 2020", title: "Business Operations & Sales", desc: "Five years inside a real business — sales, logistics, and financial operations from age 12." },
+                { year: "2023 — 2024", title: "Deep Technical Foundation", desc: "Machine learning, deep learning, MLOps, and full-stack development. Andrew Ng specializations. Computer Science.", active: false },
+                { year: "2024 — 2025", title: "AI Engineering & LLM Systems", desc: "LLM engineering, inference optimization, agentic workflows, RAG pipelines, n8n automations, AWS deployment.", active: false },
+                { year: "2025 — Now", title: "Freelance & Remote Engineering", desc: "Building AI systems for clients worldwide. Open to remote AI engineering roles.", active: true }
               ].map((item, i) => (
                 <div 
                   key={i} 
@@ -157,13 +158,13 @@ const About = () => {
           <div className="md:col-span-3" />
           <div className="md:col-span-7">
             <p className="text-sm text-muted-foreground font-light mb-8 max-w-md">
-              Open to freelance projects, AI integration work, and building with teams who move fast.
+              Available for freelance AI engineering projects and open to remote AI engineering roles. let's talk.
             </p>
             <Link 
               href="/contact" 
-              className="inline-flex items-center gap-4 text-2xl font-light text-foreground group"
+              className="inline-flex items-center gap-4 text-xl font-light text-foreground group"
             >
-              Start a conversation 
+              Let's build
               <span className="h-10 w-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
                 <ArrowRight className="w-4 h-4 group-hover:text-background -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
               </span>

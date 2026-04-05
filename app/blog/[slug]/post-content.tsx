@@ -49,12 +49,12 @@ export function PostContent({ post }: PostContentProps) {
           animate="show"
           className="mb-12 border-b border-border/50 pb-12"
         >
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[1.1] mb-6">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tighter text-foreground leading-[1.1] mb-6">
             {post.title}
           </h1>
 
           {post.description && (
-            <p className="text-[14px] text-muted-foreground font-light leading-relaxed mb-6 max-w-2xl">
+            <p className="text-[15px] text-muted-foreground font-light leading-relaxed mb-6 max-w-2xl">
               {post.description}
             </p>
           )}

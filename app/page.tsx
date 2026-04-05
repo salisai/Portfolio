@@ -77,25 +77,16 @@ export default function Home() {
               <h1
                 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.8] mb-8"
               >
-                Sayed Ali Shah. <br />
+                Sayed Ali Shah <br />
                 <span className="text-muted-foreground/40 italic font-light text-xl md:text-2xl tracking-tight">
-                  Full Stack & AI.
+                  AI Engineer.
                 </span>
               </h1>
               <p
                 className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
               >
-                Building web and AI apps with human-centric design. Currently learning and scaling intelligent systems on web.
+                I design and build AI systems — agentic workflows, RAG pipelines, LLM integrations, and n8n automations. Full-stack when the product needs it.
               </p>
-            </div>
-
-            {/* Right Column: Status/Plus Icon */}
-            <div className="md:col-span-2 flex md:justify-end">
-              <div className="flex flex-col items-end gap-4">
-                <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
-                  <Plus className="w-4 h-4 text-muted-foreground" />
-                </div>
-              </div>
             </div>
           </motion.div>
 
@@ -116,17 +107,16 @@ export default function Home() {
 
   <div className="md:col-span-7">
     <div className="space-y-6 text-[14px] text-muted-foreground font-light leading-relaxed mb-12">
-      <p>
-        Hey, I'm Ali. I build <span className="text-foreground">full-stack web apps</span> and wire AI into them — LLMs, agentic workflows, 
-        and API integrations that make products smarter without getting in the user's way.
-      </p>
-      <p>
-        From architecture to deployment, I care about one thing: does it work for the person using it.
-      </p>
-      <p>
-        Currently open to freelance projects and full-stack roles. If you're building something real, 
-        <span className="text-primary/80 font-medium italic"> let's talk.</span>
-      </p>
+    <p>
+      Hey, I'm Ali — an AI Engineer based in Islamabad. I go deep on the systems most people only use at the surface: LLM inference, retrieval architecture, agentic reasoning, and the automation layers that make it all run without human intervention.
+    </p>
+    <p>
+      I have studied machine learning and deep learning from the ground up — not just the APIs, but the math, the architecture, and the production engineering behind it. That means I can build things that hold up, debug things others cannot, and architect solutions that fit the actual problem rather than the closest template.
+    </p>
+    <p>
+      Currently taking on freelance projects and looking for remote AI engineering roles.{' '}
+      <span className="text-primary/80 font-medium italic">If you are building something serious, let's talk.</span>
+    </p>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

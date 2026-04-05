@@ -24,7 +24,7 @@ export function BlogClient({ posts }: BlogClientProps) {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-border/50 pb-16 mb-12"
+          className="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-border/50 pb-16 mb-10"
         >
           <div className="md:col-span-3">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary">Blog</span>
@@ -34,20 +34,13 @@ export function BlogClient({ posts }: BlogClientProps) {
             <h1
               className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8"
             >
-              Tech and <br />
-              <span className="text-muted-foreground/50">Business Notes.</span>
+              Some Notes<br />
+              <span className="text-muted-foreground/50">on AI and Business</span>
             </h1>
             <p
               className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
             >
-              Notes on how code, math, engineering and business principles come together to build real-world systems.
-            </p>
-          </div>
-
-          <div className="md:col-span-2 flex md:justify-end">
-            <div className="h-12 w-12 rounded-full border border-border flex items-center justify-center">
-              <Plus className="w-4 h-4 text-muted-foreground" />
-            </div>
+            Writing on LLM engineering, agentic systems, automation architecture, and the business problems they actually solve.            </p>
           </div>
         </motion.div>
 
@@ -72,21 +65,10 @@ export function BlogClient({ posts }: BlogClientProps) {
                 className="relative bg-background group p-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
               >
                 {/* Corner Accents */}
-                <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-
-                {post.mainImage && (
-                  <div className="w-full aspect-[16/9] relative overflow-hidden bg-muted/10">
-                    <Image
-                      src={urlFor(post.mainImage).width(800).height(450).url()}
-                      alt={post.title || 'Article image'}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                )}
+                <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-dotted border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-dotted border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-dotted border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-dotted border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
 
                 <div className="flex-1 flex flex-col pt-1">
                   <div className="flex justify-between items-start mb-2">
