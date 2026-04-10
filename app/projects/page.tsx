@@ -114,7 +114,7 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <Link
-              href={`/projects/${project.id}`}
+              href={project.link}
               key={project.id}
               className="relative bg-background group p-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
             >
@@ -153,7 +153,7 @@ export default function Projects() {
                         aria-label="GitHub Repository"
                         className="text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        <Github className="w-4 h-4" />
+                        <Github  className="w-4 h-4" />
                       </a>
                     </object>
                   )}
