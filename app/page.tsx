@@ -77,15 +77,15 @@ export default function Home() {
               <h1
                 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.8] mb-8"
               >
-                Sayed Ali Shah <br />
+                Sayed Ali Shah. <br />
                 <span className="text-muted-foreground/40 italic font-light text-xl md:text-2xl tracking-tight">
-                  AI Engineer.
+                  Full Stack & AI.
                 </span>
               </h1>
               <p
                 className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
               >
-                I design and build AI systems — agentic workflows, RAG pipelines, LLM integrations, and n8n automations. Full-stack when the product needs it.
+                Building web and AI apps with human-centric design. Currently learning and scaling intelligent systems on web.
               </p>
             </div>
           </motion.div>
@@ -93,152 +93,95 @@ export default function Home() {
 
           {/* SECTION 02 - about */}
           <motion.div
-  variants={stagger}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true, margin: "-100px" }}
-  className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
->
-  <div className="md:col-span-3">
-    <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground/60">
-      Background
-    </span>
-  </div>
-
-  <div className="md:col-span-7">
-    <div className="space-y-6 text-[14px] text-muted-foreground font-light leading-relaxed mb-12">
-    <p>
-      Hey, I'm Ali — an AI Engineer based in Islamabad. I go deep on the systems most people only use at the surface: LLM inference, retrieval architecture, agentic reasoning, and the automation layers that make it all run without human intervention.
-    </p>
-    <p>
-      I have studied machine learning and deep learning from the ground up — not just the APIs, but the math, the architecture, and the production engineering behind it. That means I can build things that hold up, debug things others cannot, and architect solutions that fit the actual problem rather than the closest template.
-    </p>
-    <p>
-      Currently taking on freelance projects and looking for remote AI engineering roles.{' '}
-      <span className="text-primary/80 font-medium italic">If you are building something serious, let's talk.</span>
-    </p>
-    </div>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {/* SECTION: EDUCATION */}
-      <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
-        {/* Growing Corner Accents */}
-        <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-
-        <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
-          <span className="h-[1px] w-4 bg-primary/30" />
-          Education
-        </h3>
-
-        <div className="space-y-6">
-          {[
-            { title: "B.S. Computer Science", sub: "PIEAS, Islamabad", year: "2023—2027" },
-            { title: "ML and DL Specializations", sub: "DeepLearning.ai", year: "2025" }
-          ].map((item, idx) => (
-            <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
-              <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
-                {item.title}
-              </p>
-              <div className="flex justify-between items-center mt-1.5">
-                <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
-                <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* SECTION: EXPERIENCE */}
-      <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
-        {/* Growing Corner Accents */}
-        <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-        <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
-
-        <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
-          <span className="h-[1px] w-4 bg-primary/30" />
-          Experience
-        </h3>
-
-        <div className="space-y-6">
-          {[
-            { title: "Freelance Full-Stack", sub: "Upwork", year: "2024—Present" },
-            { title: "Freelance AI Engineer", sub: "Upwork", year: "2025—Present" }
-          ].map((item, idx) => (
-            <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
-              <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
-                {item.title}
-              </p>
-              <div className="flex justify-between items-center mt-1.5">
-                <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
-                <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div className="md:col-span-2" />
-</motion.div>
-
-          {/* SECTION 03: TECH STACK (REFINED ARCHITECTURAL) */}
-          <motion.div
             variants={stagger}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-8 py-20 border-b border-border/50"
+            className="border-b border-border/50 pb-16 py-18 mb-12"
           >
-            <div className="md:col-span-3 flex flex-col justify-between py-1">
-              <div className="space-y-1">
-                <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground/60">
-                  Capabilities
-                </span>
-                <p className="text-[9px] font-mono text-muted-foreground/40 uppercase tracking-widest">
-                  System / Stack
+
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground/60 block mb-4">
+                Background
+              </span>
+
+            <div className="md:col-span-7">
+              <div className="space-y-6 text-[14px] text-muted-foreground font-light leading-relaxed mb-12">
+                <p>
+                  Hey, I'm Ali. I build <span className="text-foreground">full-stack web apps</span> and wire AI into them — LLMs, agentic workflows, 
+                  and API integrations that make products smarter without getting in the user's way. Currently open to freelance projects and full-stack roles. If you're building something real, 
+                  <span className="text-primary/80 font-medium italic"> let's talk.</span>
                 </p>
               </div>
-            </div>
 
-            <div className="md:col-span-9">
-              <div className="grid grid-cols-2 gap-x-6 gap-y-12 sm:gap-x-12">
-                {skillCategories.map((category, idx) => (
-                  <div
-                    key={category.title}
-                    className="group relative"
-                  >
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* SECTION: EDUCATION */}
+                <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
+                  {/* Growing Corner Accents */}
+                  <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-dotted border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-dotted border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-dotted border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-dotted border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
 
-                    <h3 className="text-[11px] font-bold uppercase tracking-[0.15em] text-foreground mb-4 flex items-center gap-2">
-                      <span className="shrink-0">{category.title}</span>
-                      <div className="h-[1px] w-full bg-border/30 group-hover:bg-primary/30 transition-colors" />
-                    </h3>
+                  <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
+                    <span className="h-[1px] w-4 bg-primary/30" />
+                    Education
+                  </h3>
 
-                    <ul className="space-y-2.5">
-                      {category.skills.map((skill) => (
-                        <li
-                          key={skill}
-                          className="flex items-center gap-2 group/item"
-                        >
-                          {/* Minimalist Dot Indicator */}
-                          <div className="h-1 w-1 rounded-full bg-border group-hover/item:bg-primary transition-colors shrink-0" />
-
-                          <span className="text-[12px] sm:text-[13px] text-muted-foreground/80 font-light group-hover/item:text-foreground transition-all truncate">
-                            {skill}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="space-y-6">
+                    {[
+                      { title: "B.S. Computer Science", sub: "PIEAS, Islamabad", year: "2023—2027" },
+                      { title: "ML and DL Specializations", sub: "DeepLearning.ai", year: "2025" }
+                    ].map((item, idx) => (
+                      <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
+                        <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
+                          {item.title}
+                        </p>
+                        <div className="flex justify-between items-center mt-1.5">
+                          <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
+                          <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+
+                {/* SECTION: EXPERIENCE */}
+                <div className="group relative p-6 border border-dotted border-white/20 bg-background transition-all duration-300 hover:bg-white/[0.02]">
+                  {/* Growing Corner Accents */}
+                  <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-dotted border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-dotted border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-dotted border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+                  <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-dotted border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-primary transition-all duration-300" />
+
+                  <h3 className="text-[10px] font-mono uppercase tracking-[0.2em] text-primary mb-6 flex items-center gap-2">
+                    <span className="h-[1px] w-4 bg-primary/30" />
+                    Experience
+                  </h3>
+
+                  <div className="space-y-6">
+                    {[
+                      { title: "Freelance Full-Stack", sub: "Upwork", year: "2024—Present" },
+                      { title: "Freelance AI Engineer", sub: "Upwork", year: "2025—Present" }
+                    ].map((item, idx) => (
+                      <div key={idx} className="relative pl-4 border-l border-border/50 group-hover:border-primary/30 transition-colors">
+                        <p className="text-[13px] font-medium text-foreground leading-none tracking-tight">
+                          {item.title}
+                        </p>
+                        <div className="flex justify-between items-center mt-1.5">
+                          <span className="text-[11px] text-muted-foreground/60 font-light">{item.sub}</span>
+                          <span className="text-[10px] font-mono text-muted-foreground/30">{item.year}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div className="md:col-span-2" />
           </motion.div>
+
+          
 
 
           {/* SECTION 04: RECENT NOTES (BLOG) */}
@@ -281,10 +224,10 @@ export default function Home() {
                     className="relative bg-background group p-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
                   >
                     {/* Corner Accents */}
-                    <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                    <span className="absolute -top-[1px] -right-[1px] w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                    <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
-                    <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                    <span className="absolute -top-[1px] -left-[1px] border-dotted w-3 h-3 border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                    <span className="absolute -top-[1px] -right-[1px] border-dotted w-3 h-3 border-t border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                    <span className="absolute -bottom-[1px] -left-[1px] border-dotted w-3 h-3 border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
+                    <span className="absolute -bottom-[1px] -right-[1px] border-dotted w-3 h-3 border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
 
 
                     <div className="flex-1 flex flex-col pt-1">
@@ -326,6 +269,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
     </div>
   )
 }

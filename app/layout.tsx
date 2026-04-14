@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Sora, Space_Grotesk } from 'next/font/google'
+import { Geist, Geist_Mono, Sora, Space_Grotesk , Playfair_Display, Inter} from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Navbar from '@/components/navbar'
@@ -16,6 +16,21 @@ const sora = Sora({
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  variable: "--font-body",
+})
+
+// Fancy Serif for Headings
+const serifHeading = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-heading",
+  style: ['italic', 'normal']
+});
+
+// Clean Sans for Body (Inter is the standard for high readability)
+const sansBody = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
   variable: "--font-body",
 })
 

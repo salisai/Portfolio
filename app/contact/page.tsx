@@ -72,7 +72,7 @@ export default function Contact() {
           className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
         >
           <div className="md:col-span-3">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Start a <br></br>Conversation</span>
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Let's talk</span>
           </div>
           
           <div className="md:col-span-7">
@@ -193,7 +193,7 @@ export default function Contact() {
     <div className="space-y-4">
       <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Presence</h3>
       <div className="space-y-2 text-[13px] font-light text-muted-foreground">
-        <p>Peshawar, Pakistan</p>
+        <p>Islamabad, Pakistan</p>
         <p className="hover:text-primary transition-colors duration-300 w-fit">Available remotely · GMT +5</p>
       </div>
     </div>

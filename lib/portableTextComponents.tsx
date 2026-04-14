@@ -156,14 +156,15 @@ export const portableTextComponents: PortableTextComponents = {
       )
     },
   },
-  block: {
+block: {
+    /* 1. Headings: High contrast white/off-white */
     h1: ({ children }) => (
-      <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground mt-12 mb-6 first:mt-0">
+      <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-foreground mt-12 mb-6 first:mt-0">
         {children}
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-2xl md:text-3xl font-semibold tracking-tighter text-foreground mt-10 mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mt-10 mb-4">
         {children}
       </h2>
     ),
@@ -172,40 +173,44 @@ export const portableTextComponents: PortableTextComponents = {
         {children}
       </h3>
     ),
-    h4: ({ children }) => (
-      <h4 className="text-lg md:text-xl font-semibold tracking-tight text-foreground mt-6 mb-2">
-        {children}
-      </h4>
-    ),
+    /* 2. Normal Body Text: Removed font-light, increased size to 16px-18px */
     normal: ({ children }) => (
-      <p className="text-[14px] text-muted-foreground font-light leading-relaxed mb-4">
+      <p className="text-base md:text-lg text-foreground/90 font-normal leading-relaxed mb-6">
         {children}
       </p>
     ),
+    /* 3. Blockquote: Added a subtle background to make it stand out */
     blockquote: ({ children }) => (
-      <blockquote className="border-l-4 border-primary/30 pl-6 my-6 italic text-muted-foreground">
+      <blockquote className="border-l-2 border-primary pl-6 my-8 italic text-foreground/80 bg-primary/5 py-4 pr-4 rounded-r-lg">
         {children}
       </blockquote>
     ),
   },
-  list: {
+list: {
+    /* 4. Lists: Increased size and spacing */
     bullet: ({ children }) => (
-      <ul className="list-disc list-inside space-y-2 my-6 text-[14px] text-muted-foreground font-light leading-relaxed">
+      <ul className="list-disc ml-6 space-y-3 my-6 text-base md:text-lg text-foreground/90 font-normal">
         {children}
       </ul>
     ),
     number: ({ children }) => (
-      <ol className="list-decimal list-inside space-y-2 my-6 text-[14px] text-muted-foreground font-light leading-relaxed">
+      <ol className="list-decimal ml-6 space-y-3 my-6 text-base md:text-lg text-foreground/90 font-normal">
         {children}
       </ol>
     ),
   },
   marks: {
+    /* 5. Bold & Links: Ensure they are bright enough */
     strong: ({ children }) => (
-      <strong className="font-semibold text-foreground">{children}</strong>
+      <strong className="font-bold text-foreground">{children}</strong>
     ),
     em: ({ children }) => (
-      <em className="italic">{children}</em>
+      <em className="italic text-foreground/90">{children}</em>
+    ),
+    code: ({ children }) => (
+      <code className="bg-white/10 text-primary-foreground px-1.5 py-0.5 rounded font-mono text-sm">
+        {children}
+      </code>
     ),
     link: ({ value, children }) => {
       const target = (value?.href || '').startsWith('http') ? '_blank' : undefined
@@ -214,7 +219,7 @@ export const portableTextComponents: PortableTextComponents = {
           href={value?.href}
           target={target}
           rel={target === '_blank' ? 'noopener noreferrer' : undefined}
-          className="text-primary underline hover:text-primary/80 transition-colors"
+          className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors font-medium"
         >
           {children}
         </a>

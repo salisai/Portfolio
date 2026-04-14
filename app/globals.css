@@ -3,88 +3,81 @@
 @custom-variant dark (&:where((.dark, .dark *)));
 
 :root {
-  /* Backgrounds */
-  --background: #FFFFFF;
-  --card: #F3F3F3;
-  --popover: #F5F5F5;
+  /* Cream/Ivory Backgrounds */
+  --background: #FCF9F1;    /* Light Cream */
+  --card: #F5F2EA;          /* Slightly deeper cream */
+  --popover: #FAF7F0;
   --input: #FFFFFF;
 
-  --foreground: #111111;
-  --card-foreground: #111111;
-  --popover-foreground: #111111;
-  --primary-foreground: #FFFFFF;
-  --secondary-foreground: #111111;
-  --muted-foreground: #6B7280;
+  /* Typography - Soft Charcoal instead of pure black */
+  --foreground: #2C2C2C;
+  --card-foreground: #2C2C2C;
+  --popover-foreground: #2C2C2C;
+  --primary-foreground: #FCF9F1;
+  --secondary-foreground: #4B4639;
+  --muted-foreground: #8B8678;
   --accent-foreground: #FFFFFF;
 
-  /* Colors for buttons, links, accents */
-  --primary: #111111;
-  --secondary: #E5E7EB;
+  /* Accents - Warm tones */
+  --primary: #3D3929;       /* Deep warm brown/charcoal */
+  --secondary: #E9E4D5;     /* Muted beige */
 
   /* Borders & rings */
-  --border: #aaaaaa;
-  --ring: #111111;
+  --border: #E0DBCB;        /* Warm border */
+  --ring: #3D3929;
 
   /* Muted / subtle elements */
-  --muted: #F3F4F6;
-  --btn-minimal-bg: #f3f3f3;
+  --muted: #F1EDE1;
+  --btn-minimal-bg: #F1EDE1;
   --btn-live-bg: #ffffff;
-  --btn-minimal-border: #e5e7eb;
-
+  --btn-minimal-border: #E0DBCB;
 
   --radius: 0.5rem;
-
   --dark-primary: #181C14;
 
   /* Fonts */
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Space Grotesk', sans-serif;
 
-  --progress-fill: black;
-  --progress-bg: #e5e5e5;
+  --progress-fill: #3D3929;
+  --progress-bg: #E9E4D5;
 
-  --nav: black;
-  --input-bg: oklch(0.98 0 0);
-  --input-text: oklch(0.15 0 0)
+  --nav: #3D3929;
+  --input-bg: #FCF9F1;
+  --input-text: #2C2C2C;
 }
 
-
 .dark {
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.12 0 0);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.12 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.95 0 0);
-  --primary-foreground: oklch(0.08 0 0);
-  --secondary: oklch(0.15 0 0);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.95 0 0);
-  --accent-foreground: oklch(0.08 0 0);
+  /* Warm Dark Mode - Deep Espresso/Charcoal */
+  --background: oklch(0.14 0.01 60);
+  --foreground: oklch(0.92 0.01 60);
+  --card: oklch(0.17 0.01 60);
+  --card-foreground: oklch(0.92 0.01 60);
+  --popover: oklch(0.17 0.01 60);
+  --popover-foreground: oklch(0.92 0.01 60);
+  --primary: oklch(0.92 0.01 60);
+  --primary-foreground: oklch(0.14 0.01 60);
+  --secondary: oklch(0.22 0.01 60);
+  --secondary-foreground: oklch(0.92 0.01 60);
+  --muted: oklch(0.28 0.01 60);
+  --muted-foreground: oklch(0.70 0.01 60);
+  --accent: oklch(0.92 0.01 60);
+  --accent-foreground: oklch(0.14 0.01 60);
   --destructive: oklch(0.5 0.15 10);
   --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(32.897% 0.00004 271.152);
-  --input: oklch(0% 0 0);
-  --ring: oklch(0.3 0 0);
-  --chart-1: oklch(0.6 0.15 260);
-  --chart-2: oklch(0.65 0.12 180);
-  --chart-3: oklch(0.55 0.1 40);
-  --chart-4: oklch(0.7 0.08 270);
-  --chart-5: oklch(0.6 0.1 60);
+  --border: oklch(0.25 0.01 60);
+  --input: oklch(0.10 0 0);
+  --ring: oklch(0.4 0.01 60);
 
+  --progress-fill: oklch(0.92 0.01 60);
+  --progress-bg: oklch(0.22 0.01 60);
 
-  --progress-fill: #e5e5e5;
-  --progress-bg: rgb(36, 36, 36);
-
-  --input-bg: oklch(0.15 0 0);
-  --input-text: oklch(0.95 0 0);
-  --nav: oklch(0.95 0 0);
-  --btn-minimal-bg: oklch(0.15 0 0);
-  --btn-live-bg: oklch(0.25 0 0);
-  --btn-minimal-border: oklch(0.25 0 0);
+  --input-bg: oklch(0.18 0.01 60);
+  --input-text: oklch(0.92 0.01 60);
+  --nav: oklch(0.92 0.01 60);
+  --btn-minimal-bg: oklch(0.20 0.01 60);
+  --btn-live-bg: oklch(0.25 0.01 60);
+  --btn-minimal-border: oklch(0.28 0.01 60);
 }
 
 @theme inline {
