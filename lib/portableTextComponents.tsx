@@ -159,23 +159,23 @@ export const portableTextComponents: PortableTextComponents = {
 block: {
     /* 1. Headings: High contrast white/off-white */
     h1: ({ children }) => (
-      <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-foreground mt-12 mb-6 first:mt-0">
+      <h1 className="blog-title mt-12 mb-6 first:mt-0">
         {children}
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mt-10 mb-4">
+      <h2 className="blog-subheading mt-10 mb-4">
         {children}
       </h2>
     ),
     h3: ({ children }) => (
-      <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-foreground mt-8 mb-3">
+      <h3 className="blog-subheading mt-8 mb-3">
         {children}
       </h3>
     ),
     /* 2. Normal Body Text: Removed font-light, increased size to 16px-18px */
     normal: ({ children }) => (
-      <p className="text-base md:text-lg text-foreground/90 font-normal leading-relaxed mb-6">
+      <p className="blog-body mb-6">
         {children}
       </p>
     ),
@@ -189,12 +189,12 @@ block: {
 list: {
     /* 4. Lists: Increased size and spacing */
     bullet: ({ children }) => (
-      <ul className="list-disc ml-6 space-y-3 my-6 text-base md:text-lg text-foreground/90 font-normal">
+      <ul className="list-disc ml-6 space-y-3 my-6 blog-body">
         {children}
       </ul>
     ),
     number: ({ children }) => (
-      <ol className="list-decimal ml-6 space-y-3 my-6 text-base md:text-lg text-foreground/90 font-normal">
+      <ol className="list-decimal ml-6 space-y-3 my-6 blog-body">
         {children}
       </ol>
     ),

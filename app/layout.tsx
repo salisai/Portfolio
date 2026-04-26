@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Sora, Space_Grotesk , Playfair_Display, Inter} from 'next/font/google'
+import { Geist, Geist_Mono, Sora, Space_Grotesk , Playfair_Display, Inter, Cormorant_Garamond, Source_Serif_4 } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Navbar from '@/components/navbar'
@@ -32,6 +32,20 @@ const sansBody = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   variable: "--font-body",
+})
+
+const blogTitleFont = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  style: ['normal'],
+  variable: '--font-blog-title',
+})
+
+const blogBodyFont = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal'],
+  variable: '--font-blog-body',
 })
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -78,7 +92,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`max-w-4xl font-body antialiased z-50 bg-background text-foreground justify-self-center-safe`}>
+      <body className={`${blogTitleFont.variable} ${blogBodyFont.variable} max-w-3xl font-body antialiased z-50 bg-background text-foreground justify-self-center-safe`}>
         <Providers>
           <Toaster/>
           <div className="min-h-screen flex flex-col">

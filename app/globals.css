@@ -1,18 +1,16 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:where((.dark, .dark *)));
-
 :root {
   /* Cream/Ivory Backgrounds */
-  --background: #FCF9F1;    /* Light Cream */
+  --background: #FDFBF7;    /* Light Cream */
   --card: #F5F2EA;          /* Slightly deeper cream */
   --popover: #FAF7F0;
   --input: #FFFFFF;
 
   /* Typography - Soft Charcoal instead of pure black */
-  --foreground: #2C2C2C;
-  --card-foreground: #2C2C2C;
-  --popover-foreground: #2C2C2C;
+  --foreground: rgb(26, 26, 26);
+  --card-foreground: rgb(26, 26, 26);
+  --popover-foreground: rgb(26, 26, 26);
   --primary-foreground: #FCF9F1;
   --secondary-foreground: #4B4639;
   --muted-foreground: #8B8678;
@@ -37,47 +35,18 @@
 
   /* Fonts */
   --font-heading: 'Sora', sans-serif;
-  --font-body: 'Space Grotesk', sans-serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-blog-title: 'Cormorant Garamond', serif;
+  --font-blog-body: 'Source Serif 4', serif;
 
   --progress-fill: #3D3929;
   --progress-bg: #E9E4D5;
 
   --nav: #3D3929;
   --input-bg: #FCF9F1;
-  --input-text: #2C2C2C;
-}
+  --input-text: rgb(26, 26, 26);
 
-.dark {
-  /* Warm Dark Mode - Deep Espresso/Charcoal */
-  --background: oklch(0.14 0.01 60);
-  --foreground: oklch(0.92 0.01 60);
-  --card: oklch(0.17 0.01 60);
-  --card-foreground: oklch(0.92 0.01 60);
-  --popover: oklch(0.17 0.01 60);
-  --popover-foreground: oklch(0.92 0.01 60);
-  --primary: oklch(0.92 0.01 60);
-  --primary-foreground: oklch(0.14 0.01 60);
-  --secondary: oklch(0.22 0.01 60);
-  --secondary-foreground: oklch(0.92 0.01 60);
-  --muted: oklch(0.28 0.01 60);
-  --muted-foreground: oklch(0.70 0.01 60);
-  --accent: oklch(0.92 0.01 60);
-  --accent-foreground: oklch(0.14 0.01 60);
-  --destructive: oklch(0.5 0.15 10);
-  --destructive-foreground: oklch(0.95 0 0);
-  --border: oklch(0.25 0.01 60);
-  --input: oklch(0.10 0 0);
-  --ring: oklch(0.4 0.01 60);
-
-  --progress-fill: oklch(0.92 0.01 60);
-  --progress-bg: oklch(0.22 0.01 60);
-
-  --input-bg: oklch(0.18 0.01 60);
-  --input-text: oklch(0.92 0.01 60);
-  --nav: oklch(0.92 0.01 60);
-  --btn-minimal-bg: oklch(0.20 0.01 60);
-  --btn-live-bg: oklch(0.25 0.01 60);
-  --btn-minimal-border: oklch(0.28 0.01 60);
+  
 }
 
 @theme inline {
@@ -133,8 +102,30 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-heading);
-    letter-spacing: -0.02em;
+    font-family: var(--font-blog-title);
+    font-style: normal;
+    color: rgb(26, 26, 26);
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  h2,
+  h3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 39px;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 28px;
+      line-height: 49px;
+    }
   }
 
   p,
@@ -145,7 +136,26 @@
   button,
   input,
   textarea {
-    font-family: var(--font-body);
+    font-family: var(--font-blog-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(26, 26, 26);
+  }
+
+  @media (min-width: 1024px) {
+    p,
+    span,
+    li,
+    Link,
+    a,
+    button,
+    input,
+    textarea {
+      font-size: 18px;
+      line-height: 33px;
+    }
   }
 }
 
@@ -153,6 +163,7 @@
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading);
+    letter-spacing: -0.02em;
   }
 
   .font-body {
@@ -170,6 +181,49 @@
   .heading-normal {
     letter-spacing: -0.01em;
   }
+
+  .blog-title {
+    font-family: var(--font-blog-title);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 42px;
+    color: rgb(26, 26, 26);
+  }
+
+  .blog-subheading {
+    font-family: var(--font-blog-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(26, 26, 26);
+  }
+
+  .blog-body {
+    font-family: var(--font-blog-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(26, 26, 26);
+  }
+
+  @media (min-width: 1024px) {
+    .blog-title {
+      font-size: 24px;
+      line-height: 49px;
+    }
+
+    .blog-body {
+      font-size: 18px;
+      line-height: 33px;
+    }
+
+    .body-subheading{
+      font-size: 22px,
+    }
+  }
 }
 
 @keyframes float-line {
@@ -183,35 +237,6 @@
     transform: translateY(-20px);
   }
 }
-
-@layer utilities {
-  .dark .card-gradient {
-    background: 
-      radial-gradient(
-        100% 100% at 0% 0%, 
-        rgba(255, 255, 255, 0.03) 0%, 
-        rgba(255, 255, 255, 0.01) 40%, 
-        transparent 100%
-      ),
-      hsl(var(--card));
-    /* Ensures the edges don't have a "cut-off" look */
-    background-attachment: fixed;
-  }
-
-  .dark .card-gradient-br {
-    background: 
-      radial-gradient(
-        100% 100% at 100% 100%, 
-        rgba(255, 255, 255, 0.03) 0%, 
-        rgba(255, 255, 255, 0.01) 40%, 
-        transparent 100%
-      ),
-      hsl(var(--card));
-    background-attachment: fixed;
-  }
-}
-
-
 
 .animate-float {
   animation: float-line 6s ease-in-out infinite;

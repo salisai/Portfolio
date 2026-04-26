@@ -92,12 +92,6 @@ export default function Projects() {
           </div>
 
           <div className="md:col-span-7">
-            <h1
-              className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8"
-            >
-              Work<br />
-              <span className="text-muted-foreground/50">Projects.</span>
-            </h1>
             <p
               className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
             >
@@ -116,7 +110,7 @@ export default function Projects() {
             <Link
               href={project.link}
               key={project.id}
-              className="relative bg-background group p-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
+              className="relative bg-background group md:pr-5 flex flex-col gap-4 h-full border border-dotted border-white/20 transition-all duration-300 hover:bg-white/[0.02]"
             >
               {/* Corner Accents */}
               <span className="absolute -top-[1px] -left-[1px] w-3 h-3 border-dotted border-t border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
@@ -124,19 +118,6 @@ export default function Projects() {
               <span className="absolute -bottom-[1px] -left-[1px] w-3 h-3 border-dotted border-b border-l border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
               <span className="absolute -bottom-[1px] -right-[1px] w-3 h-3 border-dotted border-b border-r border-white/40 group-hover:w-6 group-hover:h-6 group-hover:border-white transition-all duration-300" />
 
-              <div className="w-full aspect-[16/9] relative overflow-hidden bg-muted/10">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-                {project.status === 'dev' && (
-                  <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md text-white text-[10px] font-mono px-2 py-1 rounded-[4px] border border-white/10 uppercase tracking-wider">
-                    Building
-                  </div>
-                )}
-              </div>
 
               <div className="flex-1 flex flex-col pt-1">
                 <div className="flex justify-between items-start mb-2">

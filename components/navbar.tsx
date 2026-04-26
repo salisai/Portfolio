@@ -28,21 +28,19 @@ export default function Navbar() {
   return (
     <>
       {/* DESKTOP */}
-      <div className="lg:flex fixed top-0 inset-x-0 z-50 justify-center">
+      <div className="max-w-3xl px-6 mx-auto lg:px-8 lg:flex fixed top-0 inset-x-0 z-50 justify-center bg-white">
         <nav
           className="
             flex items-center justify-between w-full gap-10
-             py-6
-             px-4 sm:px-6
-            bg-black
-            text-white max-w-4xl
+            py-6
+            max-w-3xl text-muted-foreground font-light
           "
         >
           <Link
             href="/"
-            className="font-mono uppercase text-[10px] tracking-wide text-white/90"
+            className="text-[10px] tracking-wide"
           >
-            ~/Ali
+            Ali
           </Link>
 
           {/* RIGHT: NAV LINKS */}
@@ -55,10 +53,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors duration-300",
+                    "text-[10px] tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors duration-300",
                     active
-                      ? "text-white"
-                      : "text-white/60 hover:text-white"
+                      ? "text-black"
+                      : "text-black/60 hover:text-black"
                   )}
                 >
                   {link.label}

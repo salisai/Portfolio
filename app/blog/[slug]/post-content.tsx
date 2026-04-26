@@ -23,7 +23,7 @@ interface PostContentProps {
 
 export function PostContent({ post }: PostContentProps) {
   return (
-    <div className="min-h-screen bg-background pt-32 pb-40 selection:bg-primary/20">
+    <div className="min-h-screen bg-[#FDFBF7] pt-32 pb-40 selection:bg-primary/20">
       <article className="max-w-4xl mx-auto px-6 lg:px-8">
 
         {/* Back Button */}
@@ -31,11 +31,11 @@ export function PostContent({ post }: PostContentProps) {
           variants={reveal}
           initial="hidden"
           animate="show"
-          className="mb-8"
+          className=""
         >
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground/60 hover:text-foreground transition-colors font-light"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Articles
@@ -49,33 +49,9 @@ export function PostContent({ post }: PostContentProps) {
           animate="show"
           className="mb-12 border-b border-border/50 pb-12"
         >
-          <h1 className="text-3xl md:text-3xl font-semibold tracking-tighter text-foreground leading-[1.1] mb-6">
+          <h1 className="blog-title mb-6">
             {post.title}
           </h1>
-
-          {post.description && (
-            <p className="text-[16px] text-muted-foreground font-light leading-relaxed mb-6 max-w-2xl">
-              {post.description}
-            </p>
-          )}
-
-          <div className="flex items-center gap-4 text-sm text-muted-foreground font-light">
-            {post.publishedAt && (
-              <time dateTime={post.publishedAt}>
-                {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </time>
-            )}
-            {post.authorName && (
-              <>
-                <span className="text-border">•</span>
-                <span>{post.authorName}</span>
-              </>
-            )}
-          </div>
         </motion.div>
 
         {/* Feature Image */}
@@ -110,33 +86,12 @@ export function PostContent({ post }: PostContentProps) {
             variants={stagger}
             initial="hidden"
             animate="show"
-            className="prose prose-xl prose-stone max-w-none text-foreground/90"
+            className="max-w-none"
           >
             <PortableText
               value={post.body}
               components={portableTextComponents}
             />
-          </motion.div>
-        )}
-
-        {/* Categories */}
-        {post.categories && post.categories.length > 0 && (
-          <motion.div
-            variants={reveal}
-            initial="hidden"
-            animate="show"
-            className="mt-12 pt-8 border-t border-border/50"
-          >
-            <div className="flex flex-wrap gap-2">
-              {post.categories.map((category: any) => (
-                <span
-                  key={category.slug?.current}
-                  className="bg-primary/5 text-primary border rounded-[4px] border-dashed border-primary/14 hover:bg-primary/15 text-[10px] px-2.5 py-1.5 font-mono"
-                >
-                  {category.title}
-                </span>
-              ))}
-            </div>
           </motion.div>
         )}
       </article>

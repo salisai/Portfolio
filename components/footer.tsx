@@ -26,7 +26,7 @@ export default function Footer() {
           className="flex flex-col md:flex-row justify-between items-center gap-8"
         >
           <motion.div variants={revealSoft} className="order-2 md:order-1">
-            <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground/60">
+            <p className="text-[10px] text-muted-foreground font-light uppercase tracking-[0.2em]">
               &copy; {currentYear} — Sayed Ali Shah
             </p>
           </motion.div>
@@ -46,7 +46,7 @@ export default function Footer() {
                 className="group relative flex flex-col items-center gap-2"
               >
                 <social.icon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:-translate-y-1" />
-                <span className="text-[8px] font-mono text-muted-foreground/0 group-hover:text-muted-foreground/60 transition-all duration-300 absolute -bottom-4">
+                <span className="text-[8px]  text-muted-foreground/0 group-hover:text-muted-foreground/60 transition-all duration-300 absolute -bottom-4">
                   {social.label}
                 </span>
               </Link>

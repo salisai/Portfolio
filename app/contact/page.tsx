@@ -43,13 +43,13 @@ export default function Contact() {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-border/50 pb-16"
+          className="gap-4 border-b border-border/50 pb-16"
         >
           <div className="md:col-span-3">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary">Contact</span>
           </div>
 
-          <div className="md:col-span-7">
+          <div className="">
            
             <h1 className="text-3xl md:text-4xl font-semibold tracking-tighter text-foreground leading-[0.9] mb-8">
               Let's Build <br />
@@ -69,7 +69,7 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-b border-border/50"
+          className="py-16 border-b border-border/50"
         >
           <div className="md:col-span-3">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Let's talk</span>
@@ -79,39 +79,39 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-12">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 <div className="group relative">
-                  <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 group-focus-within:text-primary transition-colors">Name</label>
+                  <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 text-primary transition-colors">Name</label>
                   <input
                     name="name"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     required
-                    className="w-full text-[14px] bg-transparent border-b border-border/50 py-4 focus:outline-none focus:border-primary transition-colors text-foreground font-light text-lg placeholder:text-muted-foreground/20"
+                    className="w-full text-[14px] border-b border-border/50 py-4 outline-none border-primary/60 transition-colors text-foreground font-light text-lg placeholder:text-muted-foreground/20"
                     placeholder="Enter your name"
                   />
                 </div>
                 <div className="group relative">
-                  <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 group-focus-within:text-primary transition-colors">Email</label>
+                  <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 text-primary transition-colors">Email</label>
                   <input
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     required
-                    className="text-[14px] w-full bg-transparent border-b border-border/50 py-4 focus:outline-none focus:border-primary transition-colors text-foreground font-light text-lg placeholder:text-muted-foreground/20"
+                    className="text-[14px] w-full bg-transparent border-b border-border/50 py-4 outline-none border-primary/60 transition-colors text-foreground font-light text-lg placeholder:text-muted-foreground/20"
                     placeholder="Enter your email"
                   />
                 </div>
               </div>
               
               <div className="group relative">
-                <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 group-focus-within:text-primary transition-colors">Project Brief</label>
+                <label className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/60 text-primary transition-colors">Project Brief</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   required
                   rows={4}
-                  className="w-full text-[14px] bg-transparent border-b border-border/50 py-4 focus:outline-none focus:border-primary transition-colors text-foreground font-light text-lg resize-none placeholder:text-muted-foreground/20"
+                  className="w-full text-[14px] bg-transparent border-b border-border/50 py-4 outline-none border-primary/60 transition-colors text-foreground font-light text-lg resize-none placeholder:text-muted-foreground/20"
                   placeholder="What are you building — and where does AI fit in?"
                 />
               </div>
@@ -119,7 +119,7 @@ export default function Contact() {
               <button 
                 type="submit" 
                 disabled={loading}
-                className="group flex items-center gap-4 text-lg font-light text-foreground hover:text-primary transition-all"
+                className="group flex items-center gap-4 text-[18px] font-light text-foreground hover:text-primary transition-all"
               >
                 {loading ? <Spinner className="w-5 h-5" /> : "Send Message"}
                 <span className="h-10 w-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
@@ -132,73 +132,73 @@ export default function Contact() {
         </motion.div>
 
         {/* SECTION 03: CHANNELS & LOCATION */}
-<motion.div 
-  variants={stagger}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true }}
-  className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16"
->
-  <div className="md:col-span-3">
-    <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground inline-block pt-[2px]">
-      Channels
-    </span>
-  </div>
-  
-  <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-12">
-    {/* Direct Column */}
-    <div className="space-y-4">
-      <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Direct</h3>
-      <div className="flex flex-col space-y-2 text-[13px] font-light text-muted-foreground">
-        <a 
-          href="mailto:sayeed51003@gmail.com" 
-          className="hover:text-primary transition-colors duration-300 w-fit"
+        <motion.div 
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16"
         >
-          sayeed51003@gmail.com
-        </a>
-        <a 
-          href="https://x.com/@salisdev" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary transition-colors duration-300 w-fit"
-        >
-          X (Twitter)
-        </a>
-      </div>
-    </div>
+          <div className="md:col-span-3">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground inline-block pt-[2px]">
+              Channels
+            </span>
+          </div>
+          
+          <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-12">
+            {/* Direct Column */}
+            <div className="space-y-4">
+              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Direct</h3>
+              <div className="flex flex-col space-y-2 text-[11px] font-light text-muted-foreground">
+                <a 
+                  href="mailto:sayeed51003@gmail.com" 
+                  className="hover:text-primary transition-colors duration-300 w-fit"
+                >
+                  sayeed51003@gmail.com
+                </a>
+                <a 
+                  href="https://x.com/@salisdev" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors duration-300 w-fit"
+                >
+                  X (Twitter)
+                </a>
+              </div>
+            </div>
 
-    {/* Social Column */}
-    <div className="space-y-4">
-      <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Social</h3>
-      <div className="flex flex-col space-y-2 text-[13px] font-light text-muted-foreground">
-        <a 
-          href="https://linkedin.com/in/sayed-ali-shah" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary transition-colors duration-300 w-fit"
-        >
-          LinkedIn
-        </a>
-        <a 
-          href="https://github.com/salisai"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-primary transition-colors duration-300 w-fit"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+            {/* Social Column */}
+            <div className="space-y-4">
+              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Social</h3>
+              <div className="flex flex-col space-y-2 text-[13px] font-light text-muted-foreground">
+                <a 
+                  href="https://linkedin.com/in/sayed-ali-shah" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors duration-300 w-fit"
+                >
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://github.com/salisai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors duration-300 w-fit"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
 
-    <div className="space-y-4">
-      <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Presence</h3>
-      <div className="space-y-2 text-[13px] font-light text-muted-foreground">
-        <p>Islamabad, Pakistan</p>
-        <p className="hover:text-primary transition-colors duration-300 w-fit">Available remotely · GMT +5</p>
-      </div>
-    </div>
-  </div>
-</motion.div>
+            <div className="space-y-4">
+              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Presence</h3>
+              <div className="space-y-2 text-[13px] font-light text-muted-foreground">
+                <p>Islamabad, Pakistan</p>
+                <p className="hover:text-primary transition-colors duration-300 w-fit">Available remotely · GMT +5</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
       </section>
     </div>
