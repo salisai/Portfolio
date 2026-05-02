@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <>
       {/* DESKTOP */}
-      <div className="max-w-3xl px-6 mx-auto lg:px-8 lg:flex fixed top-0 inset-x-0 z-50 justify-center bg-white">
+      <div className="max-w-3xl px-6 mx-auto lg:px-8 lg:flex fixed top-0 inset-x-0 z-50 justify-center bg-background">
         <nav
           className="
             flex items-center justify-between w-full gap-10
@@ -38,7 +38,7 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="text-[10px] tracking-wide"
+            className="text-[10px] tracking-wide text-muted-foreground"
           >
             Ali
           </Link>

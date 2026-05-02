@@ -85,18 +85,10 @@ export default function Projects() {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-border/50 pb-16 mb-12"
+          className="gap-4 border-b border-border/50"
         >
           <div className="md:col-span-3">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary">Work</span>
-          </div>
-
-          <div className="md:col-span-7">
-            <p
-              className="text-[14px] text-muted-foreground font-light leading-relaxed max-w-xl"
-            >
-              A selection of my recent work across full-stack, AI engineering.
-            </p>
           </div>
         </motion.div>
 
