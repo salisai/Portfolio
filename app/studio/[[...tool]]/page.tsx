@@ -15,5 +15,22 @@ export const dynamic = 'force-static'
 export { metadata, viewport } from 'next-sanity/studio'
 
 export default function StudioPage() {
-  return <NextStudio config={config} />
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        /* Scope styles to the studio route only */
+        .studio-root, .studio-root * {
+          color: #ffffff !important;
+        }
+        .studio-root textarea,
+        .studio-root input,
+        .studio-root .ProseMirror {
+          color: #ffffff !important;
+        }
+      ` }} />
+      <div className="studio-root">
+        <NextStudio config={config} />
+      </div>
+    </>
+  )
 }
