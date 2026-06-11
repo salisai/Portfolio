@@ -145,7 +145,7 @@ export default function Home() {
 
             <div className="mt-12">
               <Link
-                href="/blog"
+                href="https://medium.com/@salisai"
                 className="group inline-flex items-center gap-4 text-[14px] text-muted-foreground font-light"
               >
                 View All Notes

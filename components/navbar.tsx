@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 const navLinks = [
   // { href: "/projects", label: "Work" },
-  { href: "/blog", label: "Blog" },
+  { href: "https://medium.com/@salisai", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
