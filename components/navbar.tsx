@@ -9,7 +9,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion"
 
 const navLinks = [
-  { href: "/projects", label: "Work" },
+  // { href: "/projects", label: "Work" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <>
       {/* DESKTOP */}
-      <div className="max-w-3xl px-6 mx-auto lg:px-8 lg:flex fixed top-0 inset-x-0 z-50 justify-center bg-background">
+      <div className="max-w-3xl px-4 md:px-6 mx-auto lg:px-8 lg:flex fixed top-0 inset-x-0 z-50 justify-center bg-background">
         <nav
           className="
             flex items-center justify-between w-full gap-10

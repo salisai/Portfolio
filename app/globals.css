@@ -204,7 +204,7 @@
     font-family: var(--font-blog-body);
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color: rgb(26, 26, 26);
   }
@@ -216,7 +216,7 @@
     }
 
     .blog-body {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 33px;
     }
 

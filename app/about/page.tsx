@@ -27,59 +27,18 @@ const About = () => {
               AI Engineer. <br/>
               <span className="text-muted-foreground/50"> Building</span>
             </h1>
-            <p>
+
+              <p className='text-[14px] md:text-[16px]'>
               I am an AI Engineer focused on the full spectrum — from LLM engineering and inference optimization to agentic systems, RAG pipelines, n8n automations, and full-stack web applications. I do not just integrate AI into products. I understand how the models work at a deep level, which means I can debug what others cannot, optimize what others leave slow, and architect systems that hold up in production rather than just in demos.
             </p>
-            <p>
+            <p className='text-[14px] md:text-[16px]'>
               My technical foundation covers machine learning theory, deep learning, MLOps, and deployment on cloud infrastructure including AWS. I have studied AI engineering from the ground up — not just the APIs on top, but the systems underneath.
             </p>
-            <p>
+            <p className='text-[14px] md:text-[16px]'>
               Before engineering, I spent five years working inside a real business — handling sales, logistics, and daily operations from the age of 12. That grounding shapes how I approach every project: I think about the business problem first and the technology second. I also study game theory and philosophy alongside engineering, which gives me an unusual ability to define the right problem before jumping to a solution.            </p>
-            <p>Right now I am available for freelance AI engineering projects and actively looking for remote AI engineering roles where I can go deep, build fast, and contribute meaningfully from day one.</p>
-          
-          </div>
-        </motion.div>
-
-
-        {/* SECTION 03: CAPABILITIES (GRID ALIGNED) */}
-        <motion.div 
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="py-16 border-b border-border/50"
-        >
-          <div className="md:col-span-3">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground">Capabilities</span>
-          </div>
-          <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-12">
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Skills Set</h3>
-              <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>LLM & Inference Engineering</li>
-                <li>Agentic AI Systems</li>
-                <li>RAG Pipeline Architecture</li>
-                <li>n8n Workflow Automation</li>
-                <li>Full-Stack AI Applications</li>
-                <li>MLOps & Cloud Deployment</li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Workflow</h3>
-              <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-                <li>Business Problem First</li>
-                <li>Architecture Before Code</li>
-                <li>Ship, Measure, Improve</li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Values</h3>
-              <ul className="space-y-2 text-[13px] text-muted-foreground font-light leading-relaxed">
-               <li>Depth Over Surface</li>
-                <li>Production Over Prototype</li>
-                <li>Client Outcome Over Deliverable</li>
-              </ul>
-            </div>
+            <p className='text-[14px] md:text-[16px]'>
+              Right now I am available for freelance AI engineering projects and actively looking for remote AI engineering roles where I can go deep, build fast, and contribute meaningfully from day one.
+            </p>
           </div>
         </motion.div>
 

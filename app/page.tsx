@@ -68,10 +68,10 @@ export default function Home() {
               >
                 Sayed Ali Shah. <br />
                 <span className="text-muted-foreground/50 font-light text-xl md:text-2xl tracking-tight">
-                  AI Engineering and Research
+                  AI Engineering
                 </span>
               </h1>
-              <p className='text-[16px] text-foreground font-light leading-relaxed'>
+              <p className='text-[14px] text-foreground font-light leading-relaxed'>
                   Hey, I'm Ali. I build full-stack web apps and wire AI into them — LLMs, agentic workflows, 
                   and API integrations that make products smarter without getting in the user's way. Currently open to freelance projects and full-stack roles. If you're building something real, 
                   <span className="text-primary/80 font-medium"> let's talk.</span>

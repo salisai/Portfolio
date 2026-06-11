@@ -119,7 +119,7 @@ export default function Contact() {
               <button 
                 type="submit" 
                 disabled={loading}
-                className="group flex items-center gap-4 text-[18px] font-light text-foreground hover:text-primary transition-all"
+                className="group flex items-center gap-4 text-[16px] font-light text-foreground hover:text-primary transition-all"
               >
                 {loading ? <Spinner className="w-5 h-5" /> : "Send Message"}
                 <span className="h-10 w-10 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
@@ -129,75 +129,6 @@ export default function Contact() {
             </form>
           </div>
           <div className="md:col-span-2" />
-        </motion.div>
-
-        {/* SECTION 03: CHANNELS & LOCATION */}
-        <motion.div 
-          variants={stagger}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-12 gap-8 py-16"
-        >
-          <div className="md:col-span-3">
-            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-muted-foreground inline-block pt-[2px]">
-              Channels
-            </span>
-          </div>
-          
-          <div className="md:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-12">
-            {/* Direct Column */}
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Direct</h3>
-              <div className="flex flex-col space-y-2 text-[11px] font-light text-muted-foreground">
-                <a 
-                  href="mailto:sayeed51003@gmail.com" 
-                  className="hover:text-primary transition-colors duration-300 w-fit"
-                >
-                  sayeed51003@gmail.com
-                </a>
-                <a 
-                  href="https://x.com/@salisdev" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors duration-300 w-fit"
-                >
-                  X (Twitter)
-                </a>
-              </div>
-            </div>
-
-            {/* Social Column */}
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Social</h3>
-              <div className="flex flex-col space-y-2 text-[13px] font-light text-muted-foreground">
-                <a 
-                  href="https://linkedin.com/in/sayed-ali-shah" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors duration-300 w-fit"
-                >
-                  LinkedIn
-                </a>
-                <a 
-                  href="https://github.com/salisai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors duration-300 w-fit"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-[11px] font-bold uppercase tracking-widest text-foreground">Presence</h3>
-              <div className="space-y-2 text-[13px] font-light text-muted-foreground">
-                <p>Islamabad, Pakistan</p>
-                <p className="hover:text-primary transition-colors duration-300 w-fit">Available remotely · GMT +5</p>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
       </section>
