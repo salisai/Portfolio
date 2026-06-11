@@ -72,9 +72,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className='text-[14px] text-foreground font-light leading-relaxed'>
-                  Hey, I'm Ali. I build full-stack web apps and wire AI into them — LLMs, agentic workflows, 
-                  and API integrations that make products smarter without getting in the user's way. Currently open to freelance projects and full-stack roles. If you're building something real, 
-                  <span className="text-primary/80 font-medium"> let's talk.</span>
+                  Hey, I'm Ali. I build with AI and spend a lot of time trying to understand it properly. Language models, deep learning, agentic workflows. The field moves fast and I like keeping up. Open to freelance projects and AI engineering roles.
+                  Let's talk
                 </p>
             </div>
           </motion.div> 

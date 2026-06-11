@@ -29,16 +29,21 @@ const About = () => {
             </h1>
 
               <p className='text-[14px] md:text-[16px]'>
-              I am an AI Engineer focused on the full spectrum — from LLM engineering and inference optimization to agentic systems, RAG pipelines, n8n automations, and full-stack web applications. I do not just integrate AI into products. I understand how the models work at a deep level, which means I can debug what others cannot, optimize what others leave slow, and architect systems that hold up in production rather than just in demos.
-            </p>
-            <p className='text-[14px] md:text-[16px]'>
-              My technical foundation covers machine learning theory, deep learning, MLOps, and deployment on cloud infrastructure including AWS. I have studied AI engineering from the ground up — not just the APIs on top, but the systems underneath.
-            </p>
-            <p className='text-[14px] md:text-[16px]'>
-              Before engineering, I spent five years working inside a real business — handling sales, logistics, and daily operations from the age of 12. That grounding shapes how I approach every project: I think about the business problem first and the technology second. I also study game theory and philosophy alongside engineering, which gives me an unusual ability to define the right problem before jumping to a solution.            </p>
-            <p className='text-[14px] md:text-[16px]'>
-              Right now I am available for freelance AI engineering projects and actively looking for remote AI engineering roles where I can go deep, build fast, and contribute meaningfully from day one.
-            </p>
+                I work across the full AI stack. LLM engineering, agentic systems, RAG pipelines, inference optimization, n8n automations, and enough full-stack to ship things end to end. I care about understanding how models actually work, not just how to prompt them. That ends up mattering more than people expect when something breaks in production or needs to run faster than it does.
+              </p>
+              <br/>
+              <p className='text-[14px] md:text-[16px]'>
+                My foundation is proper. Machine learning theory, deep learning, certain MLOps things, cloud deployment on AWS. I studied the systems underneath. I think that difference shows up in the work.
+              </p>
+              <br/>
+              <p className='text-[14px] md:text-[16px]'>
+                Before any of this, I spent five years working inside a real business from age 12. Sales, logistics, keeping things running. I did not plan for it to be useful later but it is. I think about the actual problem before reaching for a technical solution, which is a habit most engineers do not build until much later.
+              </p>
+              <br/>
+
+              <p className='text-[14px] md:text-[16px]'>
+                Right now I am open to freelance AI engineering projects and remote roles. I want to work on something real, go deep on it, and be useful from day one.
+              </p>
           </div>
         </motion.div>
 

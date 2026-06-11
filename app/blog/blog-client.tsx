@@ -24,7 +24,7 @@ export function BlogClient({ posts }: BlogClientProps) {
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="gap-4 border-b border-border/50"
+          className="gap-4"
         >
           <div className="">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-primary">Blog</span>
